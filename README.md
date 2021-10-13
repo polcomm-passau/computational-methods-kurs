@@ -5,8 +5,26 @@ Materialen für das Seminar "Automatisierte Sammlung & Verarbeitung von digitale
 
 Dozenten: Prof. Florian Töpfl (<florian.toepfl@uni-passau.de>), Daria Kravets (<daria.kravets@uni-passau.de>)
 
-Dies ist ein *Work-in-Progress* und wird laufend aktualisiert.
+Dies ist ein ***Work-in-Progress*** und wird laufend aktualisiert.
 
+Syllabus für den Kurs im WS21/22 finden sie <hier> (www.hier.com)
 
+Übersicht Materialen
+---------------
 
+| Woche  | Seminar       | Übung |
+| -------|:-------------:| -----:|
+| 1      | hier          | hier  |
+| 2      | hier          | hier  |
+| 3      | hier          | hier  |
+| 4      | hier          | hier  |
+| 5      | hier          | hier  |
+| 6      | hier          | hier  |
+| 7      | hier          | hier  |
+| 8      | hier          | hier  |
+| 9      | hier          | hier  |
+| 10     | hier          | hier  |
+| 11     | hier          | hier  |
+| 12     | hier          | hier  |
+| 13     | hier          | hier  |
 
