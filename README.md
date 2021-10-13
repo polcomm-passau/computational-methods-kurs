@@ -4,6 +4,7 @@ Materialen für das Seminar "Automatisierte Sammlung & Verarbeitung von digitale
 ---------------
 
 *Lehrstuhl für Politische Kommunikation, Universität Passau*
+
 Dozenten: Prof. Florian Töpfl (<florian.toepfl@uni-passau.de>), Daria Kravets (<daria.kravets@uni-passau.de>)
 
 Syllabus für den Kurs im WS21/22 finden sie <hier> (www.hier.com)
