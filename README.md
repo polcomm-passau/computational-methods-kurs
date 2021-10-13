@@ -1,6 +1,6 @@
 # R Kurs
 
-Materialen für das Seminar "Automatisierte Sammlung & Verarbeitung von digitalen Daten in R" und die begleitende Übung "Programmieren für die Kommunikationswissenschaft"
+Materialien für das Seminar "Automatisierte Sammlung & Verarbeitung von digitalen Daten in R" und die begleitende Übung "Programmieren für die Kommunikationswissenschaft"
 ---------------
 
 *Lehrstuhl für Politische Kommunikation, Universität Passau*    
@@ -10,7 +10,7 @@ Syllabus für den Kurs im WS21/22 finden sie <hier> (www.hier.com)
   
 Dies ist ein ***Work-in-Progress*** und wird laufend aktualisiert.
 
-Übersicht Materialen
+Übersicht Materialien
 ---------------
 
 | Woche  | Seminar       | Übung |
