@@ -1,3 +1,5 @@
+# R Kurs
+
 Materialen für das Seminar "Automatisierte Sammlung & Verarbeitung von digitalen Daten in R" und die begleitende Übung "Programmieren für die Kommunikationswissenschaft"
 ---------------
 
