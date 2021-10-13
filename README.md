@@ -15,7 +15,7 @@ Dies ist ein ***Work-in-Progress*** und wird laufend aktualisiert.
 
 | Woche  | Seminar       | Übung |
 | -------|:-------------:| -----:|
-| 1      | hier          | hier  |
+| 1      | Vorstellung des Seminarplans und der Lernziele           | Installation von R & Erste Erfahrungen |
 | 2      | hier          | hier  |
 | 3      | hier          | hier  |
 | 4      | hier          | hier  |
