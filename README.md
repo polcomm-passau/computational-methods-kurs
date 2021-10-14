@@ -15,7 +15,7 @@ Dies ist ein ***Work-in-Progress*** und wird laufend aktualisiert.
 
 | Woche  | Seminar       | Übung |
 | -------|:-------------:| -----:|
-| 1      | Vorstellung des Seminarplans und der Lernziele           | <Installation von R & Erste Erfahrungen> (https://github.com/polcomm-passau/computational-methods-kurs/tree/main/woche1/%C3%BCbung) |
+| 1      | Vorstellung des Seminarplans und der Lernziele           | [Installation von R & Erste Erfahrungen](https://github.com/polcomm-passau/computational-methods-kurs/tree/main/woche1/%C3%BCbung) |
 | 2      | folgt           | folgt|
 | 3      | folgt           | folgt|
 | 4      | folgt           | folgt|
