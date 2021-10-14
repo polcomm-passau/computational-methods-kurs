@@ -1,4 +1,4 @@
-#Installation von R und RStudio
+# Installation von R und RStudio
 
 *Hinweis: Falls Sie ältere Version von R oder RStudio auf Ihrem Rechner installiert haben, empfehlen wir ein Update. Um die aktualisierte Version von R zu erhalten, 
 befolgen Sie einfach die nachstehenden Anweisungen (wir benutzen in diesem Kurs die Version 3.5.1). Um RStudio zu aktualisieren, befolgen Sie die nachstehenden 
