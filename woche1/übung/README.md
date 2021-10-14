@@ -8,5 +8,5 @@ wenn Sie eine ältere Version verwenden, und folgen Sie dann den Anweisungen unt
 + Step 1: Download R von hier: https://cran.r-project.org/
 + Step 2: Download RStudio von hier: https://www.rstudio.com/products/rstudio/download/
 
-![Downloadring R Studio](/images/r_studio_download1.png "R Studio Download")<img src="https://your-image-url.type" width="100" >
+![Downloadring R Studio](/images/r_studio_download1.png "R Studio Download")<img src="/images/r_studio_download1.png" width="100" >
 
