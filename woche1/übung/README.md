@@ -24,5 +24,5 @@ Das richtige Betriebssystem (Windows, MacOS, Linux) von Ihrem Rechner wird autom
 
 
 
-Falls Sie Hilfe bei der Installation brauchen, schauen Sie sich das Video von Chris Bail: [Getting Started with RStudio](https://www.youtube.com/watch?v=oFv25YAWSNc) oder kontaktieren Sie daria.kravets@uni-passau.de
+Falls Sie Hilfe bei der Installation brauchen, schauen Sie sich das Video von Chris Bail an: [Getting Started with RStudio](https://www.youtube.com/watch?v=oFv25YAWSNc) oder kontaktieren Sie daria.kravets@uni-passau.de
 
