@@ -1,5 +1,7 @@
--   [Unterschied R und RStudio](#unterschied-r-und-rStudio)
--   [Die 4 Fenster von RStudio](#rstudio-panes)
+# R Basics
+
+-   [R und RStudio](#unterschied-r-und-rStudio)
+-   [Die 4 Fenster von RStudio](#Die-4-Fenster-von-RStudio )
     -   [Konsole](#konsole)
     -   [Skripte](#skripte)
     -   [Environment](#environment)
@@ -60,7 +62,7 @@ Um einen Skript abschließend zu speichern, clicken wir entweder auf *File - Sav
 
 ## Environment 
 
-*Environment* in RStudio ist der Ort wo die Objekten (z.B. Variablen und Daten) mit den wir aktuell arbeiten gespeichert bleiben. In dem Beispiel unten haben wir eine Variable `x` angelegt und ihr den Wert `10` vergeben. Außerdem, haben wir eine Tabelle (oder Datensatz) `tabelle_mit_autos` initialisiert. 
+*Environment* (oben rechts im Bildschirm) in RStudio ist der Ort wo die Objekten (z.B. Variablen und Daten) mit den wir aktuell arbeiten gespeichert bleiben. In dem Beispiel unten haben wir eine Variable `x` angelegt und ihr den Wert `10` vergeben. Außerdem, haben wir eine Tabelle (oder Datensatz) `tabelle_mit_autos` initialisiert. 
 
 ```r
 x = 10
@@ -73,8 +75,11 @@ Unser *Environment* sieht dann so aus:
 
 ## Files 
 
+Der rechte untere Bildschirmbereich in RStudio zeigt einen Dateibrowser (*Files*) an, der das aktuelle Arbeitsverzeichnis zeigt. Standardmäßig wird `Home` als das aktuelle Arbeitsverzeichnis ausgewählt. Da das aber sehr unübersichtlich ist (und später unpraktisch), bietet es sich an (und das empfehle ich sehr!) in RStudio mit Projekten zu arbeiten. 
 
+Um einen neunen Projekt anzulegen, gehen wir auf *File - New Project..*. Danach erscheint ein Fenster: 
 
-# Projekte
+![New_project_create](https://user-images.githubusercontent.com/17723168/138303448-ffcd37d8-fe02-469d-89d4-eb797f5a2099.png)
 
-Ich lege Euch ans Herz gleich Euch zu gewöhnen bei RStudio in Projekten zu arbeiten und für jedes neues Projekt einen eigenen Projekt anlegen. 
+Hier wählen wir *New Directory - New Project -* (Wählen den Ordner ein wo wir das Projekt anlegen wollen und geben einen Namen für das Projekt) *- Create Project*   
+
