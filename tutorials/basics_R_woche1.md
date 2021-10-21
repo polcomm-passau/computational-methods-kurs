@@ -1,4 +1,4 @@
-# R Basics
+# R Einführung
 
 -   [R und RStudio](#unterschied-r-und-rStudio)
 -   [Die 4 Fenster von RStudio](#Die-4-Fenster-von-RStudio )
@@ -81,7 +81,10 @@ Um einen neunen Projekt anzulegen, gehen wir auf *File - New Project..*. Danach 
 
 ![New_project_create](https://user-images.githubusercontent.com/17723168/138303448-ffcd37d8-fe02-469d-89d4-eb797f5a2099.png)
 
-Hier wählen wir *New Directory - New Project - (Wählen den Ordner ein wo wir das Projekt anlegen wollen und geben einen Namen für das Projekt) - Create Project*  
+Hier wählen wir *New Directory - New Project - (Wählen den Ordner wo wir das Projekt anlegen wollen und geben einen Namen für das Projekt ein) - Create Project*. In dem Beispiel lege ich das Projekt *Teaching_R* auf meinem *Desktop* an.
+
+![Create_new_project](https://user-images.githubusercontent.com/17723168/138305709-153f9490-8e80-4d47-bd4a-0be0bcc37004.png)
+
 
 Man kann mehrere Projekte auf einem Rechner gleichzeitig haben und um zwischen Projekten zu springen kann man in der rechten oberen Ecke auf den Symbol ![Project_symbol](https://user-images.githubusercontent.com/17723168/138304896-d9b22ce3-1f3d-4c31-8116-dd73f66abbd4.png) gehen. Dort werden alle Projekte aufgelistet. 
  
