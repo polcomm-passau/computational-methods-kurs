@@ -16,8 +16,8 @@ Dies ist ein ***Work-in-Progress*** und wird laufend aktualisiert.
 
 | Nr.  | Topic       | Folien | Weiterführende Links |
 | -----|:-----------:| ------:|---------------------:|
-| 1    | [Installation von R & RStudio](https://github.com/polcomm-passau/computational-methods-kurs/tree/main/woche1/%C3%BCbung)| |[Bail, C. (2020). Getting Started with R](https://www.youtube.com/watch?v=oFv25YAWSNc)|
-| 2    | [Einführung ins R und RStudio](https://github.com/polcomm-passau/computational-methods-kurs/tree/main/woche1/% |      |
+| 1    | [Installation von R & RStudio](https://github.com/polcomm-passau/computational-methods-kurs/blob/main/tutorials/installation.md)| |[Bail, C. (2020). Getting Started with R](https://www.youtube.com/watch?v=oFv25YAWSNc)|
+| 2    | [Einführung ins R und RStudio](https://github.com/polcomm-passau/computational-methods-kurs/blob/main/tutorials/basics_R_woche1.md)|      | |
 
 
 
