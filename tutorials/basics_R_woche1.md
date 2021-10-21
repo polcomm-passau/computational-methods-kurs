@@ -1,3 +1,10 @@
+-   [Unterschied R und RStudio](#unterschied-r-und-rStudio)
+-   [Die 4 Fenster von RStudio](#rstudio-panes)
+    -   [Konsole](#konsole)
+    -   [Skripte](#skripte)
+    -   [Environment](#environment)
+    -   [Files](#files)
+
 # Unterschied R und RStudio
 
 Den Unterschied zwischen R und RStudio kann man sich so vorstellen, dass RStudio ein Auto ist und R ist der Motor drin. RStudio ist also eine IDE (Integrated Development Evironment) oder eine graphische Benutzerobefläche die uns die Arbeit mit R erleichert. RStudio hilft uns R-Code zu schreiben, spreichern und öffnen. Es bietet Syntaxhervorhebungen, Autovervollständigungen und vieles mehr. 
@@ -15,17 +22,58 @@ Die Konsole ist der Motor von RStudio. Hier wird der Code ausgeführt und hier k
 
 ![Konsole_Ausgabe](https://user-images.githubusercontent.com/17723168/138288129-ceea9987-4c32-4a26-92f6-a8a6c5ec5c31.png)
 
-Prinzipiell könnten wir alle Arbeitsschritte über die Konsole ausführen. Das ist in der Praxis aber wenig sinnvoll, da wir normallerweise längere und mehrere Befehle hintereinander ausführen und diese auch festhalten möchten. Wir arbeiten daher mit Skript-Dateien.
+Prinzipiell könnten wir alle unsere Arbeitsschritte über die Konsole ausführen. Das ist in der Praxis aber wenig sinnvoll, da wir normallerweise längere und mehrere Befehle hintereinander ausführen und diese auch festhalten möchten. Wir arbeiten daher mit Skript-Dateien.
 
 ## Skripte
 
 Um eine neue Skript-Datei zu öffnen, clicken wir entweder auf *File - New File - R-Script*, gehen auf den Plus-Symbol in der linken Ecke ![Skript_Symbol](https://user-images.githubusercontent.com/17723168/138289753-b2d55725-330d-4883-bb5f-063251b0bb15.png) oder verwenden die Tastenkombination `Strg/Cmd + Shift + N`. 
 
-Ein neuer Skript, der erstellt wird, heißt normallerweise *Untitled 1*. Hier können wir nun unseren R-Code schreiben.
+Ein neuer Skript, der erstellt wird, heißt normallerweise *Untitled 1*. Hier können wir nun unseren R-Code schreiben und anschließend ausführen.
+
+```r
+2+2
+3+3
+```
+
+Um eine einzelne Befehlstaste auszuführen, verwenden wir die Tastenkombination `Strg/Cmd + ENTER`. Um den ganzen Skript mit allen drin erhaltenen Zeilen auszuführen, drückt `Strg/Cmd + Shift + ENTER`.  
+
+```r
+#Eingabe: 
+2+2
+3+3
+```
+
+```r
+#Ausgabe in der Konsole: 
+[1] 4
+[1] 6
+```
+
+Längere Skripte werden schnell unübersichtlich. Oft vergisst man auch was der Code eigentlich macht oder machen sollte. Deswegen sollte man den geschriebenen Code immer mit sinvollen Kommentaren versehen. Ein Kommentar in R beginnt mit einem Hashtag `#`.
+
+```r
+#Ich bin ein Kommentar. 
+```
+Kommentarzeilen werden vom R nicht ausgeführt (sonst führt der Rechner den Code immer Zeile für Zeile aus und erwartet in jeder Zeile einen fehlerfreien R-Code. Sonst gibt es eine Fehler-Meldung. Kommentarzeilen werden dabei ignoriert). 
+
+Um einen Skript abschließend zu speichern, clicken wir entweder auf *File - Save* oder verwenden die Tastenkombination `Strg/Cmd + S`. R-Skripte können beliebig benannt werden und erhalten die Dateiendung `.R`.
+
+## Environment 
+
+*Environment* in RStudio ist der Ort wo die Objekten (z.B. Variablen und Daten) mit den wir aktuell arbeiten gespeichert bleiben. In dem Beispiel unten haben wir eine Variable `x` angelegt und ihr den Wert `10` vergeben. Außerdem, haben wir eine Tabelle (oder Datensatz) `tabelle_mit_autos` initialisiert. 
+
+```r
+x = 10
+tabelle_mit_autos = mtcars 
+```
+
+Unser *Environment* sieht dann so aus: 
+
+![Environment](https://user-images.githubusercontent.com/17723168/138297729-d76a19e4-30e5-49d0-821c-e6ea56368620.png)
+
+## Files 
 
 
-
-Um eine einzelne Befehlstaste auszuführen verwendet die Tastenkombination `Strg/Cmd + ENTER`. Um den ganzen Skript mit allen drin erhaltenen Zeilen auszuführen, drückt `Strg/Cmd + Shift + ENTER`.  
 
 # Projekte
 
