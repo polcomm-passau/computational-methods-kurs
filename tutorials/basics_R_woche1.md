@@ -1,7 +1,7 @@
 # R Einführung
 
 -   [R und RStudio](#unterschied-r-und-rStudio)
--   [Die 4 Fenster von RStudio](#Die-4-Fenster-von-RStudio )
+-   [4 Fenster von RStudio](#Die-4-Fenster-von-RStudio )
     -   [Konsole](#konsole)
     -   [Skripte](#skripte)
     -   [Environment](#environment)
@@ -11,7 +11,7 @@
 
 Den Unterschied zwischen R und RStudio kann man sich so vorstellen, dass RStudio ein Auto ist und R ist der Motor drin. RStudio ist also eine IDE (Integrated Development Evironment) oder eine graphische Benutzerobefläche die uns die Arbeit mit R erleichert. RStudio hilft uns R-Code zu schreiben, spreichern und öffnen. Es bietet Syntaxhervorhebungen, Autovervollständigungen und vieles mehr. 
 
-# Die 4 Fenster von RStudio 
+# 4 Fenster von RStudio 
 
 Die Benutzeroberfläche von RStudio ist in vier wichtigsten Fenster (auf English *Panes*) aufgeteilt - Konsole, Skripte, Environment und Files. 
 
