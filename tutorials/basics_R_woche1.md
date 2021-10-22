@@ -6,6 +6,7 @@
     -   [Skripte](#skripte)
     -   [Environment](#environment)
     -   [Files](#files)
+-   [Übungsaufgaben](#übungsaufgaben)
 
 # R vs. RStudio
 
@@ -88,4 +89,21 @@ Hier wählen wir *New Directory - New Project - (Wählen den Ordner wo wir das P
 
 Man kann mehrere Projekte auf einem Rechner gleichzeitig haben und um zwischen Projekten zu springen kann man in der rechten oberen Ecke auf den Symbol ![Project_symbol](https://user-images.githubusercontent.com/17723168/138304896-d9b22ce3-1f3d-4c31-8116-dd73f66abbd4.png) gehen. Dort werden alle angelegten Projekte aufgelistet. 
  
+# Übungsaufgaben
+
+1. Öffnen Sie RStudio und führen Sie ein paar simple Berechnungen in der Konsole durch.
+***
+2. Erstellen Sie ein Projekt in dem Sie in diesem Semester arbeiten werden. Sie können das Projekt auch in Untersitzungen/Wochen gliedern. 
+***
+3. In dem Projekt erstellen Sie eine neue Skriptdatei und speichern Sie diese unter einem sinnvollen Namen. 
+***
+4. Rechnen Sie: 
+    +   Wie viele Wochen hat ein Jahr mit 365 Tagen?  
+    +   Wie viele Sekunden hat ein Tag? 
+    +   Fügen Sie vier weitere beliebige Berechnungen (z.B., mit +, -, ^) hinzu. 
+    Gliedern Sie die Skriptdatei durch einige Kommentare.
+
+
+
+
 
