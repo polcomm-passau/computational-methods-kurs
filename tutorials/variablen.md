@@ -28,6 +28,9 @@
 1.4. Verwenden Sie die Operatoren `[` und `:`, um auf die Temperatur der ersten drei Städte in dem Vektor zuzugreifen.  
 
 1.5. Verwenden Sie den Operator `[`, um auf die Temperatur von Paris und San Juan zuzugreifen.  
+
+1.6. Was ist die größte Zahl in dem Vektor `temp_januar`?
+
 ***
 ### 2. Strings
 2.1. Erstellen Sie eine Zeichenkette/String `greeting`, die den folgenden Text enthällt: 
