@@ -71,7 +71,7 @@ daten_als_string = c("01.03.2021", "28.10.2021", "21.10.2021", "11.11.2021")
 
 5.2. Was bedeutet das Resultat der letzten Codezeile? 
 
-5.3. Schauen Sie sich hierzu an, was passiert, wenn Sie above_average in einen numerischen Vektor umwandeln.
+5.3. Schauen Sie sich hierzu an, was passiert, wenn Sie `above_average` in einen numerischen Vektor umwandeln.
 
 ```r
 values = c(1.2, 1.3, 0.8, 0.7, 0.7, 1.5, 1.1, 1.0, 1.1, 1.2, 1.1)
