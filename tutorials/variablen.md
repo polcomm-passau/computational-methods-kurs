@@ -46,7 +46,7 @@ greeting = "Mein Name ist... Ich mag Käse."
 3.1. Sie erhalten einen Vektor mit Daten im String-Format (s. unten). Ändern Sie den Format zu Datum. 
 
 ```r
-daten_als_string = c("01.03.2021, "28.10.2021", "21.10.2021", "11.11.2021")
+daten_als_string = c("01.03.2021", "28.10.2021", "21.10.2021", "11.11.2021")
 ```
 
 3.2. Speichern Sie die Daten in einer Variable `dates` im Format mit ausgeschribenen Monat und abgekürztem Jahr: z.B. "May-21" 
