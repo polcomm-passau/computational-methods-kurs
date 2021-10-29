@@ -10,25 +10,96 @@
 
 # Variablenzuweisung
 
-In R gibt es grundsätzlich zwei Wege, um einer Variable einen Wert zuzuweisen: `<-` und `=`. Was ist richtiger? Beides ist möglich, aber die R Community und R Styling Guide empfehlen `<-` zu verwenden. Warum?  
+In R gibt es grundsätzlich zwei Wege, um einer Variable einen Wert zuzuweisen: `<-` und `=`.
+
+```r
+#Zuweisungsoperatoren
+x = 10 #oder
+x <- 10
+```
+
+Was ist richtiger? Beides ist möglich, aber die R Community und R Styling Guide empfehlen `<-` zu verwenden. Warum?  
 
 + Es gibt tatsächlich Fälle, wo `<-` die einzige richtige Möglichkeit ist einen Wert einer Variable zuzuweisen ([hier](https://www.r-bloggers.com/2018/09/why-do-we-use-arrow-as-an-assignment-operator/) könnt Ihr die Beispiele angucken). Das sind aber nicht viele und die begegnet man im "Freien Leben" nicht oft. 
 
 + **Historische Gründe:**
-  + Bis 2001 was `<-` die einzige Möglichkeit in R einer Variable einen Wert zuzuweisen. Also sind viele einfach konservativ und bleiben bei `<-` aus den Gründen.  
-  + APL Tastaturen an den R entwickelt wurde hatten eine Taste `<-` (also war `<-` früher nur ein Klick).  
+  + Bis 2001 was `<-` die einzige Möglichkeit in R einer Variable einen Wert zuzuweisen. Also sind viele einfach konservativ. 
+  + Früher war `<-` nur ein Klick, da die APL Tastaturen an den R entwickelt wurde hatten eine Taste `<-`.  
  
 + **Mathematische Gründe:** 
   + Aus mathematischer Sicht ist der Pfeil schöner, denn er macht die Richtung der Zuordnungsrichtung klar. Übringens, der Pfeil nach rechts würde in R auch funktionieren, aber bitte benutzt das nicht. Shortcut für den Linkspfeil in R-Studio ist übrigens `Alt` + `–`.
    
-+ **ABER:** `=` ist lesbarer für andere Programmiersprachen
++ **ABER:** `=` ist lesbarer für andere Programmiersprachen. Deswegen entscheiden sich viele R-Wechsler für `=`.
 + FUN FACT: Package [formatR](https://yihui.org/formatr/) ändert automatisch `=` zu `<-`.
 
 
 # Variablentypen
 
 ## Einfache Variablentypen
+
+### Integer
+```r
+x = 10L
+class(x) # class() spuckt den Variablentyp() aus
+## [1] "integer"
+```
+Übringes, L steht für Long (32-bit integer in C). 
+
+### Numeric
+
+*Numeric* ist der Standardtyp für Zahlen in R.
+
+```r
+x = 10
+class(x)
+## [1] "numeric"
+```
+### Character/String
+
+*Character*-Variablen sind ein sehr interessanter und wichtiger Datentyp für uns und wir werden damit viel damit in der Zukunft arbeiten.
+
+```r
+x = "Hello 'Daria'" # "" oder ''. In "kann man '' verwenden"
+class(x)
+## [1] "character"
+```
+
+### Logical/Boolean
+
+*Logical* können nur zwei Ausprägungen haben: `TRUE` oder `FALSE`. Übrigens, in Computer Science ist TRUE = 1 und FALSE = 0. 
+
+```r
+x = TRUE
+y = FALSE # Achtung! Die Schreibweise! Alles groß.
+class(x)
+## [1] "logical"
+```
+
 ## Komplexere Variablentypen
+
+### Vektoren 
+
+Vektoren sind Objekte, die mehrere Werte desselben Typs beinhalten. Wir erzeugen Vektoren über die Funktion c() (von concatenate, also verketten). Die einzelnen Elemente des Vektors werden durch Kommas , getrennt.
+
+```r
+gerade_zahlen <- c(2, 4, 6, 8)
+ungerade_zahlen <- c(1, 3, 5, 7, 9)
+string_vector = c("Ich", "bin", "ein", "String", "Vektor")
+zahlen = c(gerade_zahlen, ungerade_zahlen) #die Zahlen werden nicht sortiert, sondern nacheinander eingefügt.
+## [1] 2 4 6 8 1 3 5 7 9
+```
+####  Vektorelemente auswählen 
+
+Um auf Vektorenelemente zuzugreifen, benutzen wir eckige Klammen `[]`. Ein anderer Name dafür ist Index-Slicing. Anders als bei anderen Programmiersprachen, fängt R an zu zählen bei 1, nicht bei 0. 
+
+```r
+zahlen = c(2, 4, 6, 8, 1, 3, 5, 7, 9)
+zahlen[2] # 2 Element -> ## [1] 4
+zahlen[2:5] # Alle Elemente zwischen 2 und 5. -> ## [1] 4  6  8  1  3
+zahlen[c(1,4,6)] #gibt das 1, 4 und 6 Element aus -> ## [1] 2 8 3
+zahlen[-1] #Löscht das 1. Element 
+```
+
 
 # Logische Operatoren
 
