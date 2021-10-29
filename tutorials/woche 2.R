@@ -46,7 +46,7 @@ string_vektor = c("Ich", "bin", "ein", "string", "Vektor")
 zahlen = c(gerade_zahlen, ungerade_zahlen)
 zahlen
 
-#Vektorenelemente auswählen -> []
+#Vektorenelemente auswählen -> [] #Index-Slicing!
 
 zahlen[2]
 zahlen[2:10]
@@ -96,8 +96,7 @@ new_df
 
 
 #Besonderer Variblentyp - Date
-
-d = Sys.Date() #jetztige Datum
+d = Sys.Date() #jetztiges Datum
 d
 class(d)
 format(d, "%d.%m%Y")
