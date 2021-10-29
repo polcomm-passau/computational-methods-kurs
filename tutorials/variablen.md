@@ -139,7 +139,7 @@ country_codes["italy"]
 codes = c(55, 44, 66)
 names(codes) = c("china", "russia", "us")
 codes
-```r
+```
 
 #### Praktische Funktionen mit Vektoren
 
@@ -239,7 +239,7 @@ folgt.
 
 # Übungsaufgaben
 
-### 1. Vektoren
+### 1. Vektoren  
 
   1.1. Erstellen Sie einen Vektor mit den durchschnittlichen Höchsttemperaturen im Januar für Peking, Lagos, Paris, Rio de Janeiro, San Juan und Toronto. Die entsprechenden    Temperaturen sind 35, 88, 42, 84, 81 und 30 Grad Fahrenheit. Nennen Sie die Variable `temp_january`.  
 
@@ -254,7 +254,7 @@ folgt.
   1.6. Was ist die größte Zahl in dem Vektor `temp_januar`?
 
 ***
-### 2. Strings
+### 2. Strings  
   2.1. Erstellen Sie eine Zeichenkette/String `greeting`, die den folgenden Text enthällt: 
 
   ```r
@@ -267,7 +267,7 @@ folgt.
   2.4. Nun teilen Sie die Begrüßung in einzele Wörter und speichern Sie die Ausgabe in der Variable `greeting_split`. 
 
 ***
-### 3. Dates
+### 3. Dates  
   3.1. Sie erhalten einen Vektor mit Daten im String-Format (s. unten). Ändern Sie den Format zu Datum. 
 
   ```r
