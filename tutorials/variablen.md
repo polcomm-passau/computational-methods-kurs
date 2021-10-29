@@ -16,7 +16,7 @@
 - [Variablentyp ändern](#Variablentyp-ändern)
 - [Logische Operatoren](#Logische-Operatoren)
 - [Variablenbenennung](#Variablenbenennung)
-- [Übungen](#Übungen)
+- [Übungsaufgaben](#Übungsaufgaben)
 
 # Variablenzuweisung
 
@@ -217,9 +217,13 @@ as.Date("2021-10-29")
 
 # Logische Operatoren
 
+folgt.
+
 # Variablenbenennung
 
-# Übungen
+folgt.
+
+# Übungsaufgaben
 
 ### 1. Vektoren
 1.1. Erstellen Sie einen Vektor mit den durchschnittlichen Höchsttemperaturen im Januar für Peking, Lagos, Paris, Rio de Janeiro, San Juan und Toronto. Die entsprechenden Temperaturen sind 35, 88, 42, 84, 81 und 30 Grad Fahrenheit. Nennen Sie die Variable `temp_january`.  
