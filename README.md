@@ -1,4 +1,4 @@
-# Automatisierte Datensammlung und Analyse in R
+# Automatisierte Datensammlung und Analyse mit R
 
 *Lehrstuhl für Politische Kommunikation, Universität Passau* 
 
