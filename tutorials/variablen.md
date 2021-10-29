@@ -1,11 +1,29 @@
 # Variablen und Variablentypen in R
 
+- [Variablenzuweisung](#Variablenzuweisung)
 - [Variablentypen](#Variablentypen)
   - [Einfache Variablentypen](#Einfache-Variablentypen)
   - [Komplexere Variablentypen](#Komplexere-Variablentypen)
 - [Logische Operatoren](#Logische-Operatoren)
 - [Variablenbenennung](#Variablenbenennung)
 - [Übungen](#Übungen)
+
+# Variablenzuweisung
+
+In R gibt es grundsätzlich zwei Wege, um einer Variable einen Wert zuzuweisen: `<-` und `=`. Was ist richtiger? Beides ist möglich, aber die R Community und R Styling Guide empfehlen `<-` zu verwenden. Warum?  
+
++ Es gibt tatsächlich Fälle, wo `<-` die einzige richtige Möglichkeit ist einen Wert einer Variable zuzuweisen ([hier](https://www.r-bloggers.com/2018/09/why-do-we-use-arrow-as-an-assignment-operator/) könnt Ihr die Beispiele angucken). Das sind aber nicht viele und die begegnet man im "Freien Leben" nicht oft. 
+
++ **Historische Gründe:**
+  + Bis 2001 was `<-` die einzige Möglichkeit in R einer Variable einen Wert zuzuweisen. Also sind viele einfach konservativ und bleiben bei `<-` aus den Gründen.  
+  + APL Tastaturen an den R entwickelt wurde hatten eine Taste `<-` (also war `<-` früher nur ein Klick).  
+ 
++ **Mathematische Gründe:** 
+  + Aus mathematischer Sicht ist der Pfeil schöner, denn er macht die Richtung der Zuordnungsrichtung klar. Übringens, der Pfeil nach rechts würde in R auch funktionieren, aber bitte benutzt das nicht. Shortcut für den Linkspfeil in R-Studio ist übrigens `Alt` + `–`.
+   
++ **ABER:** `=` ist lesbarer für andere Programmiersprachen
++ FUN FACT: Package [formatR](https://yihui.org/formatr/) ändert automatisch `=` zu `<-`.
+
 
 # Variablentypen
 
