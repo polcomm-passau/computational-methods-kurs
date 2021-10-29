@@ -131,6 +131,35 @@ length(zahlen) # Länge des Vektors
 ## [1] 9
 ```
 
+## Listen
+
+Listen in R sind Vektoren, die mehrere Werte unterschiedlichen Typs beinhalten. Wir erzeugen Vektoren über die Funktion list(). Wie bei Vektoren werden die einzelnen Elemente des Listes durch Kommas , getrennt.
+
+```r
+l = list(10L, 3.14, "Text")
+class(l)
+```
+
+## Matrizen
+
+```r
+mat = matrix(1:12, 3,4)
+mat
+```
+
+#Dataframes
+
+```r
+df = mtcars
+df$cyl + 1 # mit $ greift man 
+dim(df) # Dimensionen eines Dataframes 
+length(df) #Zahl der Variablen
+names(df)
+summary(df)
+
+new_df = df[df$cyl >5 ,] #Subset
+new_df
+```
 
 # Logische Operatoren
 
