@@ -284,7 +284,7 @@ folgt.
 
   4.3. Wie viele Zylinder haben die enthaltenen Fahrzeuge im Durchschnitt? (Zylinder: cyl)
 
-  4.4. Erstellen Sie einen neuen Datensatz cars_short, der lediglich die Variablen mpg und hp enthält.
+  4.4. Erstellen Sie einen neuen Datensatz `cars_short`, der lediglich die Variablen mpg und hp enthält.
 
 ***
 ### 5. EXTRA 
