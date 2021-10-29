@@ -127,6 +127,20 @@ zahlen[2:5] # Alle Elemente zwischen 2 und 5. -> ## [1] 4  6  8  1  3
 zahlen[c(1,4,6)] #gibt das 1, 4 und 6 Element aus -> ## [1] 2 8 3
 zahlen[-1] #Löscht das 1. Element 
 ```
+
+#### Vektoren Namen vergeben
+
+```r
+country_codes <- c(germany = 0049, australia = 0061, italy = 0039)
+class(country_codes) #Immer noch numerischer Vektor
+names(country_codes) #aber mit namen
+country_codes["italy"]
+
+codes = c(55, 44, 66)
+names(codes) = c("china", "russia", "us")
+codes
+```r
+
 #### Praktische Funktionen mit Vektoren
 
 Das besonderen an Vektoren in R, dass man sehr einfach Ausrechnungen mit den ausführen kann. 
