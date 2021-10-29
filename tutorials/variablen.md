@@ -190,9 +190,9 @@ new_df
 ```r
 d = Sys.Date() # heutiges Datum
 d
-[1] "2021-10-29"
-format(d,"%m-%Y") #Änderung/Abkürkung des Formats
-## [1] "29.10.2021"
+## [1] "2021-10-29"
+format(d,"%m-%Y") #Änderung des Formats
+## [1] "10-2021"
 as.Date("2020-03-11") #Ein String im Standardformat (yyyy-mm-dd) ins Date umwandeln 
 as.Date("11.03.2020", format = "%d.%m.%Y") # Daten anderen Formate (z.B. dd.mm.yyy) in Date umwandeln. 
 ```
