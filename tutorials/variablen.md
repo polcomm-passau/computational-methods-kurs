@@ -133,7 +133,7 @@ length(zahlen) # Länge des Vektors
 
 ### Listen
 
-Listen in R sind Vektoren, die mehrere Werte unterschiedlichen Typs beinhalten. Wir erzeugen Vektoren über die Funktion list(). Wie bei Vektoren werden die einzelnen Elemente des Listes durch Kommas , getrennt.
+Listen in R sind Vektoren, die mehrere Werte unterschiedlichen Typs beinhalten. Wir erzeugen Listen über die Funktion list(). Wie bei Vektoren werden die einzelnen Elemente des Listes durch Kommas , getrennt.
 
 ```r
 l = list(10L, 3.14, "Text")
@@ -166,6 +166,15 @@ new_df = df[df$cyl >5 ,] #Subset -> Alle Autos mit mehr als 5 Zylinder (cyl)
 new_df
 ```
 
+### Date 
+
+```r
+d <- Sys.Date() # heutiges Datum
+format(d,"%m-%Y") #Änderung/Abkürkung des Formats 
+as.Date("2020-03-11") #Standardformat Date 
+as.Date("11.03.2020", format = "%d.%m.%Y") #Unterschiedliche Daten in R-Date umwandeln. 
+
+```
 
 # Logische Operatoren
 
