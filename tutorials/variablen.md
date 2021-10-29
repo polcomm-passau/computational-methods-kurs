@@ -11,8 +11,8 @@
     - [Vektoren](#Vektoren)
     - [Listen](#Listen)
     - [Matrizen](#Matrizen)
-    - [Dataframes](#Dataframes)
-    - [Dates](#Dates)
+    - [Dataframe](#Dataframe)
+    - [Date](#Date)
 - [Variablentyp ändern](#Variablentyp-ändern)
 - [Logische Operatoren](#Logische-Operatoren)
 - [Variablenbenennung](#Variablenbenennung)
@@ -72,6 +72,24 @@ class(x)
 x = "Hello 'Daria'" # "" oder ''. In "kann man '' verwenden"
 class(x)
 ## [1] "character"
+```
+
+#### Praktische Funktionen mit Vektoren
+
+```r
+a = "Hello"
+substr(a, 1, 2) #String verkürzen
+## [1] "He"
+toupper(a) 
+## [1] "HELLO"
+tolower(a)
+## [1] "hello"
+strsplit(a, NULL) #String in Buchstaben aufteilen
+## [1] "H" "e" "l" "l" "o"
+paste(a, "Du da") #Zum String einfügen 
+## [1] "Hello Du da"
+paste(a, "Du da", sep= ", ")
+## [1] "Hello, Du da"
 ```
 
 ### Logical/Boolean
@@ -153,7 +171,7 @@ mat
   [3,]    3    6    9   12
 ```
 
-### Dataframes
+### Dataframe
 
 ```r
 df = mtcars
@@ -176,7 +194,7 @@ d
 format(d,"%m-%Y") #Änderung/Abkürkung des Formats
 ## [1] "29.10.2021"
 as.Date("2020-03-11") #Ein String im Standardformat (yyyy-mm-dd) ins Date umwandeln 
-as.Date("11.03.2020", format = "%d.%m.%Y") # Daten anderen Formate (z.B. dd-mm-yyy) in Date umwandeln. 
+as.Date("11.03.2020", format = "%d.%m.%Y") # Daten anderen Formate (z.B. dd.mm.yyy) in Date umwandeln. 
 ```
 
 # Variablentyp ändern
@@ -206,7 +224,7 @@ as.Date("2021-10-29")
 ### 1. Vektoren
 1.1. Erstellen Sie einen Vektor mit den durchschnittlichen Höchsttemperaturen im Januar für Peking, Lagos, Paris, Rio de Janeiro, San Juan und Toronto. Die entsprechenden Temperaturen sind 35, 88, 42, 84, 81 und 30 Grad Fahrenheit. Nennen Sie die Variable `temp_january`.  
  
-1.2. Erstellen Sie nun einen Vektor mit den Städtenamen und nennen Sie die Variable `city`.  
+1.2. Erstellen Sie nun einen Vektor mit den Städtenamen und nennen Sie den Vektor `city`.  
 
 1.3. Verwenden Sie die Namensfunktion, um die Temperaturdaten der entsprechenden Stadt zuzuordnen.  
 
