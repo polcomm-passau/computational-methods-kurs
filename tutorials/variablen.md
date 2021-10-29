@@ -99,6 +99,28 @@ zahlen[2:5] # Alle Elemente zwischen 2 und 5. -> ## [1] 4  6  8  1  3
 zahlen[c(1,4,6)] #gibt das 1, 4 und 6 Element aus -> ## [1] 2 8 3
 zahlen[-1] #Löscht das 1. Element 
 ```
+#### Praktische Funktionen mit Vektoren
+
+Das besonderen an Vektoren in R, dass man sehr einfach Ausrechnungen mit den ausführen kann. 
+
+```r
+zahlen + 1 #Addiert 1 zu jedem Element des Vektors 
+## [1] 3  5  7  9  2  4  6  8 10
+zahlen[zahlen > 3] #gibt nur Zahlen > 3 aus
+## [1] 4 6 8 5 7 9
+sum(zahlen)
+## [1] 45
+min(zahlen)
+## [1] 1
+max(zahlen)
+## [1] 9
+mean(zahlen)
+## [1] 5
+sd(zahlen) # Standardabweicherung
+## [1] 2.738613
+length(zahlen) # Länge des Vektors 
+## [1] 9
+```
 
 
 # Logische Operatoren
