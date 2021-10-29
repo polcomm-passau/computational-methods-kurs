@@ -185,11 +185,16 @@ as.Date("11.03.2020", format = "%d.%m.%Y") # Daten anderen Formate (z.B. dd-mm-y
 x = "3"
 class(x)
 ## [1] "character"
+# Zum Integer:
 x = as.integer(x)
 as.integer(3.14)
 as.integer("3.14")
+# Zum Character/String:
 as.character(3)
+# Zum Numeric:
 as.numeric("3.14")
+# Zum Datum:
+as.Date("2021-10-29")
 ```
 
 # Logische Operatoren
