@@ -3,6 +3,7 @@
 - [Variablenzuweisung](#Variablenzuweisung)
 - [Variablentypen](#Variablentypen)
   - [Einfache Variablentypen](#Einfache-Variablentypen)
+    - [Integer](#Integer)   
   - [Komplexere Variablentypen](#Komplexere-Variablentypen)
 - [Logische Operatoren](#Logische-Operatoren)
 - [Variablenbenennung](#Variablenbenennung)
