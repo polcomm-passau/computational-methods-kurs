@@ -37,9 +37,9 @@ Was ist richtiger? Beides ist möglich, aber die R Community und R Styling Guide
   + Früher war `<-` nur ein Klick, da die APL Tastaturen an den R entwickelt wurde hatten eine Taste `<-`.  
  
 + **Mathematische Gründe:** 
-  + Aus mathematischer Sicht ist der Pfeil schöner, denn er macht die Richtung der Zuordnungsrichtung klar. Übringens, der Pfeil nach rechts würde in R auch funktionieren, aber bitte benutzt das nicht. Shortcut für den Linkspfeil in R-Studio ist übrigens `Alt` + `–`.
+  + Aus mathematischer Sicht ist der Pfeil schöner, denn er macht die Richtung der Zuordnungsrichtung klar. Übringens, der Pfeil nach rechts `->` würde in R auch funktionieren, aber bitte benutzt das nicht. Das Shortcut für den Linkspfeil in R-Studio ist übrigens `Alt` + `–`.
    
-+ **ABER:** `=` ist lesbarer für andere Programmiersprachen. Deswegen entscheiden sich viele R-Wechsler für `=`.
++ **ABER:** `=` ist lesbarer für andere Programmiersprachen. Deswegen entscheiden sich viele R-Nutzer, die zur R aus anderen Programmiersprachen wechseln für `=`.
 + FUN FACT: Package [formatR](https://yihui.org/formatr/) ändert automatisch `=` zu `<-`.
 
 
@@ -57,16 +57,16 @@ class(x) # class() spuckt den Variablentyp() aus
 
 ### Numeric
 
-*Numeric* ist der Standardtyp für Zahlen in R.
+*Numeric* ist der Standardtyp für Zahlen in R. Dieser Variablentyp ist für Zahlen mit Bruchkommastellen reserviert, aber oft erkennt R ganze Zahlen auch als Numeric. 
 
 ```r
-x = 10
+x = 10.5
 class(x)
 ## [1] "numeric"
 ```
 ### Character/String
 
-*Character*-Variablen sind ein sehr interessanter und wichtiger Datentyp für uns und wir werden damit viel damit in der Zukunft arbeiten.
+*Character*-Variablen sind ein sehr interessanter und wichtiger Datentyp für uns und wir werden damit sehr viel in der Zukunft arbeiten.
 
 ```r
 x = "Hello 'Daria'" # "" oder ''. In "kann man '' verwenden"
@@ -74,17 +74,17 @@ class(x)
 ## [1] "character"
 ```
 
-#### Praktische Funktionen mit Vektoren
+#### Praktische Funktionen mit Strings
 
 ```r
 a = "Hello"
-substr(a, 1, 2) #String verkürzen
+substr(a, 1, 2) #String a verkürzen
 ## [1] "He"
 toupper(a) 
 ## [1] "HELLO"
 tolower(a)
 ## [1] "hello"
-strsplit(a, NULL) #String in Buchstaben aufteilen
+strsplit(a, NULL) #String a in Buchstaben aufteilen
 ## [1] "H" "e" "l" "l" "o"
 paste(a, "Du da") #Zum String einfügen 
 ## [1] "Hello Du da"
@@ -94,7 +94,7 @@ paste(a, "Du da", sep= ", ")
 
 ### Logical/Boolean
 
-*Logical* können nur zwei Ausprägungen haben: `TRUE` oder `FALSE`. Übrigens, in Computer Science ist TRUE = 1 und FALSE = 0. 
+*Logical* können nur zwei Ausprägungen haben: `TRUE` oder `FALSE`. Übrigens, im Computer Science ist TRUE = 1 und FALSE = 0. 
 
 ```r
 x = TRUE
@@ -107,7 +107,7 @@ class(x)
 
 ### Vektoren 
 
-Vektoren sind Objekte, die mehrere Werte desselben Typs beinhalten. Wir erzeugen Vektoren über die Funktion c() (von concatenate, also verketten). Die einzelnen Elemente des Vektors werden durch Kommas , getrennt.
+Vektoren sind Objekte, die mehrere Werte desselben Typs beinhalten. Wir erzeugen Vektoren über die Funktion `c()` (von concatenate, also verketten). Die einzelnen Elemente des Vektors werden durch Kommas , getrennt.
 
 ```r
 gerade_zahlen <- c(2, 4, 6, 8)
@@ -118,7 +118,7 @@ zahlen = c(gerade_zahlen, ungerade_zahlen) #die Zahlen werden nicht sortiert, so
 ```
 ####  Vektorelemente auswählen 
 
-Um auf Vektorenelemente zuzugreifen, benutzen wir eckige Klammen `[]`. Ein anderer Name dafür ist Index-Slicing. Anders als bei anderen Programmiersprachen, fängt R an zu zählen bei 1, nicht bei 0. 
+Um auf Vektorenelemente zuzugreifen, benutzen wir eckige Klammen `[]`. Ein anderer Name dafür ist Index-Slicing. Anders als bei anderen Programmiersprachen, fängt R bei `1` statt bei `0` zu zählen.  
 
 ```r
 zahlen = c(2, 4, 6, 8, 1, 3, 5, 7, 9)
@@ -293,7 +293,7 @@ folgt.
 
   5.2. Was bedeutet das Resultat der letzten Codezeile? 
 
-  5.3. Schauen Sie sich hierzu an, was passiert, wenn Sie `above_average` in einen numerischen Vektor umwandeln.
+  5.3. Schauen Sie sich hierzu an, was passiert, wenn Sie `above_average` in einen numerischen Vektor umwandeln. Warum passiert das? 
 
 ```r
 values = c(1.2, 1.3, 0.8, 0.7, 0.7, 1.5, 1.1, 1.0, 1.1, 1.2, 1.1)
