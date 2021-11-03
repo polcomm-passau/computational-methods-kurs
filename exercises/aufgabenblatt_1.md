@@ -18,6 +18,7 @@ Sie erhalten einen numerischen Vektor `age`, der das Alter von 10 Personen enthÃ
 
 ```r 
 age = c(15,16,17,18,19,20,21,22,23,24)
+
 ## Beispiel Ausgabe: 
 ## Anna Peter Karl Anton
 ##   20    21   22    23
