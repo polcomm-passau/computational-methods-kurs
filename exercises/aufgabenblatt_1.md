@@ -1,4 +1,6 @@
-Dieser Aufgabenblatt wird benotet. Die maximale Punktenzahl ist 100 Punkte. 
+Bitte lösen Sie diesen Aufgabenblatt 1 in zweier-Gruppen und laden Sie Ihre Lösung (eine **R.**-Datei) bis 16.11 auf Stud.IP hoch. Dieser Aufgabenblatt wird benotet und die maximale Punktenzahl beträgt 100 Punkte. Happy Coding! 
+
+Falls Sie Fragen zu diesem Aufgabenblatt haben, kontakrieren Sie daria.kravets@uni-passau.de.  
 
 ## 1. Variablen (5 Pkt.)
 
