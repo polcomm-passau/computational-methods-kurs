@@ -1,4 +1,4 @@
-Bitte lösen Sie diesen Aufgabenblatt 1 in zweier-Gruppen und laden Sie Ihre Lösung (eine **R.**-Datei) bis 16.11 auf Stud.IP hoch. Dieser Aufgabenblatt wird benotet und die maximale Punktenzahl beträgt 100 Punkte. Happy Coding! 
+Bitte lösen Sie diesen Aufgabenblatt 1 in zweier-Gruppen und laden Sie Ihre Lösung (eine **R.**-Datei) bis 16.11 auf Stud.IP hoch. Dieser Aufgabenblatt wird benotet und die maximale Punktenzahl beträgt 100 Punkte. **Happy Coding!** 
 
 Falls Sie Fragen zu diesem Aufgabenblatt haben, kontakrieren Sie daria.kravets@uni-passau.de.  
 
@@ -50,7 +50,7 @@ x[1:5]        ## Beispiel
 ```
 ## 5. Funktionen aufrufen und Dokumentation konsultieren (10 Pkt.)
 
-Informieren Sie sich wie die Funktion seq() funktioniert. Dafür lesen Sie sich die Dokumentationsseite der Funktion durch. Mit Hilfe von `seq()` erstellen Sie einen Vektor, der:
+Informieren Sie sich wie die Funktion `seq()` funktioniert. Mit Hilfe von `seq()` erstellen Sie einen Vektor, der:
 
 * Mit 2 anfängt und alle geraden Zahlen von 2 bis 50 enthält.  
 * ???
