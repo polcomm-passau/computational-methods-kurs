@@ -50,7 +50,7 @@ x[1:5]        ## Beispiel
 ```
 ## 5. Funktionen aufrufen und Dokumentation konsultieren (10 Pkt.)
 
-Informieren Sie sich wie die Funktion `seq()` funktioniert. Mit Hilfe von `seq()` erstellen Sie einen Vektor, der:
+Informieren Sie sich eigenständig wie die Funktion `seq()` funktioniert. Mit Hilfe von `seq()` erstellen Sie einen Vektor, der:
 
 * Mit 2 anfängt und alle geraden Zahlen von 2 bis 50 enthält.  
 * ???
