@@ -28,9 +28,9 @@ x = 10 #oder
 x <- 10
 ```
 
-Was ist richtiger? Beides ist möglich, aber die R Community und R Styling Guide empfehlen `<-` zu verwenden. Warum?  
+Was ist richtiger? Beides ist möglich, aber die R Community und das R Styling Guide empfehlen `<-` zu verwenden. Warum?  
 
-+ Es gibt tatsächlich Fälle, wo `<-` die einzige richtige Möglichkeit ist einen Wert einer Variable zuzuweisen ([hier](https://www.r-bloggers.com/2018/09/why-do-we-use-arrow-as-an-assignment-operator/) könnt Ihr die Beispiele angucken). Das sind aber nicht viele und die begegnet man im "Freien Leben" nicht oft. 
++ Es gibt tatsächlich Fälle, wo `<-` die einzige richtige Möglichkeit ist einen Wert einer Variable zuzuweisen ([hier](https://www.r-bloggers.com/2018/09/why-do-we-use-arrow-as-an-assignment-operator/) könnt Ihr die Beispiele angucken wann das der Fall wäre). Das sind aber nicht viele und die begegnet man im "Freien Leben" nicht oft. 
 
 + **Historische Gründe:**
   + Bis 2001 was `<-` die einzige Möglichkeit in R einer Variable einen Wert zuzuweisen. Also sind viele einfach konservativ. 
