@@ -65,7 +65,7 @@ Mit Hilfe von `for` und `while`-Schleifen und `if-else`-Abfragen, schreiben Sie 
 
 ## 7. Funktionen-1 (10 Pkt.)
 
-Schreiben Sie eine Funktion, die einen Zeichenvektor als Argument nimmt und einen Zeichenvektor zurückgibt, der die ersten Buchstaben jedes Elements im ursprünglichen Vektor enthält. Um zu zeigen, dass es funktioniert, testen Sie es mit dem unten definierten Vektor.
+Schreiben Sie eine Funktion, die einen Zeichenvektor als Argument nimmt und einen Zeichenvektor zurückgibt, der die ersten Buchstaben jedes Elements im ursprünglichen Vektor enthält. Um zu zeigen, dass Ihre Funktion funktioniert, testen Sie sie mit dem unten definierten Vektor.
 
 ```r
 sentence <- c('you', 'only', 'understand', 'data', 'if', 'data', 'is', 'tidy')
