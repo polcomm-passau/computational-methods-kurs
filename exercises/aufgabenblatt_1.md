@@ -4,8 +4,8 @@ Dieser Aufgabenblatt wird benotet. Die maximale Punktenzahl ist 100 Punkte.
 
 Erstellen Sie eine Character-Variable `x` und geben Sie ihr den Wert 100. Schreiben Sie den Code, der: 
 
-* Transformiert `x` in einen numerischen Wert
-* Multipliziert `x` mit 2
+* `x` in einen numerischen Wert transformiert 
+* `x` mit 2 multipliziert 
 
 ## 2. Vektoren/Logicals (10 Pkt.)
 
@@ -78,3 +78,14 @@ Erstellen Sie eine Funktion (`gerade_oder_ungerade`), die eine ganze Zahl als Ar
 Erstellen Sie eine Funktion `fahrenheit_to_celsius`, die eine Temperaturangabe in Grad Fahrenheit (als numerischen Wert, also z. B. 80) in Grad Celsius umrechnet und diesen Wert zurückgibt. Bitte bauen Sie eine `if-else`-Abfrage ein, die prüft, ob der eingegebene Wert tatsächlich numerisch (numeric oder integer) ist und gibt einen Fehler aus, falls es nicht so sein sollte.  
 
 Die Formel zur Umrechnung von Fahrenheit in Celsius lautet: °C=(°F−32)×5/9.
+
+## 10. Funktionen-4 (10 Pkt.)
+
+Erstellen Sie eine Funktion `get_middle_character`, die von einem beliebigen Wort die mittleren Buchstaben zurückgibt. Wenn die Länge des Wortes ungerade ist, geben Sie den mittleren Buchstaben zurück. Wenn die Länge des Wortes gerade ist, geben Sie die zwei mittleren Buchstaben zurück.
+
+Beispiele: 
+
+get_middle_character("test") soll "es" zurückgeben. 
+get_middle_character("middle") soll "dd" zurückgeben. 
+get_middle_character("liebe") soll "e" zurückgeben. 
+
