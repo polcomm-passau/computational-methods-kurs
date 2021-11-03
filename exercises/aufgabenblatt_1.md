@@ -28,7 +28,7 @@ age = c(15,16,17,18,19,20,21,22,23,24)
 
 ## 3. Dates (5 Pkt.)
 
-Füllen Sie den `format`-Argument in der Funktion `strptime()`, um das Datum korrekt einzulesen. 
+Füllen Sie den `format`-Argument in der Funktion `strptime()`, um das gegebene Datum und ggf. Uhrzeit korrekt einzulesen. 
 
 ```r
 strptime('1961-12-24', format='%Y-%m-%d')   ## Beispiel 
