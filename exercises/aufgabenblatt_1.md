@@ -43,18 +43,21 @@ Mit Hilfe von Index-Slicing (Tipp: `[]`) geben Sie die folgenden Teilmengen des 
 x = letters   ## built-in Vektor mit Buchstaben des Alphabets
 x[1:5]        ## Beispiel
 ```
-# 5. Funktionen aufrufen und Dokumentation konsultieren: – seq() (10 Pkt.)
+# 5. Funktionen aufrufen und Dokumentation konsultieren (10 Pkt.)
 
-Informieren Sie sich wie die Funktion seq() funktioniert. Dafür  Lesen Sie sich die Dokumentationsseite der Funktion durch. Mit Hilfe von seq() erstellen Sie einen Vektor, der:
+Informieren Sie sich wie die Funktion seq() funktioniert. Dafür lesen Sie sich die Dokumentationsseite der Funktion durch. Mit Hilfe von `seq()` erstellen Sie einen Vektor, der:
 
 * Mit 2 anfängt und alle geraden Zahlen von 2 bis 50 enthält.  
-
+* ???
 
 # 6. Schleifen (15 Pkt.)
-???
-If, while, for
 
-# 7. Funktionen (10 Pkt.)
+Mit Hilfe von `for` und `while`-Schleifen und `if-else`-Abfragen, schreiben sie einen Programm: 
+
+* Fünf mal "Ich liebe Programmieren mit R" ausgibt (bitte schreiben Sie jeweils eine Schleife mit `for` und `while`). Zum Ausgeben in der Konsole verwenden Sie die Funktion `print()`
+* ???
+
+# 7. Funktionen-1 (10 Pkt.)
 
 Schreiben Sie eine Funktion, die einen Zeichenvektor als Argument nimmt und einen Zeichenvektor zurückgibt, der die ersten Buchstaben jedes Elements im ursprünglichen Vektor enthält. Um zu zeigen, dass es funktioniert, testen Sie es mit dem unten definierten Vektor.
 
@@ -62,7 +65,12 @@ Schreiben Sie eine Funktion, die einen Zeichenvektor als Argument nimmt und eine
 sentence <- c('you', 'only', 'understand', 'data', 'if', 'data', 'is', 'tidy')
 ```
 
-# 8. Funktionen (10 Pkt.)
+# 8. Funktionen-2 (10 Pkt.)
 
-Erstellen Sie eine Funktion (`gerade_oder_ungerade`), die eine ganze Zahl als Argument nimmt und "Gerade" für gerade Zahlen oder "Ungerade" für ungerade Zahlen zurückgibt.
+Erstellen Sie eine Funktion (`gerade_oder_ungerade`), die eine ganze Zahl als Argument nimmt und "Gerade" für gerade Zahlen oder "Ungerade" für ungerade Zahlen zurückgibt (Tipp: verwenden Sie den Modulo-Operator).
 
+# 9. Funktionen-3 (15 Pkt.)
+
+Erstellen Sie eine Funktion `fahrenheit_to_celsius`, die eine Temperaturangabe in Grad Fahrenheit (als numerischen Wert, also z. B. 80) in Grad Celsius umrechnet und diesen Wert zurückgibt. Bitte bauen Sie eine `if-else`-Abfrage ein, die prüft, ob der eingegebene Wert tatsächlich numerisch (numeric oder integer) ist und gibt einen Fehler aus, falls es nicht so sein sollte.  
+
+Die Formel zur Umrechnung von Fahrenheit in Celsius lautet: °C=(°F−32)×5/9.
