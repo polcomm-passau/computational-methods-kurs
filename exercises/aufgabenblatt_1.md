@@ -9,7 +9,7 @@ Erstellen Sie eine Character-Variable `x` und geben Sie ihr den Wert 100. Schrei
 
 # 2. Vektoren/Logicals (10 Pkt.)
 
-Sie erhalten einen numerischen Vektor `age`, der das Alter von 10 Personen enthält, der bequemerweise von 15 bis 24 hochzählt. Als erstes, geben Sie den Personen beliebige Namen (denken Sie sich welche aus!). Danach, verwenden Sie Logische Operatoren, um einen Vektor mit Logischen Werten zu erstellen, der zeigt:
+Sie erhalten einen numerischen Vektor `age`, der das Alter von 10 Personen enthält, der bequemerweise von 15 bis 24 hochzählt. Als erstes, geben Sie den Personen beliebige Namen (denken Sie sich welche aus!). Danach, verwenden Sie Logische Operatoren, um einen Vektor mit Personen zu erstellen, der zeigt:
 
 * Personen älter als 18
 * Personen junger als 21
