@@ -16,7 +16,7 @@ Sie erhalten einen numerischen Vektor `age`, der das Alter von 10 Personen enth�
 * Personen älter als 18 und junger als 21
 * Personen junger als 18 und älter als 21
 
-```{r} 
+```r 
 age = c(15,16,17,18,19,20,21,22,23,24)
 age >= 20  ## Beispiel
 ```
@@ -25,7 +25,7 @@ age >= 20  ## Beispiel
 
 Füllen Sie den `format`-Argument in der Funktion `strptime()`, um das Datum korrekt zu parsen. 
 
-```{r}
+```r
 strptime('1961-12-24', format='%Y-%m-%d')   ## Beispiel 
 strptime('25 12, 1961', format='')
 strptime('1961-12-26T19:00:00', format='')
@@ -39,7 +39,7 @@ Mit Hilfe von Index-Slicing (Tipp: `[]`) geben Sie die folgenden Teilmengen des 
 * Alle Elemente außer denen in den Positionen drei bis zwanzig
 * Die Elemente in umgekehrter Reihenfolge
 
-```{r}
+```r
 x = letters   ## built-in Vektor mit Buchstaben des Alphabets
 x[1:5]        ## Beispiel
 ```
@@ -50,7 +50,7 @@ Informieren Sie sich wie die Funktion seq() funktioniert. Dafür  Lesen Sie sich
 * Mit 2 anfängt und alle geraden Zahlen von 2 bis 50 enthält.  
 
 
-# 6. Schleifen (10 Pkt.)
+# 6. Schleifen (15 Pkt.)
 ???
 If, while, for
 
@@ -58,7 +58,7 @@ If, while, for
 
 Schreiben Sie eine Funktion, die einen Zeichenvektor als Argument nimmt und einen Zeichenvektor zurückgibt, der die ersten Buchstaben jedes Elements im ursprünglichen Vektor enthält. Um zu zeigen, dass es funktioniert, testen Sie es mit dem unten definierten Vektor.
 
-```{r}
+```r
 sentence <- c('you', 'only', 'understand', 'data', 'if', 'data', 'is', 'tidy')
 ```
 
