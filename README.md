@@ -20,7 +20,7 @@ Dies ist ein ***Work-in-Progress*** und wird laufend aktualisiert.
 | -----|:-----------:| ------:|-------:|--------------------:|
 | 1    | [Installation von R & RStudio](https://github.com/polcomm-passau/computational-methods-kurs/blob/main/tutorials/installation.md)| | |[Bail, C. (2020). Getting Started with R](https://www.youtube.com/watch?v=oFv25YAWSNc)|
 | 2    | [Einführung ins R und RStudio](https://github.com/polcomm-passau/computational-methods-kurs/blob/main/tutorials/basics_R_woche1.md)| [Woche 1](https://github.com/polcomm-passau/computational-methods-kurs/files/7390878/Sitzung.1_.WU.Programmieren.fur.KoWi.pdf)| ||
-| 3    | [Variablen und Variablentypen in R](https://github.com/polcomm-passau/computational-methods-kurs/blob/main/tutorials/variablen.md) |  [Woche 2](https://github.com/polcomm-passau/computational-methods-kurs/files/7441299/Sitzung.2_.WU.Programmieren.fur.KoWi.pdf) | [woche 2.R](https://github.com/polcomm-passau/computational-methods-kurs/blob/main/tutorials/woche%202.R) |               |
+| 3    | [Variablen und Variablentypen in R](https://github.com/polcomm-passau/computational-methods-kurs/blob/main/tutorials/variablen.md) |  [Woche 2](https://github.com/polcomm-passau/computational-methods-kurs/files/7441299/Sitzung.2_.WU.Programmieren.fur.KoWi.pdf) | [woche 2.R](https://github.com/polcomm-passau/computational-methods-kurs/blob/main/tutorials/woche%202.R) | [Basics R Cheatsheet](https://github.com/rstudio/cheatsheets/blob/main/base-r.pdf)              |
 | 4    | Packages |         |                     |
 
 
