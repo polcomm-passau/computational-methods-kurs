@@ -77,7 +77,7 @@ Erstellen Sie eine Funktion (`gerade_oder_ungerade`), die eine ganze Zahl als Ar
 
 ## 9. Funktionen-3 (15 Pkt.)
 
-Erstellen Sie eine Funktion `fahrenheit_to_celsius`, die eine Temperaturangabe in Grad Fahrenheit (als numerischen Wert, also z. B. 80) in Grad Celsius umrechnet und diesen Wert zurückgibt. Bitte bauen Sie eine `if-else`-Abfrage ein, die prüft, ob der eingegebene Wert tatsächlich numerisch (numeric oder integer) ist und gibt einen Fehler aus, falls es nicht so sein sollte.  
+Erstellen Sie eine Funktion `fahrenheit_to_celsius`, die eine Temperaturangabe in Grad Fahrenheit (als numerischen Wert, also z. B. 80) in Grad Celsius umrechnet und diesen Wert zurückgibt. Bitte bauen Sie eine `if-else`-Abfrage ein, die prüft, ob der eingegebene Wert tatsächlich numerisch (numeric oder integer) ist und einen Fehler ausgibt, falls es nicht so sein sollte.  
 
 Die Formel zur Umrechnung von Fahrenheit in Celsius lautet: °C=(°F−32)×5/9.
 
