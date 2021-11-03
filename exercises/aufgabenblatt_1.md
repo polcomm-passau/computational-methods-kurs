@@ -84,8 +84,8 @@ Die Formel zur Umrechnung von Fahrenheit in Celsius lautet: °C=(°F−32)×5/9.
 Erstellen Sie eine Funktion `get_middle_character`, die von einem beliebigen Wort die mittleren Buchstaben zurückgibt. Wenn die Länge des Wortes ungerade ist, geben Sie den mittleren Buchstaben zurück. Wenn die Länge des Wortes gerade ist, geben Sie die zwei mittleren Buchstaben zurück.
 
 Beispiele: 
-
-get_middle_character("test") soll "es" zurückgeben. 
-get_middle_character("middle") soll "dd" zurückgeben. 
-get_middle_character("liebe") soll "e" zurückgeben. 
-
+```r
+get_middle_character("test") #soll "es" zurückgeben. 
+get_middle_character("middle") #soll "dd" zurückgeben. 
+get_middle_character("liebe") #soll "e" zurückgeben. 
+```
