@@ -38,7 +38,7 @@ strptime('1961-12-26T19:00:00', format='')
 
 ## 4. Indexing (10 Pkt.)
 
-Benützen Sie Index-Slicing (Tipp: `[]`), um sich folgende Teilmengen des gegebenen Zeichenvektors `x` ausgeben zu lassen: 
+Benutzen Sie Index-Slicing (Tipp: `[]`), um sich folgende Teilmengen des gegebenen Zeichenvektors `x` ausgeben zu lassen: 
 
 * Alle Elemente in den Positionen drei bis zwanzig
 * Alle Elemente außer denen in den Positionen drei bis zwanzig
