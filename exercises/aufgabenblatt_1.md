@@ -1,17 +1,17 @@
-Bitte lösen Sie diesen Aufgabenblatt 1 in zweier-Gruppen und laden Sie Ihre Lösung (eine **R.**-Datei) bis **16.11** auf *Stud.IP* hoch. Dieser Aufgabenblatt wird benotet und die maximale Punktenzahl beträgt 100 Punkte. **Happy Coding!** 
+Bitte lösen Sie dieses Aufgabenblatt 1 in Zweier-Gruppen und laden Sie Ihre Lösung (eine **R.**-Datei) bis **16.11** auf *Stud.IP* hoch. Dieses Aufgabenblatt wird benotet und die maximale Punktenzahl beträgt 100 Punkte. **Happy Coding!** 
 
 Falls Sie Fragen zu diesem Aufgabenblatt haben, kontaktieren Sie daria.kravets@uni-passau.de.  
 
 ## 1. Variablen (5 Pkt.)
 
-Erstellen Sie eine Character-Variable `x` und geben Sie ihr den Wert 100. Schreiben Sie den Code, der: 
+Erstellen Sie eine Character-Variable `x` und geben Sie ihr den Wert 100. Schreiben Sie Code, der: 
 
 * `x` in einen numerischen Wert transformiert 
 * `x` mit 2 multipliziert 
 
 ## 2. Vektoren/Logicals (10 Pkt.)
 
-Sie erhalten einen numerischen Vektor `age`, der das Alter von 10 Personen enthält, der bequemerweise von 15 bis 24 hochzählt. Als erstes, geben Sie den Personen beliebige Namen (denken Sie sich welche aus!). Danach, verwenden Sie Logische Operatoren, um einen Vektor mit Personen zu erstellen, der zeigt:
+Sie erhalten einen numerischen Vektor `age`, der das Alter von 10 Personen enthält und von 15 bis 24 hochzählt. Geben Sie den Personen zuerst beliebige Namen (denken Sie sich welche aus!). Verwenden Sie dann Logische Operatoren, um einen Vektor mit Personen zu erstellen, der ausgibt:
 
 * Personen älter als 18
 * Personen junger als 21
@@ -28,7 +28,7 @@ age = c(15,16,17,18,19,20,21,22,23,24)
 
 ## 3. Dates (5 Pkt.)
 
-Füllen Sie den `format`-Argument in der Funktion `strptime()`, um das gegebene Datum und ggf. Uhrzeit korrekt einzulesen. 
+Füllen Sie das `format`-Argument in der Funktion `strptime()` so aus, dass das gegebene Datum und ggf. die Uhrzeit korrekt eingelesen werden. 
 
 ```r
 strptime('1961-12-24', format='%Y-%m-%d')   ## Beispiel 
@@ -38,7 +38,7 @@ strptime('1961-12-26T19:00:00', format='')
 
 ## 4. Indexing (10 Pkt.)
 
-Mit Hilfe von Index-Slicing (Tipp: `[]`) geben Sie die folgenden Teilmengen des gegebenen Zeichenvektors `x` zurück: 
+Benützen Sie Index-Slicing (Tipp: `[]`), um sich folgende Teilmengen des gegebenen Zeichenvektors `x` ausgeben zu lassen: 
 
 * Alle Elemente in den Positionen drei bis zwanzig
 * Alle Elemente außer denen in den Positionen drei bis zwanzig
