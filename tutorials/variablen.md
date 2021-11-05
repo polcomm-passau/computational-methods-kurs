@@ -274,7 +274,7 @@ folgt.
   daten_als_string = c("01.03.2021", "28.10.2021", "21.10.2021", "11.11.2021")
   ```
 
-  3.2. Speichern Sie die Daten in einer Variable `dates` im Format mit ausgeschribenen Monat und abgekürztem Jahr: z.B. "May-21" 
+  3.2. Speichern Sie die Daten in einer neuen String-Variable `dates` im Format mit ausgeschribenen Monat und abgekürztem Jahr: z.B. "May-21" 
 
 ***
 ### 4. Dataframes  
