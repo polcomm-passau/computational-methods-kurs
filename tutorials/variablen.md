@@ -199,17 +199,37 @@ new_df = df[df$cyl >5 ,] #Subset -> Alle Autos mit mehr als 5 Zylinder (cyl)
 new_df
 ```
 
-### Date 
+### Date / POSIXct
+
+Date (Datum) und POSIXct (Zeitstempel: Datum + Uhrzeit) sind besondere Variablentypen in R mit den wir in den Sozialwissenschaften oft arbeiten. Daten in Date-Format in R zu haben lohnt sich besonders wenn man Zeitverläufe analysieren möchte oder bestimmte Ausrechnungen mit Daten durchführen möchte (z.B. Daten aggregieren pro Woche). Standardgemäß möchte R Daten in `yyyy-mm-dd`-Format haben. Wenn die Daten aber in einem anderen Format vorliegen (was ziemlich oft der Fall ist), kann man das Format mit Hilfe von der `format`-Angabe and Format-Kürzel ändern.     
 
 ```r
-d = Sys.Date() # heutiges Datum
+d = Sys.Date() # gibt heutiges Datum aus
 d
 ## [1] "2021-10-29"
-format(d,"%m-%Y") #Änderung des Formats
+format(d,"%m-%Y") #Änderung des Formats mit Hilfe von Format-Kürzel (fangen immer mit % an)
 ## [1] "10-2021"
 as.Date("2020-03-11") #Ein String im Standardformat (yyyy-mm-dd) ins Date umwandeln 
 as.Date("11.03.2020", format = "%d.%m.%Y") # Daten anderen Formate (z.B. dd.mm.yyy) in Date umwandeln. 
 ```
+#### Wichtigsten Format-Kürzel für Date und POSIXct
+
+| Kürzel   | Bedeutung                                |
+| -------- | ---------------------------------------- |
+| %d       | Tag (1-31) |
+| %m       | Monat (1-12)|
+| %B       | Monat buchstabiert (Mai, Juni) |
+| %b oder %h| Monat kurz (Jun, Dez)|
+| %y       | Jahr kurz (20, 19) |
+| %Y       | Jahr lang (2020, 2019) |
+| %H       | Stunden (00-23) |
+| %l       | Stunden (00-12) |
+| %M       | Minuten (00-59) |
+| %S       | Sekunden (00-59)|
+
+
+Es gibt aber auch andere Formate wie Tag der Woche, Jahrhundert, usw. Hier findet ihr eine ausführlichere Liste: https://databraineo.com/ki-training-resources/r-programmierung/datum-und-zeitstempel-in-r-lubridate/
+
 
 # Variablentyp ändern
 
