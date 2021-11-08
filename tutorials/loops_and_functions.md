@@ -26,18 +26,20 @@ for (value in sequence) {
   
 ## While-Schleifen
 
+While-Schleifen werden ausgeführt bis eine oder mehrere bestimmte Bedignungen erfüllt sind. 
+
 ```r
 while (condition) {
 # body
 }
 
 #Beispiel
-
+ 
 i = 1
-while (i < 5) {
+while (i < 5) { # wird ausgeführt soweit i < 5 ist 
   print(i)
-  i = i + 1
-}
+  i = i + 1 # i erhört sich um 1 mit jeder Runde 
+} 
 
 ```
 
@@ -47,13 +49,15 @@ while (i < 5) {
 if (condition) {
    # statement1
 } 
-else if (condition) {
+else if (condition) { # optional 
    # statement2
 } 
 else {
    # statement3
 }
 ```
+Durch die Kombination von `else` und `if` können wir auch beliebig viele Bedingungen hintereinander prüfen.
+
 
 # Funktionen
 
@@ -74,5 +78,5 @@ my_function_name = function(argument){
     return(output) # beendet die Funktion
 }
 
-my_function_name() #Funktion-Aufruf
+my_function_name("hello") #Funktion-Aufruf
 ```
