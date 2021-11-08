@@ -12,7 +12,7 @@
     - [Listen](#Listen)
     - [Matrizen](#Matrizen)
     - [Dataframe](#Dataframe)
-    - [Date / POSIXct](#Date / POSIXct)
+    - [Date/POSIXct](#Date/POSIXct)
 - [Variablentyp ändern](#Variablentyp-ändern)
 - [Logische Operatoren](#Logische-Operatoren)
 - [Variablenbenennung](#Variablenbenennung)
@@ -187,6 +187,8 @@ mat
 
 ### Dataframe
 
+*Dataframes* sind ein wichtiges Format für uns und man kann sie sich wie ganz normale Excel-Tabellen vorstellen.   
+
 ```r
 df = mtcars
 df$cyl + 1 # mit $ greift man auf einzelne Spalten eines Dataframes
@@ -199,9 +201,11 @@ new_df = df[df$cyl >5 ,] #Subset -> Alle Autos mit mehr als 5 Zylinder (cyl)
 new_df
 ```
 
-### Date / POSIXct
 
-*Date* (Datum) und *POSIXct* (Zeitstempel: Datum + Uhrzeit) sind besondere Variablentypen in R mit den wir in den Sozialwissenschaften oft arbeiten. Daten in Date-Format in R zu haben lohnt sich besonders wenn man Zeitverläufe analysieren möchte oder bestimmte Ausrechnungen mit Daten durchführen möchte (z.B. Daten aggregieren pro Woche). Standardgemäß möchte R Daten in `yyyy-mm-dd`-Format haben. Wenn die Daten aber in einem anderen Format vorliegen (was ziemlich oft der Fall ist), kann man das Format mit Hilfe von einer `format`-Angabe und einem Format-Kürzel ändern.     
+
+### Date/POSIXct
+
+*Date* (Datum) und *POSIXct* (Zeitstempel: Datum + Uhrzeit) sind besondere Variablentypen in R mit den wir in den Sozialwissenschaften oft arbeiten. Datum in Date-Format in R zu haben lohnt sich besonders wenn man Zeitverläufe analysieren möchte oder bestimmte Ausrechnungen mit Daten durchführen möchte (z.B. Daten aggregieren pro Woche). Standardgemäß möchte R Daten in `yyyy-mm-dd`-Format haben. Wenn die Daten aber in einem anderen Format vorliegen (was ziemlich oft der Fall ist), kann man das Format mit Hilfe von dem `format`-Parameter und einem entsprechenden Format-Kürzel ändern (das geht mit der Funktion `as.Date(str, format)`).     
 
 ```r
 d = Sys.Date() # gibt heutiges Datum aus
@@ -256,7 +260,7 @@ as.Date("2021-10-29")
 | Operator   | Vergleich          | Beispiele                     |
 | ---------- | -------------------|------------------------------ |
 |`==`        | ist gleich | `1 == 1` ergibt `TRUE`   |
-|`!=`        | ist ungleich | `1 != 1` ergibt `FALSE |`
+|`!=`        | ist ungleich | `1 != 1` ergibt `FALSE` |
 |`<`        | ist kleiner | `1 < 2` ergibt `TRUE`|
 |`>`        | ist größer   | `1 > 2` ergibt `FALSE` |
 |`<=`       | ist kleiner/gleich| `1 <= 1` ergibt `TRUE`|
