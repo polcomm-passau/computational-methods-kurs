@@ -7,9 +7,9 @@
 * [Funktionen](#Funktionen)
 
  
-# Schleifen 
+## Schleifen 
 
-## For-Schleifen
+### For-Schleifen
 
 For-Schleifen 
 * werden benutzt um eine Satz von Befehlen zu wiederholen
@@ -24,7 +24,7 @@ for (value in sequence) {
   
 ```
   
-## While-Schleifen
+### While-Schleifen
 
 While-Schleifen werden ausgeführt bis eine oder mehrere bestimmte Bedignungen erfüllt sind. 
 
@@ -43,7 +43,7 @@ while (i < 5) { # wird ausgeführt soweit i < 5 ist
 
 ```
 
-# Konditionen (`if-else`-Abfragen) 
+## Konditionen (`if-else`-Abfragen) 
 
 ```r
 if (condition) {
@@ -59,7 +59,7 @@ else {
 Durch die Kombination von `else` und `if` können wir auch beliebig viele Bedingungen hintereinander prüfen.
 
 
-# Funktionen
+## Funktionen
 
 In R unterscheidet man zwischen:
 
@@ -67,7 +67,7 @@ In R unterscheidet man zwischen:
 * Funktionen, die man mit externen Packages importiert (z.B. die Funktion `as_tibble()` kommt zusammen mit dem Package *tibble*)
 * eigenen Funktionen 
 
-## Eigene Funktionen schreiben: 
+### Eigene Funktionen schreiben: 
 
 Wir können unsere eigene Funktionen mit dem Aufruf `function()` erstellen. Das was die Funktion machen soll kommt in die `{}`-Klammen. 
 
