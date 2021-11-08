@@ -27,7 +27,7 @@ Hier finden Sie diverse Kursmaterialien für die Lehre von Automatisieren Datens
 
 
 
-## Aufgabenblätter
+## Übungen 
 
 | Nr.  | Aufgabenblatt     |
 | -----|:-----------------:|
