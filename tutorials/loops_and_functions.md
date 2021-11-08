@@ -1,3 +1,10 @@
+* [Schleifen](#Schleifen)
+  * [For-Schleifen](#For-Schleifen)
+  * [While-Schleifen](#While-Schleifen)
+* [Konditionen](#Konditionen)
+* [Funktionen](#Funktionen)
+
+ 
 # Schleifen 
 
 ## For-Schleifen
@@ -64,4 +71,6 @@ my_function_name = function(argument){
     output = argument
     return(output) # beendet die Funktion
 }
+
+my_function_name() #Funktion-Aufruf
 ```
