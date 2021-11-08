@@ -17,9 +17,9 @@ For-Schleifen
 
 ```r
 for (value in sequence) {
-  statement1
-  statement2
-  statement3
+  # statement1
+  # statement2
+  # statement3
   }
   
 ```
