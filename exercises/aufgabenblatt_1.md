@@ -50,10 +50,7 @@ x[1:5]        ## Beispiel
 ```
 ## 5. Funktionen aufrufen und Dokumentation konsultieren (10 Pkt.)
 
-Informieren Sie sich eigenständig wie die Funktion `seq()` funktioniert. Mit Hilfe von `seq()` erstellen Sie einen Vektor, der:
-
-* Mit 2 anfängt und alle geraden Zahlen von 2 bis 50 enthält.  
-* ???
+Informieren Sie sich eigenständig wie die Funktion `seq()` funktioniert. Mit Hilfe von `seq()` erstellen Sie einen Vektor, der eine Zahlenfolge von 0 bis 100 in 5er-Schritten erzeugt.
 
 ## 6. Schleifen (15 Pkt.)
 
