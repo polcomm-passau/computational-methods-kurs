@@ -12,7 +12,7 @@
     - [Listen](#Listen)
     - [Matrizen](#Matrizen)
     - [Dataframe](#Dataframe)
-    - [Date](#Date)
+    - [Date / POSIXct](#Date / POSIXct)
 - [Variablentyp ändern](#Variablentyp-ändern)
 - [Logische Operatoren](#Logische-Operatoren)
 - [Variablenbenennung](#Variablenbenennung)
@@ -201,7 +201,7 @@ new_df
 
 ### Date / POSIXct
 
-Date (Datum) und POSIXct (Zeitstempel: Datum + Uhrzeit) sind besondere Variablentypen in R mit den wir in den Sozialwissenschaften oft arbeiten. Daten in Date-Format in R zu haben lohnt sich besonders wenn man Zeitverläufe analysieren möchte oder bestimmte Ausrechnungen mit Daten durchführen möchte (z.B. Daten aggregieren pro Woche). Standardgemäß möchte R Daten in `yyyy-mm-dd`-Format haben. Wenn die Daten aber in einem anderen Format vorliegen (was ziemlich oft der Fall ist), kann man das Format mit Hilfe von der `format`-Angabe and Format-Kürzel ändern.     
+*Date* (Datum) und *POSIXct* (Zeitstempel: Datum + Uhrzeit) sind besondere Variablentypen in R mit den wir in den Sozialwissenschaften oft arbeiten. Daten in Date-Format in R zu haben lohnt sich besonders wenn man Zeitverläufe analysieren möchte oder bestimmte Ausrechnungen mit Daten durchführen möchte (z.B. Daten aggregieren pro Woche). Standardgemäß möchte R Daten in `yyyy-mm-dd`-Format haben. Wenn die Daten aber in einem anderen Format vorliegen (was ziemlich oft der Fall ist), kann man das Format mit Hilfe von einer `format`-Angabe und einem Format-Kürzel ändern.     
 
 ```r
 d = Sys.Date() # gibt heutiges Datum aus
@@ -209,9 +209,11 @@ d
 ## [1] "2021-10-29"
 format(d,"%m-%Y") #Änderung des Formats mit Hilfe von Format-Kürzel (fangen immer mit % an)
 ## [1] "10-2021"
+## Oft liegen uns aber Daten im String-Format vor: 
 as.Date("2020-03-11") #Ein String im Standardformat (yyyy-mm-dd) ins Date umwandeln 
-as.Date("11.03.2020", format = "%d.%m.%Y") # Daten anderen Formate (z.B. dd.mm.yyy) in Date umwandeln. 
+as.Date("11.03.2020", format = "%d.%m.%Y") # Daten mit anderen Formaten (z.B. dd.mm.yyy) in Date umwandeln. 
 ```
+
 #### Wichtigsten Format-Kürzel für Date und POSIXct
 
 | Kürzel   | Bedeutung                                |
@@ -227,7 +229,7 @@ as.Date("11.03.2020", format = "%d.%m.%Y") # Daten anderen Formate (z.B. dd.mm.y
 | %M       | Minuten (00-59) |
 | %S       | Sekunden (00-59)|
 
-
+  
 Es gibt aber auch andere Formate wie Tag der Woche, Jahrhundert, usw. Hier findet ihr eine ausführlichere Liste: https://databraineo.com/ki-training-resources/r-programmierung/datum-und-zeitstempel-in-r-lubridate/
 
 
@@ -251,7 +253,14 @@ as.Date("2021-10-29")
 
 # Logische Operatoren
 
-folgt.
+| Operator   | Vergleich          | Beispiele                     |
+| ---------- | -------------------|------------------------------ |
+|`==`        | ist gleich | `1 == 1` ergibt `TRUE`   |
+|`!=`        | ist ungleich | `1 != 1` ergibt `FALSE |`
+|`<`        | ist kleiner | `1 < 2` ergibt `TRUE`|
+|`>`        | ist größer   | `1 > 2` ergibt `FALSE` |
+|`<=`       | ist kleiner/gleich| `1 <= 1` ergibt `TRUE`|
+|`>=`       | ist größer/gleich| `2 >= 2` ergibt `TRUE`|
 
 # Variablenbenennung
 
