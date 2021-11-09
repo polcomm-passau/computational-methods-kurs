@@ -11,8 +11,8 @@
 
 ### For-Schleifen
 
-For-Schleifen 
-* werden benutzt um eine Satz von Befehlen zu wiederholen
+*For*-Schleifen 
+* werden benutzt um einen Satz von Befehlen zu wiederholen
 * werden ausgeführt: einmal, unendlich oft oder bis eine Bedingungen erfüllt ist
 
 ```r
@@ -26,7 +26,7 @@ for (value in sequence) {
   
 ### While-Schleifen
 
-While-Schleifen werden ausgeführt bis eine oder mehrere bestimmte Bedignungen erfüllt sind. 
+*While*-Schleifen werden ausgeführt bis eine oder mehrere bestimmte Bedignungen erfüllt sind. 
 
 ```r
 while (condition) {
@@ -64,7 +64,7 @@ Durch die Kombination von `else` und `if` können wir auch beliebig viele Beding
 In R unterscheidet man zwischen:
 
 * “eingebauten” R-Basis Funktionen wie `length()`, `class()`, `sum()`, `min()`, `max()`, …
-* Funktionen, die man mit externen Packages importiert (z.B. die Funktion `as_tibble()` kommt zusammen mit dem Package *tibble*)
+* Funktionen, die mit externen Packages importiert werden (z.B. die Funktion `as_tibble()` kommt zusammen mit dem Package *tibble*)
 * eigenen Funktionen 
 
 ### Eigene Funktionen schreiben: 
