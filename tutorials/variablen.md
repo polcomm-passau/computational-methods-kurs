@@ -143,7 +143,7 @@ codes
 
 #### Praktische Funktionen mit Vektoren
 
-Das besonderen an Vektoren in R, dass man sehr einfach Ausrechnungen mit den ausführen kann. 
+Das besondere an Vektoren in R ist, dass man sehr einfach Ausrechnungen mit den ausführen kann. 
 
 ```r
 zahlen + 1 #Addiert 1 zu jedem Element des Vektors 
