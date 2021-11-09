@@ -13,7 +13,7 @@ Dies ist ein ***Work-in-Progress*** und wird laufend aktualisiert.
 Übersicht Materialien
 ---------------
 
-Hier finden Sie diverse Kursmaterialien für die Lehre von Automatisieren Datensammlung und Analyse mit R. 
+Hier finden Sie diverse Kursmaterialien für die Lehre von Automatisieren Datensammlung und Analyse mit R. Wir freuen uns sehr über Ihr Feedback oder Verbesserungsvorschläge!
 
 ## Themen & Materialien  
 
