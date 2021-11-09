@@ -1,17 +1,23 @@
-## Package installieren
+# Packages 
+
+* [Installieren](#Installieren)
+* [Nutzen](#Nutzen)
+* [Deinstalieren](#Deinstalieren)
+
+## Installieren
 
 ```r
 install.packages("package_name")
 ```
 
-## Package nutzen
+## Nutzen
 
 ```r
 library(package_name)
 
 ```
 
-## Package deinstallieren
+## Deinstallieren
 
 **1) `remove.packages()`**
 
