@@ -29,7 +29,7 @@ Hier finden Sie diverse Kursmaterialien für die Lehre von Automatisieren Datens
 
 ## Übungen 
 
-| Nr.  | Aufgabenblatt     |
-| -----|------------------:|
-|    1 | [Aufgabenblatt 1](https://github.com/polcomm-passau/computational-methods-kurs/blob/main/exercises/aufgabenblatt_1.md)                  |
+| Nr.  | Aufgabenblatt     | Abgabe|
+| -----|------------------:|------:|
+|    1 | [Aufgabenblatt 1](https://github.com/polcomm-passau/computational-methods-kurs/blob/main/exercises/aufgabenblatt_1.md)| 16.11.2021|
 
