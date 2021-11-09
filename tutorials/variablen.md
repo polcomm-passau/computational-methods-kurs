@@ -5,7 +5,7 @@
   - [Einfache Variablentypen](#Einfache-Variablentypen)
     - [Integer](#Integer)
     - [Numeric](#Numeric)
-    - [Character/String](#Character/String)
+    - [Character/String](#Character-String)
     - [Logical/Boolean](#Logical/Boolean)   
   - [Komplexere Variablentypen](#Komplexere-Variablentypen)
     - [Vektoren](#Vektoren)
