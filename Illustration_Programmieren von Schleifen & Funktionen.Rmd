@@ -1,0 +1,387 @@
+---
+title: "Schleifen, Bedingungen & Funktionen"
+output:
+  html_document:
+    df_print: paged
+---
+
+# I. Schleifen
+# -------------
+# a) For-Schleifen
+#--------------
+
+## Wir nutzen die Vektoren aus der letzten Sitzung:
+
+```{r}
+
+
+gerade_zahlen <- c(2, 4, 6, 8)
+ungerade_zahlen <- c(1, 3, 5, 7, 9)
+string_vector = c("Ich", "bin", "ein", "String", "Vektor")
+zahlen = c(gerade_zahlen, ungerade_zahlen)
+
+
+```
+
+## Wir lassen uns die Vektoren ausgeben
+```{r}
+
+print(gerade_zahlen)
+print(ungerade_zahlen)
+print(string_vector)
+print(zahlen)
+```
+
+## Wir lassen uns für alle Elemente des Vektors "gerade_zahlen" den folgenden Satz ausgeben: "Das doppelte von [Zahl ist [Zahl]"
+
+### Zunächst manuell...
+```{r}
+print(paste("Das doppelte von", gerade_zahlen[1], "ist", gerade_zahlen[1]*2)) 
+print(paste("Das doppelte von", gerade_zahlen[2], "ist", gerade_zahlen[2]*2)) 
+print(paste("Das doppelte von", gerade_zahlen[3], "ist", gerade_zahlen[3]*2)) 
+print(paste("Das doppelte von", gerade_zahlen[4], "ist", gerade_zahlen[4]*2)) 
+
+```
+
+### ...und danach mithilfe einer Schleife
+
+```{r}
+
+for (x in gerade_zahlen) {
+  print(paste("Das doppelte von", x, "ist", x*2)) 
+ }
+
+
+```
+
+## Versuchen Sie nun selbst, beide Codes für den Vektor ungerade_zahlen bzw. zahlen anzupassen
+
+
+
+```{r}
+# Hier können Sie den Code von oben einkopieren und verändern 
+```
+
+# --- 
+# Schleifen über Tibbles / Data frames laufen lassen
+
+## Wir kreieren eine einfache "Tabelle" (= Data frame / tibble)
+
+```{r}
+#install.packages("tidyverse") #Falls Sie das package tidyverse noch nicht installiert haben, sollten Sie dies nun tun. Es ist Voraussetzung dafür, mit tibbles (einer für die Sozialwissenschaften optimierten Art von data frames) zu arbeiten.
+
+library(tidyverse)
+
+name <- c("Anna", "Maria", "Mark")
+age <- c(22, 24, 26)
+
+unser_df = data.frame(name, age)
+unser_df # Dies ist ein R-base data frame
+
+unser_tibble = tibble(name, age) # tibbles sind für den sozialwissenschaftlichen Gebrauch optimierte dataframes, die im tidyverse package integriert sind; wir verwenden deshalb in diesem Kurs stets tibbles. 
+unser_tibble
+
+
+```
+
+## Wir lassen uns den Satz ausgeben, "[Student] ist [Jahre] alt" 
+
+### Zunächst stellt sich die Frage: Wie iteriert eine for-schleife über einen data frame / tibble?
+
+```{r}
+for (x in unser_tibble) {
+  print(x)
+  }
+
+```
+
+## Während obiger Befehl über alle Felder des tibbles iteriert, wollen wir  über alle Zeilen(einträge) eines Tibbles iterieren
+
+```{r}
+for (x in unser_tibble$name) {
+  print(x)
+  print(paste("Die TeilnehmerIn heißt", x))
+}
+  
+```
+
+
+## Wir lassen uns  den Satz ausgeben: "Anna ist 22 Jahre alt"
+
+### 1. Wir iterieren über die "Indizes", also über die Zeilennummern:
+
+```{r}
+
+for (x in 1:length(unser_tibble$name)) {
+  print(x)
+}
+
+
+
+
+
+
+
+```
+
+### 2. Wir sprechen den Namen und das Alter jeder Teilnehmerin über die Zeilennummer (="Index") an. Dies geschieht über den Indexwert in []
+
+```{r}
+for (x in 1:length(unser_tibble$name)) {
+  print(paste("Indexwert:", x))
+  print(paste(unser_tibble$name[x], "ist", unser_tibble$age[x], "Jahre alt."))
+}
+```
+
+### Hinweis: Sie können nicht nur über die Zeilen iterieren, sondern auch über die Spalten eines tibbles. Dies tun sie wie folgt:
+
+```{r}
+
+for (x in 1:length(unser_tibble)) {
+  print(x)
+}
+
+# Zur Illustrration kreieren wir ein beliebiges vierspaltiges Tibble
+
+vierspaltiges_tibble = tibble(name, age, age+1, age+3)
+vierspaltiges_tibble
+
+for (x in 1:length(vierspaltiges_tibble)) {
+  print(x)
+}
+
+# Ein Beispiel: Mittelwert jeder Spalte berechnen (für die erste Spalte, die Namensspalte wird ein Fehler ausgegeben, da diese nicht numerisch ist)
+
+for (x in 1:length(vierspaltiges_tibble)) {
+  print(mean(vierspaltiges_tibble[[x]]))
+}
+
+
+```
+
+# AUFGABE 1 Lösung der Programmieraufgabe
+
+## Kreieren Sie ein Tibble, das die Namen und Höhen der drei höchsten Berge des Bayerwalds enthält. 
+## Schreiben Sie eine for-Schleife, die für denen Berg den Text ausgibt: „[Bergname] ist [x] Meter hoch.“
+
+### Tibble kreieren
+```{r}
+
+Bergname = c("Arber", "Rachel", "Lusen")
+Hoehe = c(1456, 1453, 1373)
+
+berg_tibble <- tibble(Bergname, Hoehe)
+berg_tibble
+
+
+```
+
+### Schleife ausführen
+
+```{r}
+for (x in 1:length(berg_tibble$Bergname)) {
+ print(paste("Indexwert:", x))
+ print(paste("Der Berg", berg_tibble$Bergname[x], "ist", berg_tibble$Hoehe[x], "Meter hoch!"))
+}
+```
+
+## Hinweis: Besonderheit von R - R iteriert automatisch über tibbles
+
+```{r}
+
+# Dieser Code iteriert automatisch über die Zeilen des tibbles 
+
+print(paste("Der Berg", berg_tibble$Bergname, "ist", berg_tibble$Hoehe, "Meter hoch!"))
+
+
+```
+### Warum brauchen wir trotzdem schleifen?
+
+
+```{r}
+
+# ... Weil wir über Schleifen komplexere Aufgaben lösen können, wie z.B.: die Höhe des Berges in der Zeile darüber einsetzen oder erst in Zeile 2 mit der Iteration beginnen:
+
+for (x in 2:length(berg_tibble$Bergname)) {
+ print(x)
+ print(paste("Der Berg", berg_tibble$Bergname[x], "ist", berg_tibble$Hoehe[x-1], "Meter hoch!"))
+}
+
+```
+
+
+# -----
+
+# b) While Schleifen
+
+
+```{r}
+i = 1
+while (i < 5) {
+  print(i)
+  i = i + 1
+}
+```
+
+
+# .
+# .
+# --------------
+# BEDINGUNGEN
+
+```{r}
+
+# Beginnen wir mit unserem Tibble:
+
+unser_tibble
+
+
+```
+
+# Wir lassen uns nur alle Teilnehmer ausgeben, die älter als 23 Jahre sind
+
+```{r}
+
+# Schritt 1: Wir benötigen eine Schleife, die über die Indizes derZeilen iteriert
+
+
+for (x in 1:length(unser_tibble$name)) {
+  print(x)
+}
+
+# Schritt 2: Wir lassen uns den Satz für alle Zeilenausgeben
+
+for (x in 1:length(unser_tibble$name)) {
+  print(x)
+  print(paste(unser_tibble$name[x], "ist", unser_tibble$age[x], "Jahre alt!"))
+}
+
+# Schritt 3: Wir fügen die Bedingung ein und geben nur Namen für diejenigen Teilnehmer aus, die älter als 23 sind:
+
+
+for (x in 1:length(unser_tibble$name)) {
+  print(x)
+  if (unser_tibble$age[x]>23) {
+    print(paste(unser_tibble$name[x], "ist", unser_tibble$age[x], "Jahre alt!"))}
+  else {
+    print("--")
+  }
+}
+
+
+# Schritt  4: Wir geben die "---" Zeilen nicht aus
+
+for (x in 1:length(unser_tibble$name)) {
+  if (unser_tibble$age[x]>23) {
+    print(paste(unser_tibble$name[x], "ist", unser_tibble$age[x], "Jahre alt!"))}
+}
+```
+## AUFGABE 2: Lösung
+
+```{r}
+
+for (x in 1:length(unser_tibble$name)) {
+  if (unser_tibble$age[x]>23) {
+    print(paste(unser_tibble$name[x], "ist", unser_tibble$age[x], "Jahre alt!"))}
+}
+
+```
+
+# Lassen Sie sich alle Berge ausgeben, die höher als 1400 Meter sind.
+
+```{r}
+for (x in 1:length(berg_tibble$Bergname)) {
+  if (berg_tibble$Hoehe[x]>1400) {
+    print(paste("Der Berg", berg_tibble$Bergname[x], "ist", berg_tibble$Hoehe[x], "Meter hoch!"))
+    }
+}
+
+```
+# .
+# .
+# -----------
+# III: FUNKTIONEN 
+# -------
+
+## Eingebaute Funktionen: Illustration
+```{r}
+# Probieren Sie die folgenden R-base Funktionen aus
+
+length(gerade_zahlen)
+# [1] 4
+class(gerade_zahlen)
+#[1] "numeric"
+sum(zahlen)
+## [1] 45
+min(zahlen)
+## [1] 1
+max(zahlen)
+## [1] 9
+mean(zahlen)
+## [1] 5
+sd(zahlen) # Standardabweicherung
+## [1] 2.738613
+length(zahlen) # Länge des Vektors 
+## [1] 9
+```
+
+## Selbst definierte Funktionen
+
+### 60% Funktion
+```{r}
+
+#This scripts in R creates two simple functions to estimate the 60% of any given number
+
+#The first function computes the 60% always
+por_60 <- function(x) {
+  return(x*0.6)
+}
+
+print (por_60(10))
+print (por_60(4))
+
+
+
+```
+
+### 60% Funktion, die nur Zahlen größer als fünf  akzeptiert
+
+```{r}
+
+#The second function computes the 60% ONLY IF the argument is above 5, and the other cases the function returns the very same argument
+
+por_60_cond <- function(x) {
+  if (x>5) {
+    return(x*0.6)
+    } 
+  else {
+    print(paste("Die Zahl", x, "ist kleiner als 5, deshalb wird kein Prozentwert berechnet!"))
+    return(x)
+    }
+  }
+por_60_cond(4)
+
+print (por_60_cond(10))
+por_60_cond(4)
+
+```
+
+## AUFGABE III: Lösung der Programmieraufgabe III
+
+```{r}
+
+zehnzeichen <- function(x) {
+  if (nchar(x)>10) {
+    return("Glückwunsch, dieses Wort ist länger als 10 Zeichen!")
+    } 
+  else {
+    return("Vorsicht, dieses Wort ist kürzer als 10 Zeichen")
+    }
+}
+
+zehnzeichen("Schön!")
+
+```
+
+
+
