@@ -286,7 +286,7 @@ Variablen:
 
 ### 2) Styling-Konventionen
 
-*Snake_case* (`ich_bin_eine_Variable`) und *camelCase* (`ichBinEineVariable`) sind die zwei gängigsten Schreibweisen beim Programmieren. 
+*snake_case* (`ich_bin_eine_Variable`) und *camelCase* (`ichBinEineVariable`) sind die zwei gängigsten Schreibweisen beim Programmieren. 
 
 ![image](https://user-images.githubusercontent.com/17723168/141304262-19876c32-ff29-404a-8cb4-3fea43495a5d.png)
 
