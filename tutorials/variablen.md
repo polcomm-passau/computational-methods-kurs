@@ -276,9 +276,9 @@ Bis jetzt haben unseren Variablen immer nur `x`, `y` oder einfache Wörter als N
 
 Es gibt eigentlich nicht viel was ihr bei der Variablenbenenung beachten solltet:
 
-### 1) Feste Regeln:
+### 1) Feste Regeln
 
-Variablen
+Variablen:
   * können Groß- und Kleinbuchstaben, Ziffern sowie Punkte . und Unterstriche _ beinhalten. Andere Sonderzeichen, Umlaute und Leerzeichen sind nicht gestattet.
   * können mit einem Buchstaben oder einem `.` beginnen, nicht jedoch mit Ziffern oder `_` (bei `.` muss das zweite Zeichen ein Buchstabe sein).
   * sind case-sensitive, d.h. unterscheiden zwischen Groß- und Kleinschreibung. `myVar` und `myvar` sind also unterschiedliche Objekte.
