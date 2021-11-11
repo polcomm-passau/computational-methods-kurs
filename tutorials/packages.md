@@ -24,6 +24,7 @@ Hingegen um ein Package in einem Skript zu nutzen, muss es immer wieder neu akti
 
 ```r
 library(package_name) 
+
 #ODER
 library("package_name")
 
