@@ -166,7 +166,7 @@ length(zahlen) # Länge des Vektors
 
 ### Listen
 
-Listen in R sind Vektoren, die mehrere Werte unterschiedlichen Typs beinhalten. Wir erzeugen Listen über die Funktion list(). Wie bei Vektoren werden die einzelnen Elemente des Listes durch Kommas , getrennt.
+Listen in R sind Vektoren, die mehrere Werte unterschiedlichen Typs beinhalten. Wir erzeugen Listen über die Funktion `list()`. Wie bei Vektoren werden die einzelnen Elemente des Listes durch Kommas , getrennt.
 
 ```r
 l = list(10L, 3.14, "Text")
@@ -270,13 +270,13 @@ as.Date("2021-10-29")
 
 # Variablenbenennung
 
-![image](https://user-images.githubusercontent.com/17723168/141303326-c6edf25d-e1e2-4362-ad3a-455b36d9f737.png)
+<img src="https://user-images.githubusercontent.com/17723168/141303326-c6edf25d-e1e2-4362-ad3a-455b36d9f737.png" width="50%" >
 
 Bis jetzt haben unseren Variablen immer nur `x`, `y` oder einfache Wörter als Namen vergeben. Aber man könnte und sollte die Variablen immer sinnvoll benennen und zwar danach was sie machen oder beinhalten. Und Absurd wie es am Anfang klingt, Variblenbenennung ist echt ein komplixiertes Thema beim Programmieren. Einen sinnvollen und passenden Namen für eine Variable zu finden kann schwer sein - Sie werden das schon selbst merken!  
 
 Es gibt eigentlich nicht viel was ihr bei der Variablenbenenung beachten solltet:
 
-## 1) Feste Regeln:
+### 1) Feste Regeln:
 
 Variablen
   * können Groß- und Kleinbuchstaben, Ziffern sowie Punkte . und Unterstriche _ beinhalten. Andere Sonderzeichen, Umlaute und Leerzeichen sind nicht gestattet.
@@ -284,14 +284,14 @@ Variablen
   * sind case-sensitive, d.h. unterscheiden zwischen Groß- und Kleinschreibung. `myVar` und `myvar` sind also unterschiedliche Objekte.
   * können nicht eine von diesen Wörtern sein: *if, else, repeat, while, function, for, in, next, break, TRUE, FALSE, NULL, Inf, NaN, NA, NA_integer_, NA_real_, NA_complex_, NA_character_*
 
-## 2) Styling-Konventionen
+### 2) Styling-Konventionen
 
 *Snake_case* (`ich_bin_eine_Variable`) und *camelCase* (`ichBinEineVariable`) sind die zwei gängigsten Schreibweisen beim Programmieren. 
 
 ![image](https://user-images.githubusercontent.com/17723168/141304262-19876c32-ff29-404a-8cb4-3fea43495a5d.png)
 
 
-## 3) Muss sinnvoll/nachvollziehbar sein
+### 3) Muss sinnvoll/nachvollziehbar sein
 
 ```r
 # Gute Variablennamen: 
@@ -309,8 +309,7 @@ aklasls = "Daria"
 ```
 <span style="color:red">Wichtig</span> bei der Variablenbenennung - Einheitlich bleiben! 
 
-![image](https://user-images.githubusercontent.com/17723168/141305178-4ac7cbda-bb22-40d6-bfa7-cc07b46bddaa.png)
-
+<img src="https://user-images.githubusercontent.com/17723168/141305178-4ac7cbda-bb22-40d6-bfa7-cc07b46bddaa.png" width="70%" >
 
 # Übungsaufgaben
 
