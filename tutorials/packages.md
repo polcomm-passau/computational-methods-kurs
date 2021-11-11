@@ -23,7 +23,9 @@ install.packages("package_name")
 Hingegen um ein Package in einem Skript zu nutzen, muss es immer wieder neu aktiviert werden. 
 
 ```r
-library(package_name) # funktioniert auch mit "" -> library("package_name")
+library(package_name) 
+#ODER
+library("package_name")
 
 #Alternative, wenn man nur eine Funktion aus dem Package einmalig nutzen möchte: 
 
