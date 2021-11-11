@@ -25,7 +25,7 @@ Hier finden Sie diverse Kursmaterialien für die Lehre von Automatisieren Datens
 | 4    | [Schleifen und Funktionen](https://github.com/polcomm-passau/computational-methods-kurs/blob/main/tutorials/loops_and_functions.md) | [Folien 3](https://github.com/polcomm-passau/computational-methods-kurs/files/7503813/Sitzung.3.-.R_Schleifen.Bedingungen.Funktionen.pdf)| [R-Code 3.Rmd](https://github.com/polcomm-passau/computational-methods-kurs/blob/main/tutorials/r_code/Illustration_Programmieren%20von%20Schleifen%20%26%20Funktionen.Rmd)| 
 | 5    | [Packages](https://github.com/polcomm-passau/computational-methods-kurs/blob/main/tutorials/packages.md) | [Folien 4](https://github.com/polcomm-passau/computational-methods-kurs/files/7520889/Sitzung.3_.WU.Programmieren.fur.KoWi.pdf)| [R-Code 4.R](https://github.com/polcomm-passau/computational-methods-kurs/blob/main/tutorials/r_code/%C3%BCbung_3.R)  | 
 
-[R Basics CheatSheet](https://github.com/rstudio/cheatsheets/blob/main/base-r.pdf)
+* [R Basics CheatSheet](https://github.com/rstudio/cheatsheets/blob/main/base-r.pdf)
 
 ## Data Wrangling
 
