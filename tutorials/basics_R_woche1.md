@@ -21,7 +21,7 @@ Die Benutzeroberfläche von RStudio ist in vier wichtigsten Fenster (auf English
 
 ## Konsole 
 
-Die Konsole ist der Motor von RStudio. Hier wird der Code ausgeführt und hier kommen die Ergebnisse raus. Zum Beispiel, versuchen wir eine einfache Berechnung in R auszuführen. Dafür geben wir `2+2` in der Konsole ein und führen es mit `ENTER` aus. Als Ergebniss kommt `4` raus. 
+Die Konsole ist der Motor von RStudio. Hier wird der Code ausgeführt und hier kommen die Ergebnisse raus. Zum Beispiel, versuchen wir eine einfache Berechnung in R auszuführen. Dafür geben wir `2+2` in der Konsole ein und führen sie mit `ENTER` aus. Als Ergebniss kommt `4` raus. 
 
 ![Konsole_Ausgabe](https://user-images.githubusercontent.com/17723168/138288129-ceea9987-4c32-4a26-92f6-a8a6c5ec5c31.png)
 
