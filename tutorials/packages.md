@@ -5,8 +5,8 @@
 * [Deinstalieren](#Deinstalieren)
 
 Packages sind das Herzstück von R:  
-* R-Packages sind im Grunde eine Sammlung von fertigen Funktionen, die Sie verwenden können. Die bekanntesten und wichtigsten Packages für den sozialwissenschaftlichen Gebrauch sind *tidyverse*, *quanteda*, *tibble*, *ggplot2*, usw. 
-* Auf [CRAN](https://cran.r-project.org/) (*The Comprehensive R Archive Network*) habe Sie Zugriff auf mehr als 15.000 Packages
+* R-Packages sind im Grunde eine Sammlung von fertigen Funktionen, die Sie verwenden können. Die bekanntesten und wichtigsten Packages für den sozialwissenschaftlichen Gebrauch sind *tidyverse*, *quanteda*, *tibble*, *ggplot2*, usw.
+* Auf [CRAN](https://cran.r-project.org/) (*The Comprehensive R Archive Network*) haben Sie Zugriff auf mehr als 15.000 Packages
 * Es gibt ein Package für ziemlich alles was man machen möchte! 
   
 
