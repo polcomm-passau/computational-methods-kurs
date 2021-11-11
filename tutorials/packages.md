@@ -12,7 +12,7 @@ Packages sind das Herzstück von R:
 
 ## Installieren
 
-Packages müssen nur einmal isntalliert werden. 
+Packages müssen nur einmal installiert werden. 
 
 ```r
 install.packages("package_name")
