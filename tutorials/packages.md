@@ -41,7 +41,7 @@ tibble::as_tibble(mtcars) # as_tibble ist eine Funktion aus dem Package Tibble
 Ein Package deinstallieren geht mit `remove.packages()`:
 
 ```r
-remove.packages("affycoretools")
+remove.packages("package_name")
 
 ```
 **2) Manuell** 
