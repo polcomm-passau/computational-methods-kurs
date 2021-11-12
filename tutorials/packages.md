@@ -46,7 +46,7 @@ remove.packages("affycoretools")
 ```
 **2) Manuell** 
 
-Gehen Sie zu *Packages* in der rechten unteren Ecke von Rstudio, wählen Sie das Package, das Sie löschen möchten und klicken auf das nebenstehende **X**-Symbol, um es zu entfernen.
+Gehen Sie zu *Packages* in der rechten unteren Ecke von Rstudio, wählen Sie das Package, dass Sie löschen möchten und klicken auf das nebenstehende **X**-Symbol, um es zu entfernen.
 
 ![Packages_delete](https://user-images.githubusercontent.com/17723168/140925876-b7a7622e-9e6e-4505-b423-cb61c9a388a9.png)
 
