@@ -80,3 +80,5 @@ my_function_name = function(argument){
 
 my_function_name("hello") #Funktion-Aufruf
 ```
+
+Tipp: wenn Sie in RStudio `fun` eingeben und mit ENTER bestätigen, erstellt RStudio automatisch eine Vorlage für eine Funktion. 
