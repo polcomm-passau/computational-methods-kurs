@@ -44,7 +44,7 @@ g_kurz = paste(g_kurz, "Daria")
 ```
   2.4. Nun teilen Sie die Begrüßung in einzele Wörter und speichern Sie die Ausgabe in der Variable `greeting_split`. 
 ```r
-strsplit(g_kurz, " ")
+greeting_split = strsplit(g_kurz, " ")
 ```
 
 ***
@@ -85,8 +85,8 @@ cars_short <- data.frame(mtcars$mpg, mtcars$hp) #alternative
   5.3. Schauen Sie sich hierzu an, was passiert, wenn Sie `above_average` in einen numerischen Vektor umwandeln. Warum passiert das? 
 
 ```r
-values = c(1.2, 1.3, 0.8, 0.7, 0.7, 1.5, 1.1, 1.0, 1.1, 1.2, 1.1)
-average = mean(values)
-above_average = values > average
-sum(above_average) / length(values)
+values = c(1.2, 1.3, 0.8, 0.7, 0.7, 1.5, 1.1, 1.0, 1.1, 1.2, 1.1) #Ein numerischer Vektor values wird erstellt
+average = mean(values) # Mittelwert von dem Vektor ausgerechnet
+above_average = values > average # above_average ist ein logischer Vektor, der für jedes Element in values die Prüfung enthällt ob das Element größer als der Mittelwert ist
+sum(above_average) / length(values) # Wie viel % der Elemente aus dem Vektor values sind über den Durchschnitt?  
 ```
