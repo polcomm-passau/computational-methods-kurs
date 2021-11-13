@@ -46,3 +46,7 @@ Eine Excel-Datei (.xls und .xlsx) laden:
 ```r
 read_excel("file.xls")
 ```
+## CheetSheet
+
+[data-import.pdf](https://github.com/rstudio/cheatsheets/blob/main/data-import.pdf)
+
