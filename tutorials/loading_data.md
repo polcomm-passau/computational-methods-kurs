@@ -31,6 +31,12 @@ read_csv("file.csv")
 * **Keine Spaltennamen laden:** `read_csv("file.csv", col_names = FALSE)`
 * **Neue Spaltennamen vergeben:** `read_csv("file.csv", col_names = c("x", "y", "z"))`
 
+### CSV-Dateien speichern
+
+```r
+# CSV-Datei speichern:
+write_csv(df, "file.csv") 
+```
 
 ## Excel-Dateien: `readxl` 
 
