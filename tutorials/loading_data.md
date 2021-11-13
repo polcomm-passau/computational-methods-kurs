@@ -34,8 +34,15 @@ read_csv("file.csv")
 
 ## Excel-Dateien: `readxl` 
 
+`readxl` Installieren/ Aktivieren:
+
+```r
+install.packages("readxl") # Installieren
+library("readxl") # Aktivieren
+```
+
 Eine Excel-Datei (.xls und .xlsx) laden: 
 
 ```r
-read_excel()
+read_excel("file.xls")
 ```
