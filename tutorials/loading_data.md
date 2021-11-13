@@ -28,12 +28,10 @@ read_csv("file.csv")
 * `read_table()`: tabular files where columns are separated by white-space.
 * `read_log()`: web log files
 
-
-
 #### Nutzvolle `read_`-Argumente
 
-* `read_csv("file.csv", col_names = FALSE)` -> Keine Spalten-Namen
-* `read_csv("file.csv", col_names = c("x", "y", "z"))` -> Neue Spaltennamen vergeben
+* **Keine Spaltennamen laden:** `read_csv("file.csv", col_names = FALSE)`
+* **Neue Spaltennamen vergeben:** `read_csv("file.csv", col_names = c("x", "y", "z"))`
 
 
 ## Excel-Dateien
