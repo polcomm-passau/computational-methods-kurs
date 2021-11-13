@@ -1,8 +1,6 @@
 # Daten in R laden
 
-## CSV-Dateien
-
-### `readr`
+## CSV-Dateien: `readr`
 
 Um CSV-Dateinen in R zu laden eignet sich am besten das externe Package [readr](https://readr.tidyverse.org/) aus dem *tidyverse*-Universum. 
 
@@ -34,9 +32,7 @@ read_csv("file.csv")
 * **Neue Spaltennamen vergeben:** `read_csv("file.csv", col_names = c("x", "y", "z"))`
 
 
-## Excel-Dateien
-
-### `readxl`
+## Excel-Dateien: `readxl` 
 
 Eine Excel-Datei (xls und xlsx) laden: 
 
