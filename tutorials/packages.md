@@ -18,7 +18,7 @@ Packages müssen nur einmal installiert werden.
 install.packages("package_name")
 ```
 
-Als Alternative dazu können Packages über die Benutzeroberfläche von RStudio installiert werden: Dafür auch das *Packages*-Pane gehen -> Install ![install_button](https://user-images.githubusercontent.com/17723168/141771117-9a9846af-693f-4be4-8545-cd15eb08e904.png) -> und das richtige Package suchen.   
+Als Alternative dazu können Packages über die Benutzeroberfläche von RStudio installiert werden: Dafür gehen Sie auf das *Packages*-Pane in der rechten Ecke von RStudio ->![install_button](https://user-images.githubusercontent.com/17723168/141771117-9a9846af-693f-4be4-8545-cd15eb08e904.png) -> und das richtige Package suchen.   
 
 ![install_packages](https://user-images.githubusercontent.com/17723168/141770887-41ea79ba-6826-49d1-9e3f-3b234570ff98.png)
 
