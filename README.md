@@ -32,7 +32,7 @@ Hier finden Sie diverse Kursmaterialien für die Lehre von Automatisieren Datens
 
 | Nr.  | Thema| Folien | R-Code |
 | -----|:------------| :------|:-------|
-| 1    |             |        |        |
+| 1    | [Daten laden und speichern](https://github.com/polcomm-passau/computational-methods-kurs/blob/main/tutorials/loading_data.md) |        |        |
 
 
 ## Übungen 
