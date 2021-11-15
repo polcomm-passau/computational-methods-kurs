@@ -1,5 +1,11 @@
 # Daten in R laden und speichern
 
+* CSV-Dateien
+* Excel-Dateien
+* SPSS-Dateien
+* Dateien aus dem Internet
+
+
 ## CSV-Dateien: `readr`
 
 Um CSV-Dateinen in R zu laden eignet sich am besten das externe Package [readr](https://readr.tidyverse.org/) aus dem *tidyverse*-Universum. 
@@ -55,4 +61,10 @@ read_excel("file.xls")
 ## CheetSheet
 
 [data-import.pdf](https://github.com/rstudio/cheatsheets/blob/main/data-import.pdf)
+
+## SPSS-Dateien: `haven`
+
+```r
+library(haven)
+```
 
