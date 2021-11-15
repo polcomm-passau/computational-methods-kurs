@@ -24,6 +24,7 @@ Als Alternative dazu können Packages über die Benutzeroberfläche von RStudio 
 
 Außerdem können so alle Packages aktualisiert werden (![Update](https://user-images.githubusercontent.com/17723168/141771260-9df25473-e0a7-4fa2-8e6e-049236124734.png)) - es empfiehlt sich, dies regelmässig zu tun.
 
+![load-tidyverse](https://user-images.githubusercontent.com/17723168/141772040-7c23daf1-2b06-48a0-9e9e-f20b6590db46.png)
 
 
 ## Nutzen
