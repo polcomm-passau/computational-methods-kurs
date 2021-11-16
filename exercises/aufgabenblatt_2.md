@@ -18,12 +18,35 @@ Erstellen Sie einen Teildatensatz, der:
 
 Speichern Sie diesen Teildatensatz als CSV-Datei.
 
+Danach: 
+
+* Berechnen Sie das mittlere Alter und die Standardabweichung für beide Geschlechter. Verwenden Sie group_by()
+* Viele viele Fälle hat jede Gruppe? 
+
 ## Aufgabe 3: Der Pipe-Operator `%>%`
 
 Lösen Sie die Übungsaufgabe 2 erneut, aber verwenden Sie Pipes, um den Code lesbarer und mit weniger redundanten Zwischenobjekten zu gestalten.
 
 ## Aufgabe 4
 
+Only include columns that contain "mm" in the variable name.
+
 ## Aufgabe 5
 
+Below is a dataset that needs some cleaning.
+
+Use the skills that you have learned so far to turn the data into a tidy dataset.
+
+```r
+animal_friends <- tibble(
+  Names = c("Francis", "Catniss", "Theodor", "Eugenia"),
+  TheAnimals = c("Dog", "Cat", "Hamster", "Rabbit"),
+  Sex = c("m", "f", "m", "f"),
+  Vaccinated = c("yes", "0", "0", "yes"),
+  a_opterr = c("me", "me", "me", "me"),
+  `Age/Adopted/Condition` = c("8/2020/Very Good", "13/2019/Wild", "1/2021/Fair", "2/2020/Good")    
+) 
+```
+
+If you are done, turn the final data into long format.
 
