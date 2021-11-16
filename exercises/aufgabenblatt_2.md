@@ -6,7 +6,9 @@ Falls Sie Fragen zu diesem Aufgabenblatt haben, kontaktieren Sie daria.kravets@u
 
 Laden Sie die Datei `facebook_europawahl.csv` von Stud.IP in Ihr Projektverzeichnis herunter und lesen Sie den Datensatz in R ein. Bei dieser Datei handelt es sich um ...
 
-Lassen Sie sich die Anzahl an Posts sowie die Anzahl der erhobenen Variablen über die entsprechenden Befehle in R ausgeben.
+Lassen Sie sich die Anzahl an Posts sowie die Anzahl der erhobenen Variablen über die entsprechenden Befehle in R ausgeben. 
+
+Then take a look a look at it using `glimpse`. 
 
 ## Aufgabe 2: Daten modifizieren und speichern (20 Pkt)
 
@@ -26,7 +28,7 @@ Danach:
 
 ## Aufgabe 3: Der Pipe-Operator `%>%` (10 Pkt)
 
-Lösen Sie die Übungsaufgabe 2 erneut, aber verwenden Sie Pipes, um den Code lesbarer und mit weniger redundanten Zwischenobjekten zu gestalten.
+Lösen Sie die Übungsaufgabe 2 erneut (ohne den Datensatz zu speichern), aber verwenden Sie Pipes, um den Code lesbarer und mit weniger redundanten Zwischenobjekten zu gestalten.
 
 ## Aufgabe 4
 
