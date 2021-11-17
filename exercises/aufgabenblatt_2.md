@@ -14,6 +14,7 @@ Then take a look a look at it using `glimpse`.
 
 Erstellen Sie einen Teildatensatz, der:
 
+* die Variable ID nicht enthält 
 * nur Posts der aktuell im Bundestag vertretenen Parteien enthält (CDU, CSU, SPD, FDP, Linke, Grüne, AfD); Tipp: Betrachten Sie vorab die Schreibweise der Parteien (bzw. deren Facebook-Accounts)
 * nur die Variablen party, timestamp, type sowie alle Facebook-Metriken enthält
 * eine umbenannte Variable x enthält
