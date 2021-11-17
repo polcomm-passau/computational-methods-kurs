@@ -10,7 +10,7 @@ Lassen Sie sich die Anzahl an Posts sowie die Anzahl der erhobenen Variablen üb
 
 Gucken Sie sich die Daten mittels `glimpse()` an. 
 
-## Aufgabe 2: Daten modifizieren und speichern (20 Pkt)
+## Aufgabe 2: Daten modifizieren und speichern (30 Pkt)
 
 Erstellen Sie einen Teildatensatz, der:
 
@@ -21,6 +21,7 @@ Erstellen Sie einen Teildatensatz, der:
 * nur Posts mit mehr als 50 Likes enthält
 * wo die Variable text in post_text umcodiert wird
 * keine fehlenden Werten bei den Shares enthällt (wähle zwischen einer der besprochenen Strategien für die Behandlung von fehlenden Werten)
+* wo die Posts nach Likes aufsteigend sortiert sind 
 
 Speichern Sie diesen Teildatensatz als CSV-Datei.
 
@@ -37,7 +38,26 @@ Verwenden Sie wieder den Datensatz aus der Datei `RT_D_Small.xlsx`.
 
 Lösen Sie die Übungsaufgabe 2 erneut, aber verwenden Sie Pipes, um den Code lesbarer und mit weniger redundanten Zwischenobjekten zu gestalten.
 
-## Aufgabe 5: Daten bereinigen (20 Pkt)
+## Aufgabe 5: Datensätze zusammenfügen (20 Pkt)
+
+Sie haben zwei Datensätze `born` und `died`: 
+
+```r
+born <- tibble(
+  name = c("Moe", "Larry", "Curly", "Harry"),
+  year_born = c(1887, 1902, 1903, 1964),
+  place_born = c("Bensonhurst", "Philadelphia", "Brooklyn", "Moscow")
+)
+
+died <- tibble(
+  name = c("Curly", "Moe", "Larry"),
+  year_died = c(1952, 1975, 1975)
+)
+```
+
+Fügen Sie die zwei Datensätze mit Hilfe von `inner_join()`, `full_join()`, `left_join()` und `right_join()` zusammen und beschreiben Sie die Unterschiede in den Datensätzen nach der Methode der Zusammenfügung. 
+
+## Aufgabe 6: Daten bereinigen (20 Pkt)
 
 Hier ist ein Datensatz, der etwas Bereinigung braucht.
 
@@ -47,8 +67,8 @@ Nutzen Sie die bisher erlernten Fähigkeiten, um aus den Daten einen *tidy*-Date
 animal_friends <- tibble(
   Names = c("Francis", "Catniss", "Theodor", "Eugenia"),
   "???" = c("Dog", "Cat", "Hamster", "Rabbit"),
-  Sex = c("m", "f", "m", "f"),
-  Vaccinated = c("yes", "0", "0", "yes"),
+  Sex = c("m", "female", "m", "f"),
+  VaCCinated = c("yes", "0", "0", "yes"),
   a_opterr = c("me", "me", "me", "me"), # lösche mich
   `Age/Adopted/Condition` = c("8/2020/Very Good", "13/2019/Wild", "1/2021/Fair", "2/2020/Good") # benutze separate()
 ) 
