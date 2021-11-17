@@ -2,7 +2,7 @@ Bitte lösen Sie dieses Aufgabenblatt 2 in Zweier-Gruppen und laden Sie Ihre Lö
 
 Falls Sie Fragen zu diesem Aufgabenblatt haben, kontaktieren Sie daria.kravets@uni-passau.de.
 
-## Aufgabe 1: Daten laden (5 Pkt)
+## Aufgabe 1: Daten laden (10 Pkt)
 
 Laden Sie die Datei `RT_D_Small.xlsx` von Stud.IP in Ihr Projektverzeichnis herunter und lesen Sie den Datensatz in R ein. Bei dieser Datei handelt es sich um Posts von der Facebook-Seite RT Deutsch.  
 
