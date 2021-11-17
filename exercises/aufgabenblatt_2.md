@@ -24,7 +24,6 @@ Erstellen Sie einen Teildatensatz, der:
 
 Speichern Sie diesen Teildatensatz als CSV-Datei.
 
-
 ## Aufgabe 3: Daten umstrukturieren (10 Pkt) 
 
 Verwenden Sie wieder den Datensatz aus der Datei `RT_D_Small.xlsx`. 
@@ -42,16 +41,16 @@ Lösen Sie die Übungsaufgabe 2 erneut, aber verwenden Sie Pipes, um den Code le
 
 Hier ist ein Datensatz, der etwas Bereinigung braucht.
 
-Nutzen Sie die bisher erlernten Fähigkeiten, um aus den Daten einen *tidy*-Datensatz zu machen.
+Nutzen Sie die bisher erlernten Fähigkeiten, um aus den Daten einen *tidy*-Datensatz zu machen (wenden Sie mindestens 5 Veränderungen an).
 
 ```r
 animal_friends <- tibble(
   Names = c("Francis", "Catniss", "Theodor", "Eugenia"),
-  TheAnimals = c("Dog", "Cat", "Hamster", "Rabbit"),
+  "???" = c("Dog", "Cat", "Hamster", "Rabbit"),
   Sex = c("m", "f", "m", "f"),
   Vaccinated = c("yes", "0", "0", "yes"),
-  a_opterr = c("me", "me", "me", "me"),
-  `Age/Adopted/Condition` = c("8/2020/Very Good", "13/2019/Wild", "1/2021/Fair", "2/2020/Good")    
+  a_opterr = c("me", "me", "me", "me"), # lösche mich
+  `Age/Adopted/Condition` = c("8/2020/Very Good", "13/2019/Wild", "1/2021/Fair", "2/2020/Good") # benutze separate()
 ) 
 ```
 
