@@ -17,10 +17,10 @@ Erstellen Sie einen Teildatensatz, der:
 * die Variable id nicht enthält 
 * nur Posts ohne Video enthält (video = 0)
 * nur die Variablen date, post_link, video, text sowie alle Facebook-Metriken enthält
-* eine neue Variable total_emotions enthält, in der für jeden Post die Gesamtzahl der aller Reactions (hahas, likes, sads, etc.) angegeben ist
+* eine neue Variable total_emotions enthält, in der für jeden Post die Gesamtzahl aller Reactions (hahas, likes, sads, etc.) angegeben ist
 * nur Posts mit mehr als 50 Likes enthält
 * wo die Variable text in post_text umcodiert wird
-* keine fehlenden Werten bei den Shares enthällt (wähle zwischen einer der besprochenen Strategien für die Behandlung von fehlenden Werten)
+* keine fehlenden Werte bei den Shares enthällt (wähle zwischen einer der besprochenen Strategien für die Behandlung von fehlenden Werten)
 * wo die Posts nach Likes aufsteigend sortiert sind 
 
 Speichern Sie diesen Teildatensatz als CSV-Datei.
