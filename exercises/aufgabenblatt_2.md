@@ -38,7 +38,7 @@ Verwenden Sie wieder den Datensatz aus der Datei `RT_D_Small.xlsx`.
 
 Lösen Sie die Übungsaufgabe 2 erneut, aber verwenden Sie Pipes, um den Code lesbarer und mit weniger redundanten Zwischenobjekten zu gestalten.
 
-## Aufgabe 5 (20 Pkt)
+## Aufgabe 5: Daten bereinigen (20 Pkt)
 
 Hier ist ein Datensatz, der etwas Bereinigung braucht.
 
