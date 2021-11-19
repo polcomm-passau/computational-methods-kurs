@@ -223,6 +223,17 @@ summarize(groups,
           mean_class = mean(Pclass, na.rm = TRUE)
           )
 ```
+```r
+# Ausgabe: 
+
+A tibble: 2 × 4
+Survived	mean_age	sd_age	    mean_class
+<dbl>	<dbl>	<dbl>	<dbl>
+0	        30.62618	14.17211	2.531876
+1	        28.34369	14.95095	1.950292
+
+```
+
 Wir können auch nach mehreren Variablen gruppieren:
 
 ```r
@@ -232,6 +243,19 @@ summarize(groups,
         number_people = n() # Zähle wie viele Fälle in jeder Gruppe
         )
 ```
+
+# Ausgabe: 
+
+```r
+A grouped_df: 4 × 4
+Survived  Sex	mean_age    number_people
+<dbl>	<chr>	<dbl>	<int>
+0	    female	25.04688	81
+0   	male	31.61806	468
+1	    female	28.84772	233
+1	    male	27.27602	109
+```
+
 ### `arrange()`
 
 Datensatz sortieren mit `arrange()`: 
