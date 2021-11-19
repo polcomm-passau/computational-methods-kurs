@@ -33,6 +33,7 @@ Hier finden Sie diverse Kursmaterialien für die Lehre von Automatisieren Datens
 | Nr.  | Thema| Folien | R-Code |
 | -----|:------------| :------|:-------|
 | 1    | [Daten laden und speichern](https://github.com/polcomm-passau/computational-methods-kurs/blob/main/tutorials/loading_data.md) |        |        |
+| 2    | [Daten bearbeiten]()| [Folien 2](https://colab.research.google.com/drive/1zxPN0jXArKoqhEXK-oebTKmA0_0QxFA_?usp=sharing)| |  
 
 
 ## Übungen 
