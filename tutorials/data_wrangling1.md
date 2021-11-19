@@ -1,11 +1,6 @@
 * [Willkommen in *tidyverse*-Universum](#Willkommen-in-Tidyverse-Universum)
-    - `select()`
-    - `filter()`
-    -  `rename()`
-    -  `mutate()`
-    -  `group_by()`
-    -  `summarize()`
-    -  `arrange()`
+    - [`select()`, `filter()`, `rename()`, `mutate()`](#`select()`,-`filter()`,-`rename()`,-`mutate()`)
+    -  `group_by()`, `summarize()`, `arrange()`
 * Der Pipe-Operator `%>%`: Verketten mehrerer Operationen
 * Fehlende Werte
 * Long vs. Wide Data
@@ -439,7 +434,7 @@ Mit Hilfe von `arrange()`, `group_by()` und `summarize()`:
 
 ```r
 #Übungsaufgabe 1
-d2 = read_csv("Studenten_Datensatz.csv")
+d2 = read_csv("https://raw.githubusercontent.com/polcomm-passau/computational-methods-kurs/main/datasets/Studenten_Datensatz.csv")
 ```
 ```r
 #Übungsaufgabe 2
