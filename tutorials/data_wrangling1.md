@@ -87,6 +87,8 @@ tail(d1) # 6 letzte Werte
 
 ### `select()`
 
+Wähle die Daten spaltenweise. 
+
 ![select](https://user-images.githubusercontent.com/17723168/142610091-e06bebdd-8bf6-42e5-bf0c-63a1fd5d9908.png)
 
 ```r
@@ -103,8 +105,10 @@ select(d1, PassengerId, Pclass, Survived, Name, Sex, Age) # Wähle nur bestimmte
 ```
 
 ### `filter()`
-![filter](https://user-images.githubusercontent.com/17723168/142610264-84cdcbbe-1121-4639-b3cc-02a7d6460ea3.png)
 
+Wähle die Daten zeilenweise.
+
+![filter](https://user-images.githubusercontent.com/17723168/142610264-84cdcbbe-1121-4639-b3cc-02a7d6460ea3.png)
 
 `filter(d, col_name == "col-content")`
 
