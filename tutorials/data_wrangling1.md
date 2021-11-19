@@ -286,4 +286,167 @@ sum(is.na(d1$Age))
 colSums(is.na(d1))
 
 ```
- 
+
+Datensätze haben oft fehlende Werte. Beim Behandeln von fehlenden Werten haben wir drei Optionen: 
+
+1. Alle Zeilen entfernen, die `NA` enthalten: `drop_na()`
+2. `NA` mit dem letzten oder nächsten vorhandenen Eintrag füllen: `fill()`
+3. `NA` durch den Spaltenduchschnitt ersetzen: `replace_na()`
+
+```r
+d$column = drop_na(column) # Lösche alle Zeilen mit fehlenden Werten
+d$column = fill(column) # default -> nehme den letzten vorhandenen Eintrag ("down"). Alternativen: .direction = "up",  "downup", "updown"
+d$column = replace_na(column, mean(column, na.rm=TRUE) # Spaltendurchschnitt
+
+```
+
+# Long vs. Wide Data
+
+Einer der häufigsten Fälle der Umstrukturierung von Datensätzen betrifft das Konvertieren von Wide Data in Long Data und umgekehrt.
+
+*   **Wide Data:**
+
+    -  Mehrere Beobachtungen desselben Wertetyps stehen in einer Zeile in unterschiedlichen Spalten.
+
+
+Zum Beispiel, betrachten wir einen fiktiven Datensatz, der die Auflagezahlen verschiedener politischer Wochenmagazine beinhaltet: 
+
+```r
+wide_tibble = tibble(
+  medium       = c("Spiegel", "Stern", "Focus"),
+  auflage_2018 = c(708077, 701095, 799999),
+  auflage_2019 = c(606037, 603833, 659999),
+  auflage_2020 = c(503033, 656565, 520202)
+)
+wide_tibble #Die Auflagen für jedes Magazin und Jahr stehen in einer Zeile, aber unterschiedlichen Spalten. Jedes Magazin kommt nur einmal vor. 
+```
+
+*   **Long Data:**
+
+  - Jede Beobachtung hat eine eigene Zeile.
+
+Der selbe Datensatz mit politischen Wochenmagazinen im *Long*-Format würde so aussehen: 
+
+```r
+long_tibble = tibble(
+  medium       = c("Spiegel", "Spiegel","Spiegel","Stern", "Stern","Stern","Focus","Focus","Focus"),
+  jahr         = c(2018, 2019, 2020,2018, 2019, 2020, 2018, 2019, 2020),
+  auflage      = c(708077,606037,503033, 701095,603833, 656565,799999,659999,520202)
+)
+long_tibble # Jede Auflage hat eine eigene Zeile. 
+```
+
+### Long Data ins Wide transformieren und umgekehrt:
+
+*   pivot_longer()
+*   pivot_wider()
+
+
+```r
+#Wide Data in Long transformieren: 
+
+pivot_longer(wide_tibble, c(auflage_2018, auflage_2019, auflage_2020))
+
+#Schöner ist
+
+pivot_longer(wide_tibble, starts_with("auflage"), names_to = "jahr", values_to = "auflage", names_prefix = "auflage_")
+
+```
+
+
+```r
+# Long Data in Wide transformieren: 
+
+pivot_wider(long_tibble, names_from = jahr, values_from = auflage)
+
+# Schöner ist 
+
+pivot_wider(long_tibble, names_from = jahr, values_from = auflage, names_prefix = "auflage_")
+
+```
+
+# Datensätze zusammenfügen
+
+Datensätze in R zusammenfügen geht mittels `join()`. 
+
+Es gibt mehrere Möglichkeiten Datensätze zusammenzufügen:
+
+*   `full_join(d1, d2)`
+*   `inner_join(d1, d2)`
+*   `left_join(d1, d2)`
+*   `right_join(d1, d2)`
+
+![dplyr-left-join-inner-join-full-join-right-join-cheatsheet-1024x768](https://user-images.githubusercontent.com/17723168/142611502-e08e2802-d390-4095-9f4f-ea4fa858bce1.jpg)
+
+# Übungsaufgaben
+## Übungsaufgabe I
+
+Laden Sie den Studenten-Datensatz in R. Gucken Sie sich den Datensatz, deren Werte und Variablen an.
+
+## Übungsaufgabe II
+
+Aus dem Studenten-Datensatz `d2`:
+  * Löschen Sie die Spalte X
+  * Wählen Sie alle Studenten über 20 Jahre
+  * Gucken Sie sich die Variable ??? an und geben Sie ihr einen sinnvollen Namen
+  * Fügen Sie eine neue Variable `Durchschnittliches_Vertrauen` hinzu. Die Variable soll als Durchschnitt `Vertrauen_TV`, `Vertrauen_Print`, `Vertrauen_Internet` ausgerechnet werden. 
+
+## Übungsaufgabe III
+
+Lösen Sie die Übungsaufgabe II erneut, aber verwenden Sie Pipes, um den Code lesbarer und mit weniger redundanten Zwischenobjekten zu gestalten.
+
+## Übungsaufgabe IV
+
+Mit Hilfe von `arrange()`, `group_by()` und `summarize()`:
+
+*   Sortieren Sie den Studenten-Datensatz `d2` nach Semester. 
+*   Gruppieren Sie die Studierenden nach Studiengang und Geschlecht.
+  - Wie viele Studierenden gibt es in jeder Gruppe? 
+  - Rechnen Sie den durchschnittlichen Alter für jede Gruppe. 
+
+
+# Lösungen
+
+
+
+```r
+#Übungsaufgabe 1
+d2 = read_csv("Studenten_Datensatz.csv")
+```
+```r
+#Übungsaufgabe 2
+
+# Löschen Sie die Spalte X: select()
+select(d2, -X)
+# Wählen Sie alle Studenten über 20 Jahre : filter()
+filter(d2, Alter > 20)
+# Gucken Sie sich die Variable ??? an und geben Sie ihr einen sinnvollen Namen: rename()
+rename(d2, Geschlecht = "???")
+# Fügen Sie eine neue Variable Durchschnittliches_Vertrauen dazu: mutate()
+
+mutate(d2, 
+  Durchschnittliches_Vertrauen = (Vertrauen_TV + Vertrauen_Print + Vertrauen_Internet)/3)
+```
+```r
+#Übungsaufgabe 3
+d2 %>%
+  select(-X) %>%
+  filter(Alter > 20) %>%
+  rename(Geschlecht = "???") %>%
+  mutate(Durchschnittliches_Vertrauen = (Vertrauen_TV + Vertrauen_Print + Vertrauen_Internet)/3)
+
+```
+```r
+#Übungsaufgabe 4
+# Sortieren Sie den Studenten-Datensatz `d2` nach Semester : arrange()
+
+arrange(d2, Semester)
+
+# Gruppieren Sie die Studierenden nach Studiengang und Geschlecht: group_by() und summarize()
+
+groups = group_by(d2, Studiengang, Geschlecht)
+summarize(groups, 
+        mean_Alter = mean(Alter), #round extra
+        number_Fälle = n() # Zähle wie viele Fälle in jeder Gruppe
+        )
+```
