@@ -90,9 +90,7 @@ tail(d1) # 6 letzte Werte
 
 ![select](https://user-images.githubusercontent.com/17723168/142610091-e06bebdd-8bf6-42e5-bf0c-63a1fd5d9908.png)
 
-```r
 
-```
 ```r
 select(d, column1, column2) # keeps columns 1 & 2
 select(d, column1:column3)
