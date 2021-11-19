@@ -316,12 +316,26 @@ wide_tibble = tibble(
   auflage_2019 = c(606037, 603833, 659999),
   auflage_2020 = c(503033, 656565, 520202)
 )
-wide_tibble #Die Auflagen für jedes Magazin und Jahr stehen in einer Zeile, aber unterschiedlichen Spalten. Jedes Magazin kommt nur einmal vor. 
+wide_tibble 
+
+#Die Auflagen für jedes Magazin und Jahr stehen in einer Zeile, aber unterschiedlichen Spalten. Jedes Magazin kommt nur einmal vor. 
+```
+
+```r
+# Ausgabe: 
+
+A tibble: 3 × 4
+medium	auflage_2018	auflage_2019	auflage_2020
+<chr>	<dbl>	<dbl>	<dbl>
+Spiegel	708077	606037	503033
+Stern	701095	603833	656565
+Focus	799999	659999	520202
+
 ```
 
 *   **Long Data:**
 
-  - Jede Beobachtung hat eine eigene Zeile.
+    - Jede Beobachtung hat eine eigene Zeile.
 
 Der selbe Datensatz mit politischen Wochenmagazinen im *Long*-Format würde so aussehen: 
 
@@ -332,6 +346,22 @@ long_tibble = tibble(
   auflage      = c(708077,606037,503033, 701095,603833, 656565,799999,659999,520202)
 )
 long_tibble # Jede Auflage hat eine eigene Zeile. 
+```
+```r
+# Ausgabe: 
+
+A tibble: 9 × 3
+medium	jahr	auflage
+<chr>	<dbl>	<dbl>
+Spiegel	2018	708077
+Spiegel	2019	606037
+Spiegel	2020	503033
+Stern	2018	701095
+Stern	2019	603833
+Stern	2020	656565
+Focus	2018	799999
+Focus	2019	659999
+Focus	2020	520202
 ```
 
 ### Long Data ins Wide transformieren und umgekehrt:
