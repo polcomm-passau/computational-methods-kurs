@@ -364,8 +364,8 @@ Focus	2020	520202
 
 ### Long Data ins Wide transformieren und umgekehrt:
 
-*   pivot_longer()
-*   pivot_wider()
+*   `pivot_longer()`
+*   `pivot_wider()`
 
 
 ```r
