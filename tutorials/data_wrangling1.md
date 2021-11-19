@@ -244,16 +244,17 @@ summarize(groups,
         )
 ```
 
+```r
 # Ausgabe: 
 
-```r
 A grouped_df: 4 × 4
-Survived  Sex	mean_age    number_people
+Survived	Sex	mean_age	number_people
 <dbl>	<chr>	<dbl>	<int>
-0	    female	25.04688	81
-0   	male	31.61806	468
-1	    female	28.84772	233
-1	    male	27.27602	109
+0	female	25.04688	81
+0	male	31.61806	468
+1	female	28.84772	233
+1	male	27.27602	109
+
 ```
 
 ### `arrange()`
