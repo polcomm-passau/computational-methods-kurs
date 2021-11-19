@@ -17,11 +17,11 @@ Tidyverse beschreibt sich selbst:
 
 > The tidyverse is an opinionated **collection of R packages** designed for data science. All packages share an underlying design philosophy, grammar, and data structures.
 
+![data-science-workflow](https://user-images.githubusercontent.com/17723168/142609726-df3c439d-5e75-471b-b2b1-797d594996a6.png)
+
 Das schöne an `tidyverse`:
 
 > Alle Funktionen aus dem *tidyverse*-Package bekommen eine Tibble-Dataframe als erstes Argument und geben eine Tibble-Dataframe zurück. 
-
-![data-science-workflow](https://user-images.githubusercontent.com/17723168/142609726-df3c439d-5e75-471b-b2b1-797d594996a6.png)
 
 ## Relevante Packages aus dem *tidyverse*-Package:
 
