@@ -118,6 +118,7 @@ filter(d1, Sex == "female" & Survived == 1) # Wähle nur bestimmte Zeilen
 
 ### `rename()`
 
+Variablen (Spalten) umbenennen. 
 
 `rename(d, new_name = old_name)`
 
