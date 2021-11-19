@@ -1,6 +1,11 @@
-* Willkommen in *tidyverse*-Universum 
-* `select()`, `filter()`, `rename()`, `mutate()`, 
-* `group_by()`, `summarize()`, `arrange()`
+* [Willkommen in *tidyverse*-Universum](#Willkommen-in-Tidyverse-Universum)
+    - `select()`
+    - `filter()`
+    -  `rename()`
+    -  `mutate()`
+    -  `group_by()`
+    -  `summarize()`
+    -  `arrange()`
 * Der Pipe-Operator `%>%`: Verketten mehrerer Operationen
 * Fehlende Werte
 * Long vs. Wide Data
@@ -37,12 +42,9 @@ Tidyverse beschreibt sich selbst:
 library(tidyverse)
 ```
 
-# Wiederholung: `select()`, `filter()`, `rename()`, `mutate()`
+# `select()`, `filter()`, `rename()`, `mutate()`
 
-Wir arbeiten heute mir zwei Datensätzen: 
-
-
-
+Wir arbeiten mit zwei Datensätzen: 
 
 ```r
 d1 # Titanic Datensatz -> alle meine Beispiele 
@@ -73,8 +75,7 @@ head(d1) # 6 erste Werte
 tail(d1) # 6 letzte Werte
 ```
 
-## Wichtigsten Funktionen für Datenmanagment
-
+## Wichtigsten Funktionen für Datenmanagment:
 
 *   `select()` : Auswählen von Variablen (spaltenweise)
 *   `filter()` : Filtern von Variablen (zeilenweise)
@@ -89,7 +90,6 @@ tail(d1) # 6 letzte Werte
 ### `select()`
 
 ![select](https://user-images.githubusercontent.com/17723168/142610091-e06bebdd-8bf6-42e5-bf0c-63a1fd5d9908.png)
-
 
 ```r
 select(d, column1, column2) # keeps columns 1 & 2
@@ -107,16 +107,18 @@ select(d1, PassengerId, Pclass, Survived, Name, Sex, Age) # Wähle nur bestimmte
 ### `filter()`
 ![filter](https://user-images.githubusercontent.com/17723168/142610264-84cdcbbe-1121-4639-b3cc-02a7d6460ea3.png)
 
+
+`filter(d, col_name == "col-content")`
+
 ```r
-filter(d, col_name == "col-content")
 filter(d1, Sex == "female" & Survived == 1) # Wähle nur bestimmte Zeilen
 ```
 
 ### `rename()`
 
-```r
-rename(d, new_name = old_name)
-```
+
+`rename(d, new_name = old_name)`
+
 Theoretisch geht Variablen umbenennen auch mit der Funktion `select()`, aber übersichtlicher ist `rename()`.
 
 ```r
@@ -128,13 +130,12 @@ rename(d1, Class = Pclass)
 
 Neue Varibalen (Spalten) aus anderen Variablen erzeugen (oder vorhandene Variablen verändern):
 
-```r
-mutate(d, 
+
+`mutate(d, 
       new_column1 = old_column1 + old_column2,
       new_column2 = str_replace_all(old_column3, "string_old", "string_new")
-      )
+      )`
 
-```
 ```r
 mutate(d1, 
       Age_Today = Age + 108, # Titanic ist genau vor 108 Jahren versunken
@@ -208,9 +209,8 @@ d1 %>%
 
 Wenn Sie Ihre Daten (nach Gruppen) aggregieren möchten: 
 
-```r
-group_by(d, column)
-```
+`group_by(d, column)`
+
 
 ```r
 groups = group_by(d1, Survived)
