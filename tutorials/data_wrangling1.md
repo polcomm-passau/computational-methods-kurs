@@ -34,6 +34,7 @@ Das schöne an `tidyverse`:
 * `lubridate`: Arbeiten mit Datum 
 * und viele mehr...
 
+Tidyverse installieren (einmalig) und aktivieren (für jeden Sktipt): 
 
 ```r
 # install.packages("tidyverse")
@@ -48,7 +49,7 @@ Wir arbeiten mit zwei Datensätzen:
 ```r
 d1 # Titanic Datensatz -> alle meine Beispiele 
 
-d2 # Fiktiver Datensatz mit 50 Studierenden und deren Medienzufriedenheit -> Datensatz für Eure Übungen in der Sitzung
+d2 # Fiktiver Datensatz mit 50 Studierenden und deren Medienzufriedenheit -> Datensatz für Eure Übungen
 ```
 
 Den Titanic-Datensatz einlesen:
