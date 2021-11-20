@@ -282,6 +282,9 @@ Dafür sind drei Argumente wichtig:
   - `col` : gibt an, welche Variable (Spalte) aufgeteilt werden soll
   - `sep`: gibt an, durch welches Zeichen die Werte in der Variable geteilt werden sollen
   - `into`: welche Namen sollen die neuen Variablen bekommen
+
+`separate(d, old_column, sep = " ", into = c("column1", "column2"))`
+
 *   `recode()`
 *   `count()`
 
