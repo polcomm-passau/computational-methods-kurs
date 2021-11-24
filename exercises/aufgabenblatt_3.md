@@ -25,7 +25,7 @@ Sie erhalten einen Vektor `imdb_urls` mit URLs zu Filmen aus der Internet Movie 
 
 ```r
 imdb_urls = c(
-  "https://www.imdb.com/title/tt6751668/?ref_=hm_fanfav_tt_4_pd_fp1",
+  "https://www.imdb.com/title/tt6751668/?ref_=hm_fanfav_tt_4_pd_fp1", # Zum Beispiel, die ID hier ist 6751668
   "https://www.imdb.com/title/tt0260991/",
   "www.imdb.com/title/tt7282468/reviews",
   "https://m.imdb.com/title/tt4768776/"
