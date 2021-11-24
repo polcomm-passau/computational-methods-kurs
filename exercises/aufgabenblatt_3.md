@@ -58,7 +58,7 @@ emails = c("daria.kravets@uni-passau.de",
       )
 ```
 
-## Aufgabe 5: Regex (30 Pkt)
+## Aufgabe 5: Regex Daten extrahieren (30 Pkt)
 
 Aus folgendem Vektor `adressen` extrahieren Sie folgende Adressbestandteile in einzelne Spalten in eine Tibble-Dataframe `adressen_tibble`:
 
