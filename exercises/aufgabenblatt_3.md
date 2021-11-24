@@ -2,12 +2,12 @@ Bitte lösen Sie dieses Aufgabenblatt 2 in Zweier-Gruppen und laden Sie Ihre Lö
 
 Falls Sie Fragen zu diesem Aufgabenblatt haben, kontaktieren Sie daria.kravets@uni-passau.de.
 
-## Aufgabe 1: Stringr (20 Pkt)
+## Aufgabe 1: Stringr (10 Pkt)
 
 Sie erhalten einen Vektor `sentences` mit Texten:
 
 ```r
-sentences <-c("Climate change is a crisis all across the world - but how come we've not taken it serious?",
+sentences = c("Climate change is a crisis all across the world - but how come we've not taken it serious?",
               "CLIMATE CHANGE - the world issue that strikes specifically the poorest 20% around the globe.",
               "Global warming is a problem, but we've known that for a while now.",
               "Climate scepticism under the microscope: A debate between scientists and scepticists across the world",
@@ -19,10 +19,22 @@ sentences <-c("Climate change is a crisis all across the world - but how come we
 * Wie oft kommen die Wörter "climate change" (klein- und großgeschrieben) in dem Vektor `sentences` vor? 
 * Ersetzen Sie die umgangssprachige Englische Schreibweise "we've" mit "we have"
 
+## Aufgabe 2: Regex (10 Pkt)
 
-## Aufgabe 2: Datensätze mit Regex verändern (30 Pkt)
+Sie erhalten einen Vektor `imdb_urls` mit URLs zu Filmen aus der Internet Movie Database (https://www.imdb.com/). Jeder Link enthält eine eindeutige ID (im Format ".../title/tt[ID]"). Bitte extrahieren Sie diese IDs in einen neuen Vektor.    
 
-Laden Sie die Datei `RT_D_Small.xlsx` von Stud.IP in Ihr Projektverzeichnis herunter und lesen Sie den Datensatz in R ein. Bei dieser Datei handelt es sich um Posts von der Facebook-Seite RT Deutsch.  
+```r
+imdb_urls = c(
+  "https://www.imdb.com/title/tt6751668/?ref_=hm_fanfav_tt_4_pd_fp1",
+  "https://www.imdb.com/title/tt0260991/",
+  "www.imdb.com/title/tt7282468/reviews",
+  "https://m.imdb.com/title/tt4768776/"
+)
+```
+
+## Aufgabe 3: Datensätze mit Regex verändern (30 Pkt)
+
+Laden Sie die Datei `RT_D_Small.xlsx` von Stud.IP in Ihr Projektverzeichnis herunter und lesen Sie den Datensatz in R ein. Bei dieser Datei handelt es sich um Posts von der Facebook-Seite RT Deutsch (diese Datei sollte Euch schon von letzten Arbeitsblatt bekannt sein).  
 
 * Erstellen Sie eine neue Variable `links_from_text`, die alle Links aus der Spalte `text` enthällt. 
 * Aus der Spalte `fulltext`, lösche den wiederholenden Satz "AddThis Sharing Buttons"
@@ -31,9 +43,9 @@ Laden Sie die Datei `RT_D_Small.xlsx` von Stud.IP in Ihr Projektverzeichnis heru
 * In allen Texten in der Spalte `fulltext` löschen Sie den gesamten Text nach dem Wort "Tags: " 
 * Wählen Sie alle Zeilen, die in der Spalte `text` ein Plus-Zeichen (`+`) enthalten. 
 
-## Aufgabe 3: Regex (email) (20 Pkt)
+## Aufgabe 4: Regex (Email) (20 Pkt)
 
-Sie erhalten einen Vektor `emails`, der verschiedende Uni-Passau Emails enthällt. Schreiben Sie Code, der alle gegebenen Emails zu extrahieren schafft.
+Sie erhalten einen Vektor `emails`, der verschiedende Uni Passau-Emails enthällt. Schreiben Sie Code, der alle gegebenen Emails zu extrahieren schafft.
 
 ```r
 emails = c("daria.kravets@uni-passau.de",
@@ -43,7 +55,7 @@ emails = c("daria.kravets@uni-passau.de",
       )
 ```
 
-## Aufgabe 4: Regex (30 Pkt)
+## Aufgabe 5: Regex (30 Pkt)
 
 Aus folgendem Vektor `adressen` extrahieren Sie folgende Adressbestandteile in einzelne Spalten in eine Tibble-Dataframe `adressen_tibble`:
 
@@ -61,4 +73,3 @@ adressen = c(
   )
 ```
 
-## Aufgabe 5: 
