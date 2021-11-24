@@ -18,6 +18,8 @@ sentences = c("Climate change is a crisis all across the world - but how come we
 * Bitte ersetzen sie alle Leerzeichen im Text durch das Wort Leerzeichen und speichern die manipulierten Sätze im Vektor `sentences_new` ab.
 * Wie oft kommen die Wörter "climate change" (klein- und großgeschrieben) in dem Vektor `sentences` vor? 
 * Ersetzen Sie die umgangssprachige Englische Schreibweise "we've" mit "we have"
+* Welcher Regulärer Ausdruck wird die ganzen Sätze in jedem String erkennen? (benutzen Sie `str_view()`)
+
 
 ## Aufgabe 2: Regex (10 Pkt)
 
@@ -34,7 +36,7 @@ imdb_urls = c(
 
 ## Aufgabe 3: Datensätze mit Regex verändern (30 Pkt)
 
-Laden Sie die Datei `RT_D_Small.xlsx` von Stud.IP in Ihr Projektverzeichnis herunter und lesen Sie den Datensatz in R ein. Bei dieser Datei handelt es sich um Posts von der Facebook-Seite RT Deutsch (diese Datei sollte Euch schon von letzten Arbeitsblatt bekannt sein).  
+Laden Sie die Datei `RT_D_Small.xlsx` von Stud.IP in Ihr Projektverzeichnis herunter und lesen Sie den Datensatz in R ein. Bei dieser Datei handelt es sich um Posts von der Facebook-Seite RT Deutsch (diese Datei sollte Ihnen schon aus dem letzten Arbeitsblatt bekannt sein).  
 
 * Erstellen Sie eine neue Variable `links_from_text`, die alle Links aus der Spalte `text` enthällt. 
 * Aus der Spalte `fulltext`, lösche den wiederholenden Satz "AddThis Sharing Buttons"
@@ -42,6 +44,7 @@ Laden Sie die Datei `RT_D_Small.xlsx` von Stud.IP in Ihr Projektverzeichnis heru
 * Extrahieren Sie alle Hashtags (#) und alle Mentions (@) in jeweilige neue Spalten. 
 * In allen Texten in der Spalte `fulltext` löschen Sie den gesamten Text nach dem Wort "Tags: " 
 * Wählen Sie alle Zeilen, die in der Spalte `text` ein Plus-Zeichen (`+`) enthalten. 
+
 
 ## Aufgabe 4: Regex (Email) (20 Pkt)
 
