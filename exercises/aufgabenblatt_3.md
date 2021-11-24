@@ -1,5 +1,28 @@
+Bitte lösen Sie dieses Aufgabenblatt 2 in Zweier-Gruppen und laden Sie Ihre Lösung (**eine R.-Datei**) bis 30.11 auf Stud.IP hoch. Dieses Aufgabenblatt wird benotet und die maximale Punktenzahl beträgt 100 Punkte. **Happy Coding!**
 
-# Aufgabe x: Regex
+Falls Sie Fragen zu diesem Aufgabenblatt haben, kontaktieren Sie daria.kravets@uni-passau.de.
+
+## Aufgabe 1: Stringr (20 Pkt)
+
+Sie erhalten einen Vektor `sentences` mit Texten:
+
+```r
+sentences <-c("Climate change is a crisis all across the world - but how come we've not taken it serious?",
+              "CLIMATE CHANGE - the world issue that strikes specifically the poorest 20% around the globe.",
+              "Global warming is a problem, but we've known that for a while now.",
+              "Climate scepticism under the microscope: A debate between scientists and scepticists across the world",
+              "No one's safe? Why this might, after all, not be true when it comes to climate change",
+              "We've failed: The climate crisis is dooming")
+```
+
+* Bitte ersetzen sie alle Leerzeichen im Text durch das Wort Leerzeichen und speichern die manipulierten Sätze im Vektor `sentences_new` ab.
+* Wie oft kommen die Wörter "climate change" (klein- und großgeschrieben) in dem Vektor `sentences` vor? 
+* Ersetzen Sie die umgangssprachige Englische Schreibweise "we've" mit "we have"
+
+
+## Aufgabe 2: Datensätze mit Regex verändern (30 Pkt)
+
+Laden Sie die Datei `RT_D_Small.xlsx` von Stud.IP in Ihr Projektverzeichnis herunter und lesen Sie den Datensatz in R ein. Bei dieser Datei handelt es sich um Posts von der Facebook-Seite RT Deutsch.  
 
 * Erstellen Sie eine neue Variable `links_from_text`, die alle Links aus der Spalte `text` enthällt. 
 * Aus der Spalte `fulltext`, lösche den wiederholenden Satz "AddThis Sharing Buttons"
@@ -8,8 +31,34 @@
 * In allen Texten in der Spalte `fulltext` löschen Sie den gesamten Text nach dem Wort "Tags: " 
 * Wählen Sie alle Zeilen, die in der Spalte `text` ein Plus-Zeichen (`+`) enthalten. 
 
+## Aufgabe 3: Regex (email) (20 Pkt)
 
-# Aufgabe x: Regex (email)
+Sie erhalten einen Vektor `emails`, der verschiedende Uni-Passau Emails enthällt. Schreiben Sie Code, der alle gegebenen Emails zu extrahieren schafft.
 
-Sie erhalten einen Vektor `x`, der verschiedende Emails enthällt. Schreiben Sie Code, der alle gegebenen Emails zu extrahieren schafft.
+```r
+emails = c("daria.kravets@uni-passau.de",
+      "kravet01@ads.uni-passau.de",
+      "florian.toepfl@uni-passau.de", 
+      "toepf2@ads.uni-passau.de"
+      )
+```
 
+## Aufgabe 4: Regex (30 Pkt)
+
+Aus folgendem Vektor `adressen` extrahieren Sie folgende Adressbestandteile in einzelne Spalten in eine Tibble-Dataframe `adressen_tibble`:
+
+* Straßenname
+* Hausnummer
+* Postleitzahl
+* Stadt
+* Land
+
+```r
+adressen = c(
+    "Platz der Republik 1, D-11011 Berlin",
+    "Dr.-Hans-Kapfinger-Str 14c, D-94032 Passau",
+    "Bundesplatz 3, CH-3005 Bern"
+  )
+```
+
+## Aufgabe 5: 
