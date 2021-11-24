@@ -63,12 +63,13 @@ Aus folgendem Vektor `adressen` extrahieren Sie folgende Adressbestandteile in e
 * Hausnummer
 * Postleitzahl
 * Stadt
-* Land
+* Land (ausgeschrieben)
 
 ```r
 adressen = c(
     "Platz der Republik 1, D-11011 Berlin",
     "Dr.-Hans-Kapfinger-Str 14c, D-94032 Passau",
+    "Opernring 2, A-1010 Wien",
     "Bundesplatz 3, CH-3005 Bern"
   )
 ```
