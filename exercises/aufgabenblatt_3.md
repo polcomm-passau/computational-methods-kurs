@@ -18,7 +18,7 @@ sentences = c("Climate change is a crisis all across the world - but how come we
 * Bitte ersetzen Sie alle Leerzeichen im Text durch das Wort "Leerzeichen" und speichern die manipulierten Sätze im Vektor `sentences_new` ab.
 * Wie oft kommen die Wörter "climate change" (klein- und großgeschrieben) in dem Vektor `sentences` vor? 
 * Ersetzen Sie die umgangssprachige Englische Schreibweise "we've" mit "we have"
-* Welcher Regulärer Ausdruck wird die ganzen Sätze (d.h. im Fall des ersten Satzen "Climate change is a crisis all across the world - but how come we've not taken it serious?") erkennen? (benutzen Sie `str_view()`)
+* Welcher Regulärer Ausdruck wird die ganzen Sätze erkennen? D.h. im Fall des ersten Satzes soll der ganze Satz "Climate change is a crisis all across the world - but how come we've not taken it serious?" erkannt werden)(benutzen Sie `str_view()`).
 
 
 ## Aufgabe 2: Regex (10 Pkt)
@@ -36,7 +36,7 @@ imdb_urls = c(
 
 ## Aufgabe 3: Datensätze mit Regex verändern (30 Pkt)
 
-Laden Sie die Datei `RT_D_Small.xlsx` von Stud.IP in Ihr Projektverzeichnis herunter und lesen Sie den Datensatz in R ein. Bei dieser Datei handelt es sich um Posts von der Facebook-Seite RT Deutsch (diese Datei sollte Ihnen schon aus dem letzten Arbeitsblatt bekannt sein). Bitte benutzen Sie die Funktionen aus dem *tidyverse*-Package, um die Dateien einzulesen.   
+Laden Sie die Excel-Datei `RT_D_Small.xlsx` von Stud.IP in Ihr Projektverzeichnis herunter und lesen Sie den Datensatz in R ein. Bei dieser Datei handelt es sich um Posts von der Facebook-Seite RT Deutsch (diese Datei sollte Ihnen schon aus dem letzten Arbeitsblatt bekannt sein). Bitte benutzen Sie eine Funktion aus dem *tidyverse*-Package, um die Datei einzulesen.   
 
 * Erstellen Sie eine neue Spalte `links_from_text`, die alle Links aus der Spalte `text` enthällt 
 * Aus der Spalte `fulltext`, löschen Sie den wiederholenden Satz "AddThis Sharing Buttons"
