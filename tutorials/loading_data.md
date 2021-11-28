@@ -1,9 +1,11 @@
 # Daten in R laden und speichern
 
-* CSV-Dateien
+* [CSV-Dateien](#CSV-Dateien:-`readr`)
 * Excel-Dateien
 * SPSS-Dateien
 * Dateien aus dem Internet
+* [Pfad zu Dateien richtig angeben](#Pfad-zu-Dateien-richtig-angeben)
+
 
 
 ## CSV-Dateien: `readr`
