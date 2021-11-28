@@ -89,7 +89,7 @@ getwd() # Aktuelles Arbeitsverzeichnis prüfen
 Falls der Datensatz sich in dem aktuellen Arbeitsverzeichnis (Ordner) befindet, kann lediglich der Name der Datei angegeben werden. 
 
 ```r
-read_csv("Studenten_Datensatz.csv")
+read_csv("Studenten_Datensatz.csv") # Beispiel Datensazt "Studenten_Datensatz.csv"
 ```
 
 Falls die Datei sich aber nicht in dem aktuellen Arbeitsverzeichnis befindet, muss der genaue Pfad zu der Datei angegeben werden (entweder absolut oder relativ): 
