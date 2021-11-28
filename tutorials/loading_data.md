@@ -68,3 +68,57 @@ read_excel("file.xls")
 library(haven)
 ```
 
+## Pfad zu Dateien richtig angeben
+
+Beim Einlesen von Dateien benötigt R genaue Angaben, wo oder in welchem Ordner es nach der Datei suchen soll. Jede Datei auf dem Computer liegt an einem Ort in der Ordner-Baum-Struktur, identifiziert über den sogenannten *Pfad*.
+ 
+```r
+pfad  = "Der/Pfad/zu/meiner/Datei"
+```
+
+Von Ordner zu Ordner springen geht mit `/` bei Windows und `\` bei Mac OS und Linux. 
+
+```r
+getwd() # Aktuelles Arbeitsverzeichnis prüfen
+
+#Auf meinem Computer wäre die Ausgabe: 
+
+#"C:/Users/kravet01/Documents/Teaching/Programmieren für KoWi/Teachning_R_WS21"
+```
+
+Falls der Datensatz sich in dem aktuellen Arbeitsverzeichnis (Ordner) befindet, kann lediglich der Name der Datei angegeben werden. 
+
+```r
+read_csv("Studenten_Datensatz.csv")
+```
+
+Falls die Datei sich aber nicht in dem aktuellen Arbeitsverzeichnis befindet, muss der genaue Pfad zu der Datei angegeben werden (entweder absolut oder relativ): 
+
+* *Absoluter* Pfad fängt auf dem Hauptlaufwerk an (üblicherweise, Laufwerk C://)
+* Bei *Relativer* Pfad nimmt R das aktuelle Arbeitsverzeichnis
+und geht von dort aus weiter
+    - Falls Sie mit Projekten arbeiten, fängt R immer in dem Root-Projektordner zu suchen. 
+
+```r
+# Absoluter Pfard Windows: 
+
+read_csv("C:/Users/kravet01/Documents/Teaching/Programmieren für KoWi/datasets/Studenten_Datensatz.csv")
+
+# Mac OS und Linux:
+
+#read_csv("C:\Users\kravet01\Documents\Teaching\Programmieren für KoWi\datasets\Studenten_Datensatz.csv")
+```
+```r
+# Relativer Pfad aus dem Projekt:
+
+read_csv("woche 4/Studenten_Datensatz.csv")
+```
+
+*Tipp:* Man kann den Pfad zu jeder Datei sich auch ganz einfach anzeigen lassen. 
+
+
+Man kann das Arbeitsverzeichnis auch manuell ohne Verwendung von Projekten setzten: 
+
+```r
+setwd("Der/Pfad/zu/dem/gewünschten/Arbeitsverzeichnis")
+```
