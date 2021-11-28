@@ -397,3 +397,39 @@ str_subset(words, "ing$|ise$")
 #Extra: End with ed, but not with eed.
 str_subset(words, "[^e]ed$")
 ```
+## Übungsaufgabe IV
+
+```r
+# Neue Lösung: 
+
+str_subset(words, "^\\w{3}$")
+
+# Alle Schreibweisen von Spiderman aus dem Vektor zu extrahieren:
+
+spiderman = c("Spiderman", "Spider man", "Spider-man")
+
+str_extract(spiderman, "Spider[- ]?man")
+
+numbers = c(
+  "(0176) 576 6418",
+  "(0151)281-0208",
+  "Zuhause: 0176-707-5568",
+  "01795052205",
+  "Ich habe kein Handy"
+)
+
+str_extract(numbers, "\\(?0[\\d]{3}[- )]*([0-9]{3})[- .]?([0-9]{4})")
+```
+
+## Übungsaufgabe V
+
+```r
+# Wie oft kommt das Wort "Bier" for?
+str_count(zungenbrecher, "Bier")
+
+#Zählen Sie nur das Wort "Bier" und nicht das Wort "Bierbrauer"
+str_count(zungenbrecher, "Bier\\b")
+
+#Wörter mit "brau", aber nicht "braun"
+str_extract_all(zungenbrecher, "(\\w)*brau[^n]")
+```
