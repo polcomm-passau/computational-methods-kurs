@@ -72,12 +72,13 @@ str_replace_all(text, " ", "_") # Ersetzt alle Übereinstimmungen in einem Strin
 ![regex_small](https://user-images.githubusercontent.com/17723168/143787216-01a2ef4c-328d-4eed-87ee-19eb6aad5371.jpg)
 
 
-*Regex* ist eine sehr effiziente Methode um mit Textdaten zu arbeiten und Daten zu extrahieren, bereinigen und filtern. Ihr werdet es lieben! (und gleichzeitig hassen)
+*Regex* ist eine sehr effiziente Methode um mit Textdaten zu arbeiten und Daten zu extrahieren, bereinigen und filtern. Ihr werdet es lieben! (und gleichzeitig hassen)  
 
-
+  
 > *Some people, when confronted with a problem, think "I know, I’ll use regular expressions." Now they have two problems* (Jamie Zawinski)
 
-Mit Hilfe von `stringr` und *Regex* kann man **detect**, **subset**, **locate**, **extract**, **match**, **replace** und **split** Textdaten nach bestimmten Patterns. 
+  
+Mit Hilfe von `stringr` und *Regex* kann man **detect**, **subset**, **locate**, **extract**, **match**, **replace** und **split** Textdaten nach bestimmten Patterns (Mustern). 
 
 
 Im einfachsten Fall suchen wir nach einer exakten Zeichenkette – etwa um festzustellen, ob der Name `Trump` in aktuellen Schlagzeilen zur USA auftaucht:
