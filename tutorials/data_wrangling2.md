@@ -1,4 +1,11 @@
+* [`stringr`](#stringr)
+* [Regex](#Regex)
+* [Übungsaufgaben](#)
+
+
 ## `stringr`
+
+![stringr](https://user-images.githubusercontent.com/17723168/143787208-423a9b58-e5d8-4748-9e56-1df4720f8dd9.png)
 
 `stringr` ist ein wichtiger Package aus dem *tidyverse*-Universum für die Arbeit mit Textdaten.  
   
@@ -51,34 +58,17 @@ str_replace(text, " ", "_") # Ersetzt nur die erste Übereinstimmung in einem St
 #		[3] "Aber_ich diene als Beispiel"
 ```
 
-c
+```r
 str_replace_all(text, " ", "_") # Ersetzt alle Übereinstimmungen in einem String
 #Ausgabe:
 		[1] "Ich_bin_ein_Vektor_mit_viel_Text" "Ich_bin_ziemlich_nutzlos"        
 		[3] "Aber_ich_diene_als_Beispiel"
 ```
 
-## Übungsaufgabe II
-
-Wir benutzen den Datensatz aus der Datei `dirty_schlagzeilen.csv`. Wie Sie sehen ist der Datensatz *tidy* (jede Variable hat eine eigene Spalte, jede Beobachtung hat eine eigene Zeile). ABER die Spalte `schlagzeilen` braucht Bereinigung. 
-
-In der Spalte `schlagzeilen`:
-
-
-*   Löschen Sie alle überflüssigen Leerzeichen
-*   Löschen Sie alle HTML-Tags 
-*   Extrahieren Sie die Autoren der Publikation in eine eigene Spalte `Author`
-* Löschen Sie danach die Autoren aus den Schlagzeilen
-
-```r
-# Löschen Sie alle überflüssigen Leerzeilen
-
-# Löschen Sie alle HTML-Tags (<b> und </b>)
-
-# Extrahieren Sie die Autoren der Publikation in eine eigene Spalte author (Tipp: separate() oder komplizierter - str_split_fixed() )
-```
-
 ## Regex
+
+![regex_small](https://user-images.githubusercontent.com/17723168/143787216-01a2ef4c-328d-4eed-87ee-19eb6aad5371.jpg)
+
 
 *Regex* ist eine sehr effiziente Methode um mit Textdaten zu arbeiten und Daten zu extrahieren, bereinigen und filtern. Ihr werdet es lieben! (und gleichzeitig hassen)
 
@@ -189,6 +179,9 @@ str_extract_all(schlagzeilen, "(Trump|USA|Vereinige Staaten)")
 
 ## Kompliziertere Muster suchen und extrahieren
 
+![regex_meme](https://user-images.githubusercontent.com/17723168/143787221-1d9dad48-4dd9-4296-b222-4a8096046c5d.jpg)
+
+
 * `.` : Alle Zeichen (*Wildcard*) 
 * `\\d` : Alle Ziffern (und `\D` das Gegenteil, also alles außer Ziffern)
 * `\\w` : Alle alphanumerischen Zeichen (Klein- und Großbuchstaben, Ziffern, Unterstrich; `\W` das Gegenteil)
@@ -223,33 +216,7 @@ Um Zeichen mit Sonderbedeutungen darzustellen müssen diese mit doppeltem Backsl
 + `\\\\` : `\`
 
 
-Auf dieser Webseite können Sie Regex prüfen: https://regexr.com/
-
-
-## Übungsaufgabe III
-
-Wir arbeiten mit dem eingebauten Datensatz `words`:
-```r
-length(words)
-words[1:20]
-
-#Ausgabe:
-		[1] 980
-		[1] "a"         "able"      "about"     "absolute"  "accept"    "account"  
-		 [7] "achieve"   "across"    "act"       "active"    "actual"    "add"      
-		[13] "address"   "admit"     "advertise" "affect"    "afford"    "after"    
-		[19] "afternoon" "again"
-```
-
-Extrahieren Sie Wörter (benutzen Sie `str_subset()`), die: 
-
-* Die Buchstabenkette (`ana`) enthalten 
-*   Beginnen mit `y`
-*   Enden mit `x`
-* Sind genau drei Buchstaben lang (nicht `str_length()` benutzen!)
-* Beginnen nicht mit einem Vokal (*Tipp:* Vokale im Englischen sind a, e, i, o, u).
-* Enden mit `ing` oder `ise`.
-* Extra: Enden mit `ed`, aber nicht mit `eed`.
+Auf dieser Webseite können Sie Regex-Abfragen prüfen: https://regexr.com/
 
 
 ## Quantoren
@@ -286,7 +253,51 @@ Quantoren müssen nicht nur auf einen Element (z.B. Buchstabe) angewendet werden
 str_extract_all(aufrufe, "(ah)+")
 ```
 
-## Übungsaufgabe IV
+## Übungsaufgabe I
+
+Wir benutzen den Datensatz aus der Datei `dirty_schlagzeilen.csv`. Wie Sie sehen ist der Datensatz *tidy* (jede Variable hat eine eigene Spalte, jede Beobachtung hat eine eigene Zeile). ABER die Spalte `schlagzeilen` braucht Bereinigung. 
+
+In der Spalte `schlagzeilen`:
+
+
+*   Löschen Sie alle überflüssigen Leerzeichen
+*   Löschen Sie alle HTML-Tags 
+*   Extrahieren Sie die Autoren der Publikation in eine eigene Spalte `Author`
+* Löschen Sie danach die Autoren aus den Schlagzeilen
+
+```r
+# Löschen Sie alle überflüssigen Leerzeilen
+
+# Löschen Sie alle HTML-Tags (<b> und </b>)
+
+# Extrahieren Sie die Autoren der Publikation in eine eigene Spalte author (Tipp: separate() oder komplizierter - str_split_fixed() )
+```
+## Übungsaufgabe II
+
+Wir arbeiten mit dem eingebauten Datensatz `words`:
+```r
+length(words)
+words[1:20]
+
+#Ausgabe:
+		[1] 980
+		[1] "a"         "able"      "about"     "absolute"  "accept"    "account"  
+		 [7] "achieve"   "across"    "act"       "active"    "actual"    "add"      
+		[13] "address"   "admit"     "advertise" "affect"    "afford"    "after"    
+		[19] "afternoon" "again"
+```
+
+Extrahieren Sie Wörter (benutzen Sie `str_subset()`), die: 
+
+* Die Buchstabenkette (`ana`) enthalten 
+*   Beginnen mit `y`
+*   Enden mit `x`
+* Sind genau drei Buchstaben lang (nicht `str_length()` benutzen!)
+* Beginnen nicht mit einem Vokal (*Tipp:* Vokale im Englischen sind a, e, i, o, u).
+* Enden mit `ing` oder `ise`.
+* Extra: Enden mit `ed`, aber nicht mit `eed`.
+
+## Übungsaufgabe III
 
 1. Lösen Sie die Aufgabe erneut, aber diesmal mit Verwendung von Quantoren:
 
@@ -320,7 +331,7 @@ numbers = c(
 
 Schreiben Sie eine Regex-Abfrage, die alle Telefonnummern erkennt und extrahiert.
 
-## Übungsaufgabe V (Extra)
+## Übungsaufgabe IV (Extra)
 
 Sie erhalten einen Zungenbrecher: 
 
@@ -336,13 +347,8 @@ zungenbrecher = "Bierbrauer Bauer braut braunes Bier, braunes Bier braut Bierbra
 
 # Lösungen
 
+
 ## Übungsaufgabe I
-
-```r
-d = read_csv("dirty_schlagzeilen.csv")
-```
-
-## Übungsaufgabe II
 
 ```r
 d %>%
@@ -372,7 +378,7 @@ d %>%
     )
 ```
 
-## Übungsaufgabe III
+## Übungsaufgabe II
 
 ```r
 #Die Buchstabenkette (ana) enthalten:
@@ -397,7 +403,7 @@ str_subset(words, "ing$|ise$")
 #Extra: End with ed, but not with eed.
 str_subset(words, "[^e]ed$")
 ```
-## Übungsaufgabe IV
+## Übungsaufgabe III
 
 ```r
 # Neue Lösung: 
@@ -421,7 +427,7 @@ numbers = c(
 str_extract(numbers, "\\(?0[\\d]{3}[- )]*([0-9]{3})[- .]?([0-9]{4})")
 ```
 
-## Übungsaufgabe V
+## Übungsaufgabe IV
 
 ```r
 # Wie oft kommt das Wort "Bier" for?
