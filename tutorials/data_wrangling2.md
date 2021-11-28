@@ -1,5 +1,7 @@
 * [`stringr`](#stringr)
 * [Regex](#Regex)
+* 	- [Kompliziertere Muster suchen](#Kompliziertere-Muster-suchen-und-extrahieren)
+	- [Quantoren](#Quantoren)
 * [Übungen](#Übungen)
 
 
@@ -149,6 +151,8 @@ schlagzeilen[str_detect(schlagzeilen, "\\d")]
 		[2] "USA verbieten Einreisen aus Brasilien ab 20. Januar"
 
 ```
+
+Weitere Möglichkeiten zum Arbeiten mit Texten mit Regex: 
 
 ```r
 # Nach Zeilen in einem Tibble filtern 
