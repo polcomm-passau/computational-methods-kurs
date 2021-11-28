@@ -1,6 +1,6 @@
 * [`stringr`](#stringr)
 * [Regex](#Regex)
-* [Übungsaufgaben](#)
+* [Übungen](#Übungen)
 
 
 ## `stringr`
@@ -253,6 +253,7 @@ Quantoren müssen nicht nur auf einen Element (z.B. Buchstabe) angewendet werden
 str_extract_all(aufrufe, "(ah)+")
 ```
 
+# Übungen
 ## Übungsaufgabe I
 
 Wir benutzen den Datensatz aus der Datei `dirty_schlagzeilen.csv`. Wie Sie sehen ist der Datensatz *tidy* (jede Variable hat eine eigene Spalte, jede Beobachtung hat eine eigene Zeile). ABER die Spalte `schlagzeilen` braucht Bereinigung. 
