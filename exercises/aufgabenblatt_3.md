@@ -20,6 +20,7 @@ sentences = c("Climate change is a crisis all across the world - but how come we
 * Ersetzen Sie die umgangssprachige Englische Schreibweise "we've" mit "we have"
 * Welcher Regulärer Ausdruck wird die ganzen Sätze erkennen? D.h. im Fall des ersten Satzes soll der ganze Satz "Climate change is a crisis all across the world - but how come we've not taken it serious?" erkannt werden)(benutzen Sie `str_view()`).
 
+<!-- Noch eine Übung:  Extrahieren Sie alle Wörter, die entweder dem Wort "climate" oder "global" folgen. Am Ende, sollten Sie Wörterpaare wie "climate change", "climate scepticism" haben. -->
 
 ## Aufgabe 2: Regex (10 Pkt)
 
