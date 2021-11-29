@@ -41,7 +41,7 @@ Laden Sie die Excel-Datei `RT_D_Small.xlsx` von Stud.IP in Ihr Projektverzeichni
 * Erstellen Sie eine neue Spalte `links_from_text`, die alle Links aus der Spalte `text` enthällt 
 * Aus der Spalte `fulltext`, löschen Sie den wiederholenden Satz "AddThis Sharing Buttons"
 * Fast jeder Post in der Spalte `fulltext` enthällt eine Quelle ("Quelle: [...]"). Erstellen Sie eine neue Spalte, die die Quellen enthällt.
-* Extrahieren Sie alle Hashtags (#) und alle Mentions (@) in jeweilige neue Spalten. 
+* Extrahieren Sie alle Hashtags (#) und alle Mentions (@) aus der Spalte `fulltext` in jeweilige neue Spalten. 
 * In allen Texten in der Spalte `fulltext` löschen Sie den gesamten Text nach dem Wort "Tags: " 
 * Wählen Sie alle Zeilen, die in der Spalte `text` ein Plus-Zeichen (`+`) enthalten. 
 
@@ -66,7 +66,7 @@ Aus folgendem Vektor `adressen` extrahieren Sie folgende Adressbestandteile in e
 * Hausnummer
 * Postleitzahl
 * Stadt
-* Land (ausgeschrieben)
+* Land (ausgeschrieben, d.h. Deutschland für D, Österreich für A, usw.)
 
 ```r
 adressen = c(
