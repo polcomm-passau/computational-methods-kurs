@@ -27,6 +27,20 @@ Außerdem können so alle Packages aktualisiert werden (![Update](https://user-i
 ![load-tidyverse](https://user-images.githubusercontent.com/17723168/141772040-7c23daf1-2b06-48a0-9e9e-f20b6590db46.png)
 
 
+### Packages von GitHub installieren
+
+Dafür müssen Sie zuerst einmal `devtools` installieren (Windows-Nutzen müssen zudem [RTools](https://cran.r-project.org/bin/windows/Rtools/) auf Ihrem Rechner installieren: 
+
+```r
+install.packages("devtools")
+```
+
+Danach kann man Packages direkt von GitHub installieren, man muss nur den korrekten Pfad eingeben: 
+
+```r
+devtools::install_github("hadley/dplyr") # Hier installieren wir das Package "dplyr", der von Hadley Wickham auf GitHub entwickelt wird. 
+```
+
 ## Nutzen
 
 Hingegen um ein Package in einem Skript zu nutzen, muss es immer wieder neu aktiviert werden. 
