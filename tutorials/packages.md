@@ -29,7 +29,7 @@ Außerdem können so alle Packages aktualisiert werden (![Update](https://user-i
 
 ### Packages von GitHub installieren
 
-Dafür müssen Sie zuerst einmal `devtools` installieren (Windows-Nutzen müssen zudem [RTools](https://cran.r-project.org/bin/windows/Rtools/) auf Ihrem Rechner installieren: 
+Dafür müssen Sie zuerst einmal `devtools` installieren (Windows-Nutzen müssen zudem [RTools](https://cran.r-project.org/bin/windows/Rtools/) auf Ihrem Rechner installiert haben): 
 
 ```r
 install.packages("devtools")
