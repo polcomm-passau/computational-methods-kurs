@@ -14,7 +14,7 @@ Packages sind das Herzstück von R:
 
 ## Installieren
 
-Packages müssen nur einmal installiert werden. Am einfachsten und häufigsten wird eine Installation von CRAN verwendet:   
+Packages müssen nur einmal installiert werden. Am einfachsten ist und wird am häufigsten verwendet eine Installation von CRAN:   
 
 ```r
 install.packages("package_name") #von CRAN
