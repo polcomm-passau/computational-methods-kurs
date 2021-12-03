@@ -40,7 +40,7 @@ Hier finden Sie diverse Kursmaterialien für die Lehre von Automatisieren Datens
 
 | Nr.  | Thema       | Folien | 
 | -----|:------------| :------|
-| 1    | [APIs](./polcomm-passau/computational-methods-kurs/blob/main/tutorials/api.md)   | [Folien 1](https://colab.research.google.com/drive/1bxOfODWV5d5oiV6Y5KKTFpiI5gJ3qbUG?usp=sharing)|      
+| 1    | [APIs](https://github.com/polcomm-passau/computational-methods-kurs/blob/main/tutorials/api.md)  | [Folien 1](https://colab.research.google.com/drive/1bxOfODWV5d5oiV6Y5KKTFpiI5gJ3qbUG?usp=sharing)|      
 
 ## Übungen 
 
