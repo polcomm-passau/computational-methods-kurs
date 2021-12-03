@@ -1,6 +1,8 @@
 # Packages 
 
 * [Installieren](#Installieren)
+    - [von CRAN](#Installieren)
+    - [von GitHub](#Packages-von-GitHub-installieren)  
 * [Nutzen](#Nutzen)
 * [Deinstalieren](#Deinstalieren)
 
@@ -12,10 +14,10 @@ Packages sind das Herzstück von R:
 
 ## Installieren
 
-Packages müssen nur einmal installiert werden. 
+Packages müssen nur einmal installiert werden. Am einfachsten und häufigsten wird eine Installation von CRAN verwendet:   
 
 ```r
-install.packages("package_name")
+install.packages("package_name") #von CRAN
 ```
 
 Als Alternative dazu können Packages über die Benutzeroberfläche von RStudio installiert werden: Dafür gehen Sie auf das *Packages*-Pane in der rechten Ecke von RStudio ->![install_button](https://user-images.githubusercontent.com/17723168/141771117-9a9846af-693f-4be4-8545-cd15eb08e904.png) -> und das richtige Package suchen.   
