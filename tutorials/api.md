@@ -42,7 +42,7 @@ Einen umfassenden Überblick über alle verfügbaren APIs finden Sie auf [Progra
 
 JSON (**J**ava **S**cript **O**bject **N**otation) ist ein gängiges Format fürs Datenaustausch zwischen Anwendungen. Es hat sich als universales, leichtgewichtiges (benötigt wenig Speicherplatz), menschen- und maschinenlesbares Datenformat etabliert.
 
-Ein JSON Dokument beginnt und endet immer mit `{` und `}`. Innerhalb den geschweiften Klammen werden Inhalte (Objekte) plaziert. Jedes Objekt wird mit einem Namen definiert gefolgt von einem Doppelpunkt und den Wert (z.B. Objekt *Vorname* hat den Wert *Reagan*). Ein Objekt kann dann wieder ein Objekt sein. 
+Ein JSON Dokument beginnt und endet immer mit `{` und `}`. Innerhalb den geschweiften Klammen werden Inhalte (Objekte) plaziert. Jedes Objekt wird mit einem Namen definiert gefolgt von einem Doppelpunkt und den Wert (z.B. Objekt *Vorname* hat den Wert *Ronald*). Ein Objekt kann dann wieder ein Objekt sein. 
 
 ```r
 #JSON-Format
