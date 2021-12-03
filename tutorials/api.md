@@ -163,7 +163,7 @@ access_token_secret = "xxxxxxx"
   
 ## authenticate via web browser
 token <- create_token(
-  app = "rt_testing_api", # Name von der Twitter App
+  app = "xxxxxxxx", # Name von der Twitter App (ersetze durch eigenen Namen)
   consumer_key = api_key,
   consumer_secret = api_secret_key,
   access_token = access_token,
