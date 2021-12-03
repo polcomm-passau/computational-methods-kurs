@@ -1,5 +1,5 @@
 # Automatisierte Datensammlung und Analyse mit R
-
+<meta name="google-site-verification" content="I3aLKbPR1DNZ_f9F_hQLKFyfAtpeDWprs9AMmCn6OVI" />
 *Lehrstuhl für Politische Kommunikation, Universität Passau* 
 
 Dozenten: Prof. Florian Töpfl (<florian.toepfl@uni-passau.de>), Daria Kravets (<daria.kravets@uni-passau.de>)
