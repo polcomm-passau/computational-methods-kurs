@@ -1,3 +1,4 @@
+{% seo %} 
 # Automatisierte Datensammlung und Analyse mit R
 
 *Lehrstuhl für Politische Kommunikation, Universität Passau* 
