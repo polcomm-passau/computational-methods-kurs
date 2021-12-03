@@ -38,9 +38,11 @@ Hier finden Sie diverse Kursmaterialien für die Lehre von Automatisieren Datens
 
 ## Datensammlung
 
-| Nr.  | Thema       | Folien | 
-| -----|:------------| :------|
-| 1    | [APIs](https://github.com/polcomm-passau/computational-methods-kurs/blob/main/tutorials/api.md)  | [Folien 1](https://colab.research.google.com/drive/1bxOfODWV5d5oiV6Y5KKTFpiI5gJ3qbUG?usp=sharing)|      
+| Nr.  | Thema       | Folien | Beispiel |
+| -----|:------------| :------|:----------|
+| 1    | [APIs](https://github.com/polcomm-passau/computational-methods-kurs/blob/main/tutorials/api.md)  | [Folien 1](https://colab.research.google.com/drive/1bxOfODWV5d5oiV6Y5KKTFpiI5gJ3qbUG?usp=sharing)| Twitter API |
+| 2    | Youtube API    |        | Youtube API  |
+
 
 ## Übungen 
 
