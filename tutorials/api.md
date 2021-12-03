@@ -216,7 +216,7 @@ Man kann auch die gewünschte **Sprache** von Tweets bestimmen und **Retweets** 
 d = search_tweets("impfung", lang = "de", include_rts = FALSE)
 ```
          
-Man könnte auch die Rate Limits mit `retryonratelimit = TRUE` automatisch überschreiten: 
+Man könnte auch die **Rate Limits** mit `retryonratelimit = TRUE` automatisch überschreiten: 
 
 ```r
 d = search_tweets("impfung", n = 50000, retryonratelimit = TRUE) # würde ~42 Minuten dauern 
