@@ -186,16 +186,16 @@ get_token()
 ### `search_tweets()` :
 
 
-Wahrscheinlich die meistbenutze Funktion - nach Tweets mit bestimmten Stichwörtern (z.B. Hashtags) suchen:   
+Wahrscheinlich die meistbenutze Funktion von `rtweet` ist nach Tweets mit bestimmten Stichwörtern (z.B. Hashtags) zu suchen:   
 
 ```r
-## search for a keyword
+## suche nach einem keyword
 d = search_tweets(q = "impfung")
-## search for a hashtag
+## suche nach einem hashtag
 d = search_tweets(q = "#impfung")
-## search for a phrase
+## suche nach einer phrase
 d = search_tweets(q = "impfpflicht protesten")
-## search for multiple keywords
+## suche nach mehreren keywords (können im Text an unterschiedlichen Stellen stehen)
 d = search_tweets(q = "impfung AND afd")
 ```
          
@@ -224,10 +224,10 @@ d = search_tweets("impfung", n = 50000, retryonratelimit = TRUE) # würde ~42 Mi
          
 Weitere nutzvolle Query-Parameter (werden zur `q`-Parameter eingefügt):
 
-* Exclude retweets via "-filter:retweets"
-* Exclude quotes via "-filter:quote"
-* Exclude replies via "-filter:replies"
-* Filter (return only) verified via "filter:verified"
+* Retweets ausschließen via "-filter:retweets"
+* Quotes ausschließen via "-filter:quote"
+* Replies ausschließen via "-filter:replies"
+* Nur verifizierte Nutzer ausgeben via "filter:verified"
 * Exclude verified via "-filter:verified"
 * Get everything (firehose for free) via "-filter:verified OR filter:verified"
 * Filter (return only) tweets with links to news articles via "filter:news"
