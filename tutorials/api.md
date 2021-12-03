@@ -271,7 +271,7 @@ scholz_followers = get_followers("OlafScholz", n = 5)
 scholz_friends = get_friends("OlafScholz", n = 5) # Following 
 ```
   
-## `get_favorites()` : 
+### `get_favorites()` : 
 
 Entdecken was Nutzer liken (max 3.000): 
 
@@ -279,7 +279,7 @@ Entdecken was Nutzer liken (max 3.000):
 get_favorites("OlafScholz", n = 100) # Die letzten 100 Tweets die Olaf Scholz geliked hat
 ```
 
-## `get_trends()` :
+### `get_trends()` :
 
 Entdecken was derzeit auf einem Ort/in einem Land *trending* ist:
 
