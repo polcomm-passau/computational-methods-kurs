@@ -155,7 +155,7 @@ Wenn das immer noch nicht klappt, lesen Sie die Fehlermeldung aufmerksam. Sagt s
 Oder falls Sie doch mit Authentifizierung arbeiten möchten, würde das so gehen: 
   
 ```r
-api_key = "xxxxxxx" #Ersetzen durch eigene  
+api_key = "xxxxxxx" #Ersetzen durch eigenes Key, dass Sie von Twitter bekommen haben  
 api_secret_key = "xxxxxxx"
 access_token = "xxxxxxx"
 access_token_secret = "xxxxxxx"
