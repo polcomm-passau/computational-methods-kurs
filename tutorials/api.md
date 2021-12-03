@@ -140,8 +140,19 @@ install.packages("rtweet")
 ```r
 library(rtweet) # Aktivieren
 ```
+  
+Um `rtweet` zu nutzen benötigen wir nur einen Twitter-Account (für eine einfache Anwendung keinen Developer Account) und müssen bei der ersten Verwendung einmalig eine Twitter-App authorisieren (hierzu öffnet sich automatisch ein Pop-Up-Fenster). 
 
-Falls Sie doch mit Authentifizierung arbeiten möchten, würde das so gehen: 
+**Tipp:** Falls kein Pop-Up-Fenster sich öffnet, versuchen Sie `httpuv` zu installieren: 
+
+```r
+install.packages("httpuv")
+```
+
+Wenn das immer noch nicht klappt, lesen Sie die Fehlermeldung aufmerksam. Sagt sie, dass Sie was ausführen müssen? (Oft blockiert Firewall Pop-Up Fenster) -> Dann führen Sie es in R aus.   
+
+
+Oder falls Sie doch mit Authentifizierung arbeiten möchten, würde das so gehen: 
   
 ```r
 api_key = "xxxxxxx" #Ersetzen durch eigene  
@@ -159,14 +170,6 @@ token <- create_token(
   access_secret = access_token_secret)
 
 get_token()
-```
-  
-Um `rtweet` zu nutzen benötigen wir nur einen Twitter-Account (für eine einfache Anwendung keinen Developer Account) und müssen bei der ersten Verwendung einmalig eine Twitter-App authorisieren (hierzu öffnet sich automatisch ein Pop-Up-Fenster). 
-
-**Tipp:** Falls kein Pop-Up-Fenster sich öffnet, versuchen Sie `httpuv` zu installieren: 
-
-```r
-install.packages("httpuv")
 ```
 
 Was kann man mit `rtweet` machen? 
