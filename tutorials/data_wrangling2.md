@@ -210,7 +210,7 @@ Alternative Schreibweise:
 * `[:graph:]` : letters, numbers, and punctuation.
 
 
-Um Zeichen mit Sonderbedeutungen darzustellen müssen diese mit doppeltem Backslash *escaped* werden:
+Um **Zeichen** mit Sonderbedeutungen darzustellen müssen diese mit doppeltem Backslash *escaped* werden:
 
 + `\\.` : `.`
 + `\\+` : `+`
@@ -256,6 +256,21 @@ Quantoren müssen nicht nur auf einen Element (z.B. Buchstabe) angewendet werden
 
 ```r
 str_extract_all(aufrufe, "(ah)+")
+```
+## Look Arounds
+
+* `(?=)` : gefolgt von
+* `(?!)` : nicht gefolgt von
+* `(?<=)` : davor
+* `(?<!)` : nicht davor
+
+Zum Beispiel: 
+
+```r
+a(?=b) # a gefolgt von b
+a(?!b) # a nicht gefolgt von b
+(?<=b)a # a mit b vorne
+(?<!b)a # a nicht mit b vorne
 ```
 
 # Übungen
