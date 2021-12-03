@@ -123,19 +123,6 @@ glimpse(d)
   
 Erneut gilt: jede *API* ist anders aufgebaut und erfordert daher spezifische Einarbeitung. Die Grundschritte sind aber immer nahezugleich: Dokumentation lesen -> Anfrage mit `httr` stellen -> dann schrittweise vorarbeiten, bis die gewünschten Daten vorhanden sind.
 
-## Übungsaufgabe I 
-
-1. Lesen Sie die Anleitung von [Datamuse API](https://www.datamuse.com/api/).
-
-2. Mit Hilfe von Datamuse API finden Sie alle Synonyme zum Wort "old" und speichern sie diese in einem Tibble. 
-
-3. Wie müssen Sie die Parameter anpassen, um maximal 10 Synomyne zu bekommen? 
-
-```r
-# Alle Synonyme zu "old"
-
-# Max 10 Synonyme
-```
 
 
 # Twitter API
@@ -306,43 +293,7 @@ Mehr zur Möglichkeiten von `rtweet`:
 
 vignette("intro", package = "rtweet")
 ```
-  
-## Übungsaufgabe II
-
-Nehmen wir an wir möchten den Twitter-Account von RT (https://twitter.com/RT_com) analysieren. 
-
-1. Extrahieren Sie die letzten 100 Posts (Tweets) von RT. 
-
-  	1.1. Wie lang im Durchschnitt sind RTs Tweets (`display_text_width`)?
-
-  1.2. Welcher Tweet wurde am häufigsten geliked (`favorite_count`) und welcher am häufigsten retweeted (`retweet_count`)?
-
-  1.3. Filtern sie nur Tweets aus, die Hashtags haben. 
-
-```r
-# Extrahieren Sie die letzten 100 Posts (Tweets) von RT.
-
-# Wie lang im Durchschnitt sind RTs Tweets (display_text_width)?
-
-# Welcher Tweet wurde am häufigsten geliked (favorite_count) und welcher am häufigsten retweeted (retweet_count)?
-
-# Filtern sie nur Tweets, die Hashtags haben.
-```
-  
-2. Gucken Sie sich die Followers (n=50) von RT an. 
-
-3. Suchen Sie nach Tweets (n=100) von verifizierten Nutzern, die RT erwähnen (*Tipp:* `search_tweets()`). 
-
-4. Suchen Sie nach Tweets (n=100), die RT erwähnen, aber keine Replies sind. 
-
-```r
-# Gucken Sie sich die Followers (n=50) von RT an.
-
-# Suchen Sie nach Tweets (n=100) von verifizierten Nutzern, die RT erwähnen (Tipp: search_tweets()).
-
-# Suchen Sie nach Tweets (n=100), die RT erwähnen, aber keine Replies sind.
-```
-  
+    
 # Twitter API v2
 
 
@@ -386,6 +337,57 @@ Alternative (schneller, aber schlecterer Zugang):
 > * 1 App environment per Project
 > * No access to standard v1.1, premium v1.1, or enterprise
 
+# Übungen 
+
+## Übungsaufgabe I 
+
+1. Lesen Sie die Anleitung von [Datamuse API](https://www.datamuse.com/api/).
+
+2. Mit Hilfe von Datamuse API finden Sie alle Synonyme zum Wort "old" und speichern sie diese in einem Tibble. 
+
+3. Wie müssen Sie die Parameter anpassen, um maximal 10 Synomyne zu bekommen? 
+
+```r
+# Alle Synonyme zu "old"
+
+# Max 10 Synonyme
+```
+
+## Übungsaufgabe II
+
+Nehmen wir an wir möchten den Twitter-Account von RT (https://twitter.com/RT_com) analysieren. 
+
+1. Extrahieren Sie die letzten 100 Posts (Tweets) von RT. 
+
+  	1.1. Wie lang im Durchschnitt sind RTs Tweets (`display_text_width`)?
+
+  1.2. Welcher Tweet wurde am häufigsten geliked (`favorite_count`) und welcher am häufigsten retweeted (`retweet_count`)?
+
+  1.3. Filtern sie nur Tweets aus, die Hashtags haben. 
+
+```r
+# Extrahieren Sie die letzten 100 Posts (Tweets) von RT.
+
+# Wie lang im Durchschnitt sind RTs Tweets (display_text_width)?
+
+# Welcher Tweet wurde am häufigsten geliked (favorite_count) und welcher am häufigsten retweeted (retweet_count)?
+
+# Filtern sie nur Tweets, die Hashtags haben.
+```
+  
+2. Gucken Sie sich die Followers (n=50) von RT an. 
+
+3. Suchen Sie nach Tweets (n=100) von verifizierten Nutzern, die RT erwähnen (*Tipp:* `search_tweets()`). 
+
+4. Suchen Sie nach Tweets (n=100), die RT erwähnen, aber keine Replies sind. 
+
+```r
+# Gucken Sie sich die Followers (n=50) von RT an.
+
+# Suchen Sie nach Tweets (n=100) von verifizierten Nutzern, die RT erwähnen (Tipp: search_tweets()).
+
+# Suchen Sie nach Tweets (n=100), die RT erwähnen, aber keine Replies sind.
+```
 
 # Lösungen
 
