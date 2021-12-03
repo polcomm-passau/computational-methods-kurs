@@ -172,7 +172,7 @@ token <- create_token(
 get_token()
 ```
 
-Was kann man mit `rtweet` machen? 
+## Was kann man mit `rtweet` machen? 
 
 
 *   `search_tweets()` : Tweets aus der letzten 7 Tagen extrahieren 
