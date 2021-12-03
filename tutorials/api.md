@@ -191,7 +191,7 @@ Wahrscheinlich die meistbenutze Funktion - nach Tweets mit bestimmten Stichwört
 ```r
 ## search for a keyword
 d = search_tweets(q = "impfung")
-## search for a keyword
+## search for a hashtag
 d = search_tweets(q = "#impfung")
 ## search for a phrase
 d = search_tweets(q = "impfpflicht protesten")
