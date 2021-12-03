@@ -141,10 +141,10 @@ install.packages("rtweet")
 library(rtweet) # Aktivieren
 ```
 
-Falls Sie mit Authentifikation arbeiten möchten: 
+Falls Sie doch mit Authentifizierung arbeiten möchten, würde das so gehen: 
   
 ```r
-api_key = "xxxxxxx" #Ersetze durch eigene 
+api_key = "xxxxxxx" #Ersetzen durch eigene  
 api_secret_key = "xxxxxxx"
 access_token = "xxxxxxx"
 access_token_secret = "xxxxxxx"
