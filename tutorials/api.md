@@ -84,12 +84,12 @@ library(httr)
 library(jsonlite) # erleichtert den Umgang mit JSON-Dateien in R
 ```
   
-Wir versuchen eine einfache API-Anfrage an [Datamuse API](https://www.datamuse.com/api/) - eine **Word-Finding** API - zu stellen: 
+Wir versuchen eine einfache API-Anfrage an [Datamuse API](https://www.datamuse.com/api/) - eine einfache **Word-Finding** API - zu stellen: 
 
 Die Dokumentation zur API finden Sie auf deren Webseite. 
 
 ```r
-response = GET("https://api.datamuse.com/words?rel_rhy=funny") # rel_rhy findet Wörter die rhymen 
+response = GET("https://api.datamuse.com/words?rel_rhy=funny") # rel_rhy findet Wörter die rhymen, in dem Fall zu dem Wort "funny" 
 status_code(response)
 ```
 
