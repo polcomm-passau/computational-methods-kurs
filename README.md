@@ -4,8 +4,6 @@
 
 Dozenten: Prof. Florian Töpfl (<florian.toepfl@uni-passau.de>), Daria Kravets (<daria.kravets@uni-passau.de>)
 
-<meta name="google-site-verification" content="I3aLKbPR1DNZ_f9F_hQLKFyfAtpeDWprs9AMmCn6OVI" />
-
 Syllabus für den Kurs im WS21/22 @UniPassau finden sie [hier (Stand 28.11.2021)](https://github.com/polcomm-passau/computational-methods-kurs/files/7614495/2021_11_03_Seminarplan_Datensammlung%2BUebung_neu.pdf).
 
   
