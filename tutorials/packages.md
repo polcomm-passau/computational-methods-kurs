@@ -31,7 +31,7 @@ Außerdem können so alle Packages aktualisiert werden (![Update](https://user-i
 
 ### Packages von GitHub installieren
 
-Manche Packages sind nicht auf CRAN verfügbar oder manchmal möchte man die aktuelleste Version "in-der-Enwicklung" herunterladen. Dafür müssen Sie zuerst einmal `devtools` installieren (Windows-Nutzen müssen zudem [RTools](https://cran.r-project.org/bin/windows/Rtools/) auf Ihrem Rechner installiert haben): 
+Manche Packages sind nicht auf CRAN verfügbar oder manchmal möchte man die aktuelleste Version "in-der-Enwicklung" herunterladen. Dafür müssen Sie zuerst einmal `devtools` installieren (Windows-Nutzer müssen zudem [RTools](https://cran.r-project.org/bin/windows/Rtools/) auf Ihrem Rechner installiert haben vor dem sie `devtools` installieren): 
 
 ```r
 install.packages("devtools")
@@ -41,7 +41,7 @@ Danach kann man Packages direkt von GitHub installieren, man muss nur den korrek
 
 ```r
 # Hier installieren wir das Package "dplyr", der von Hadley Wickham auf GitHub entwickelt wird. 
-devtools::install_github("hadley/dplyr") 
+devtools::install_github("hadley/dplyr") # (user name + repository name)
 ```
 
 ## Nutzen
