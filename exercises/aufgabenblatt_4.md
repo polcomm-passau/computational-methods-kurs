@@ -2,7 +2,7 @@ Bitte lösen Sie dieses Aufgabenblatt 3 in Zweier-Gruppen und laden Sie Ihre Lö
 
 Falls Sie Fragen zu diesem Aufgabenblatt haben, kontaktieren Sie daria.kravets@uni-passau.de.
 
-# Aufgabe I - Guardian API
+# Aufgabe I - Guardian API (100 Pkt)
 
 Machen Sie sich mit der Dokumentation von [Guardian API](https://open-platform.theguardian.com/) vertraut und beantragen Sie einen Zugansschlüssel zu der API.
 
