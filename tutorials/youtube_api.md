@@ -48,7 +48,7 @@ status_code(response)
 
 In dem Beispiel oben gibt die Query-Parameter `maxResults=` an wie viele Ergebnisse wir zurück bekommen möchten; `q=` ist Keyword, und `key=` ist der API Schlüssel. 
 
-Wenn die Daten von der API übermittelt sind, kommt der nächste schwere Schritt - die relevanten Daten in einen *tidy*-Format zu extrahieren.  
+Wenn die Daten von der API übermittelt sind, kommt der nächste schwere Schritt - die relevanten Daten in einen *tidy*-Format zu extrahieren. Dafür zuerst JSON zu einem Dataframe umwandeln:  
 
 ```r
 #JSON to Dataframe: 
@@ -59,6 +59,8 @@ d = response %>%
 
 glimpse(d)
 ```
+
+Das Dataframe ist nested. Das heißt es enthällt verschachtelte Listen als Spalten. Das ist nicht *tidy*. Solche Dataframes müssen bereinigt werden und die relevanten Daten müssen in einzelne Spalten extrahiert werden. Dafür gibt es mehrere Möglichkeiten (s. unten). Aber zuerst, ein praktische Funktion, die bei der Navigation von Nested-Dataframes hilft ist `names()`:  
 
 ```r
 # Hilft bei der Navigation von Nested-Dataframes 
