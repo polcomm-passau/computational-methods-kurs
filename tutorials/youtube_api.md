@@ -5,6 +5,8 @@
 
 # YouTube API v3
 
+![113628-98738-i_rc](https://user-images.githubusercontent.com/17723168/145721894-13dcf0a6-fccd-4609-b81d-7da2dc3e3980.jpg)
+
 Die **YouTube** **Application Programming Interface** (YouTube API) gibt uns Zugriff auf Videos, Kanäle, Playlists, deren Statistiken und Kommentare auf der Video-Sharing Platform YouTube. 
 
 YouTube hat weltweit 2 Milliarden Nutzer und jeden Tag sehen die Nutzer eine Milliarde Stunden Video auf YouTube. Es ist also eine wichtige Datenquelle für sozialwissenschaftliche Forschung. 
@@ -125,9 +127,6 @@ Es sollte ein Pop-Up Fenster erscheinen und Sie werden aufgefordert sich mit Ihr
 Wenn Sie diesen Text sehen, dann ist alles gut gelaufen: 
 
 
-## Übungsaufgabe II
-
-Führen Sie die `tuber`-Authentifizierung durch. 
 
 ## Was kann man mit `tuber` machen?
 
@@ -247,6 +246,9 @@ glimpse(res)
 
 ```
 
+## Übungsaufgabe II
+
+Führen Sie die `tuber`-Authentifizierung durch. 
 
 # Übungsaufgabe III
 
