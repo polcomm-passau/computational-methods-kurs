@@ -99,24 +99,6 @@ glimpse(df)
 ```
 
 
-## Übungsaufgabe I
-
-1. Erstellen Sie einen API-Schlüssel in Ihrer [Google API Console](https://console.cloud.google.com/apis/).
-
-2. Mit Hilfe dieses Schlüssels: 
-
-   * Suchen Sie nach 10 Videos (und **nur Videos!**) über Corona, die für Deutschland (d.h. zugänglich aus Deutschland, ISO Alpha 2: DE) nach dem 1.12.2021 veröffentlicht wurden (lesen Sie die [Dokumentation](https://developers.google.com/youtube/v3/docs) von YouTube!)   
-
-  * Sammeln Sie alle Kommentare (ohne Replies) zu dem [Tutorial](https://www.youtube.com/watch?v=4YyoMGv1nkc) von Kasper Welbers (*Tipp: CommentThreads*). Erstellen Sie eine Tibble mit allen relevanten Spalten (Sie können diese selbst bestimmen). 
-  
-```r
-# 10 Videos 
-
-
-# Kommentare sammeln (Tipp: CommentThreads)
-
-```
-
 # `tuber`
 
 `tuber` ist ein Hilfspacket (Wrapper), der den Umgang mit YouTube API erleichtert. Aber immer wenn man einen Wrapper benutzt, verliert man ein Teil der Kontrolle. 
@@ -231,6 +213,41 @@ comments_and_replies_tutorial
 ```
 
 
+
+# Searching Video IDs with `tuber`
+
+`tuber` bietet die Funktion `yt_search()`, um *YouTube* zu suchen. Die Nutzung dieser Funktion ist jedoch in Bezug auf API-Abfragen/Quoten extrem kostspielig.
+
+Eine einzelne Suchanfrage mit der Funktion `yt_search()` kann Ihr tägliches Kontingentlimit leicht überschreiten, da standardmäßig Daten für alle Suchergebnisse zurückgegeben werden. Wenn Sie die Funktion `yt_search()` verwenden möchten, empfehlen wir daher dringend, das Argument `get_all` auf `FALSE` zu setzen. Dies gibt bis zu 50 Ergebnisse zurück.
+
+```r
+# Search Videos
+
+res = yt_search("Barack Obama", get_all = F) # type default -> video
+
+glimpse(res)
+```
+# Übungsaufgaben
+
+## Übungsaufgabe I
+
+1. Erstellen Sie einen API-Schlüssel in Ihrer [Google API Console](https://console.cloud.google.com/apis/).
+
+2. Mit Hilfe dieses Schlüssels: 
+
+   * Suchen Sie nach 10 Videos (und **nur Videos!**) über Corona, die für Deutschland (d.h. zugänglich aus Deutschland, ISO Alpha 2: DE) nach dem 1.12.2021 veröffentlicht wurden (lesen Sie die [Dokumentation](https://developers.google.com/youtube/v3/docs) von YouTube!)   
+
+  * Sammeln Sie alle Kommentare (ohne Replies) zu dem [Tutorial](https://www.youtube.com/watch?v=4YyoMGv1nkc) von Kasper Welbers (*Tipp: CommentThreads*). Erstellen Sie eine Tibble mit allen relevanten Spalten (Sie können diese selbst bestimmen). 
+  
+```r
+# 10 Videos 
+
+
+# Kommentare sammeln (Tipp: CommentThreads)
+
+```
+
+
 # Übungsaufgabe III
 
 
@@ -250,22 +267,7 @@ comments_and_replies_tutorial
 ```
 
 
-# Searching Video IDs with `tuber`
-
-`tuber` bietet die Funktion `yt_search()`, um *YouTube* zu suchen. Die Nutzung dieser Funktion ist jedoch in Bezug auf API-Abfragen/Quoten extrem kostspielig.
-
-Eine einzelne Suchanfrage mit der Funktion `yt_search()` kann Ihr tägliches Kontingentlimit leicht überschreiten, da standardmäßig Daten für alle Suchergebnisse zurückgegeben werden. Wenn Sie die Funktion `yt_search()` verwenden möchten, empfehlen wir daher dringend, das Argument `get_all` auf `FALSE` zu setzen. Dies gibt bis zu 50 Ergebnisse zurück.
-
-```r
-# Search Videos
-
-res = yt_search("Barack Obama", get_all = F) # type default -> video
-
-glimpse(res)
-```
-
 # Lösungen
-
 
 ## Übungsaufgabe I
 
