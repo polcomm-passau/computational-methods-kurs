@@ -60,7 +60,7 @@ d = response %>%
 glimpse(d)
 ```
 
-Das Dataframe ist nested. Das heißt es enthällt verschachtelte Listen als Spalten. Das ist nicht *tidy*. Solche Dataframes müssen bereinigt werden und die relevanten Daten müssen in einzelne Spalten extrahiert werden. Dafür gibt es mehrere Möglichkeiten (s. unten). Aber zuerst, ein praktische Funktion, die bei der Navigation von Nested-Dataframes hilft ist `names()`:  
+Das Dataframe ist nested. Das heißt es enthällt verschachtelte Listen als Spalten. Das ist nicht *tidy*. Solche Dataframes müssen bereinigt werden und die relevanten Daten müssen in einzelne Spalten extrahiert werden. Dafür gibt es mehrere Möglichkeiten (s. unten). Aber zuerst, eine praktische Funktion, die bei der Navigation von Nested-Dataframes hilft ist `names()`:  
 
 ```r
 # Hilft bei der Navigation von Nested-Dataframes 
@@ -136,6 +136,9 @@ yt_oauth(ID, secret)
 Es sollte ein Pop-Up Fenster erscheinen und Sie werden aufgefordert sich mit Ihrem Google-Account anzumelden und den Zugang der API zu erlauben. 
 
 Wenn Sie diesen Text sehen, dann ist alles gut gelaufen: 
+
+![youtube_api_complete](https://user-images.githubusercontent.com/17723168/145722512-06af9074-d388-48e1-8975-c45ecb9c36dd.png)
+
 
 
 
