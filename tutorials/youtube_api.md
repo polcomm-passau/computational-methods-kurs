@@ -34,7 +34,7 @@ library(jsonlite) # erleichtert den Umgang mit JSON-Dateien in R
 ```
 
 ```r
-response = GET("https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=25&q=surfing&key=AIzaSyBsuTSjA1nfIyxuNaXBnfdRVuIDWT-pW6g")
+response = GET("https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=25&q=surfing&key=xxxxxxxxx") #key ersetzen
 status_code(response)
 
 ## 200 # Status 200 sagt uns, dass alles erfolgreich gelaufen ist.  
