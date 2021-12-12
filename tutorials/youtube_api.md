@@ -11,7 +11,7 @@ Die **YouTube** **Application Programming Interface** (YouTube API) gibt uns Zug
 
 YouTube hat weltweit 2 Milliarden Nutzer und jeden Tag sehen die Nutzer eine Milliarde Stunden Video auf YouTube. Es ist also eine wichtige Datenquelle für sozialwissenschaftliche Forschung. 
 
-Bitte folgen Sie [dieser Anleitung](https://github.com/jobreu/youtube-workshop-gesis-2021/blob/main/slides/A0_YouTube_API_Setup/A0_YouTubeAPISetup.pdf), um den Zugang zur YouTube API zu beantragen. Die Anleitung ist von Februar 2021 und ein paar Sachen haben sich verändert, aber im Großen und Ganzen sieht die Beantragung gleich aus. 
+Bitte folgen Sie [dieser Anleitung](https://github.com/jobreu/youtube-workshop-gesis-2021/blob/main/slides/A0_YouTube_API_Setup/A0_YouTubeAPISetup.pdf) von *Julian Kohne, Johannes Breuer und Rohangis Mohseni*, um den Zugang zur YouTube API zu beantragen. Die Anleitung ist von Februar 2021 und ein paar Sachen haben sich verändert, aber im Großen und Ganzen sieht die Beantragung gleich aus. 
 
 ## Rate Limits
 
