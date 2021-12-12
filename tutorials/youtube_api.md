@@ -27,13 +27,17 @@ Ihren aktuellen Verbrauch können Sie hier angucken: https://console.developers.
 # API-Anfragen an die YouTube API
 
 
-YouTube hat eine sehr ausführliche, aber gleichzeitig oft verwirrende Dokumentation: [YouTube API Dokumentation](https://developers.google.com/youtube/v3/docs)
+YouTube hat eine sehr ausführliche, aber gleichzeitig oft verwirrende Dokumentation: [YouTube API Dokumentation](https://developers.google.com/youtube/v3/docs). 
+
+Um direkt API-Anfragen an YouTube API zu schicken, benötigen wir die Packages `httr`, `tidyverse` und `jsonlite`: 
 
 ```r
 library(httr)
-library(tidyverse)
+library(tidyverse) # Datenmanipulationen
 library(jsonlite) # erleichtert den Umgang mit JSON-Dateien in R
 ```
+
+Nehmen wir an, wir wollen 25 Videos für die Suche "surfing" sammeln. Das würde so gehen: 
 
 ```r
 response = GET("https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=25&q=surfing&key=xxxxxxxxx") #key ersetzen
@@ -41,6 +45,11 @@ status_code(response)
 
 ## 200 # Status 200 sagt uns, dass alles erfolgreich gelaufen ist.  
 ```
+
+In dem Beispiel oben gibt die Query-Parameter `maxResults=` an wie viele Ergebnisse wir zurück bekommen möchten; `q=` ist Keyword, und `key=` ist der API Schlüssel. 
+
+Wenn die Daten von der API übermittelt sind, kommt der nächste schwere Schritt - die relevanten Daten in einen *tidy*-Format zu extrahieren.  
+
 ```r
 #JSON to Dataframe: 
 
