@@ -5,12 +5,12 @@
 * Um die aktualisierte Version von R zu **installieren**, befolgen Sie die nachstehenden Anweisungen. 
 * Um RStudio zu **aktualisieren**, befolgen Sie die nachstehenden Anweisungen ODER gehen Sie in RStudio zur Registerkarte „Help“, klicken Sie auf „Check for Updates“, wählen Sie dann „Quit and Download“, wenn Sie eine ältere Version verwenden, und folgen Sie dann den Anweisungen unten, um die neueste Version herunterzuladen.
 
-+ **Step 1:** Laden Sie R von hier: https://cran.r-project.org/
++ **Step 1:** Laden Sie R unter folgendem Link herunter: https://cran.r-project.org/
 
-Laden und installieren Sie die entsprechende Version von R abhängig vom Betriebssystem Ihres Rechners ([Windows](https://cran.r-project.org/)/[Mac](https://cran.r-project.org/)).  
+Laden Sie herunter und installieren Sie die entsprechende Version von R abhängig vom Betriebssystem Ihres Rechners ([Windows](https://cran.r-project.org/)/[Mac](https://cran.r-project.org/)).  
 <img src="https://user-images.githubusercontent.com/17723168/137346821-afe7fcad-bf03-4f0b-b83d-a2efc418da25.png" width="90%" >
 
-+ **Step 2:** Laden Sie RStudio von hier: https://www.rstudio.com/products/rstudio/download/  
++ **Step 2:** Laden Sie RStudio unter folgendem Link herunter: https://www.rstudio.com/products/rstudio/download/  
 
 <!--![Downloading R Studio](/images/r_studio_download1.png "R Studio Download")-->
 
