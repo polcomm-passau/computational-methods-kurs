@@ -52,7 +52,7 @@ Um eine einzelne Befehlstaste auszuführen, verwenden wir die Tastenkombination 
 [1] 6
 ```
 
-Längere Skripte werden schnell unübersichtlich. Oft vergisst man auch was der Code eigentlich macht oder machen sollte. Deswegen sollte man den geschriebenen Code immer mit sinvollen Kommentaren versehen. Ein Kommentar in R beginnt mit einem Hashtag `#`.
+Längere Skripte werden schnell unübersichtlich. Oft vergisst man auch, was der Code eigentlich macht oder machen sollte. Deswegen sollte man den geschriebenen Code immer mit sinvollen Kommentaren versehen. Ein Kommentar in R beginnt mit einem Hashtag `#`.
 
 ```r
 #Ich bin ein Kommentar. 
