@@ -57,7 +57,7 @@ Längere Skripte werden schnell unübersichtlich. Oft vergisst man auch, was der
 ```r
 #Ich bin ein Kommentar. 
 ```
-Kommentarzeilen werden vom R nicht ausgeführt (sonst führt der Rechner den Code immer Zeile für Zeile aus und erwartet in jeder Zeile einen fehlerfreien R-Code. Sonst gibt es eine Fehler-Meldung. Kommentarzeilen werden dabei ignoriert). 
+Kommentarzeilen werden vom R nicht ausgeführt (sonst führt der Rechner den Code immer Zeile für Zeile aus und erwartet in jeder Zeile einen fehlerfreien R-Code. Sonst gibt es eine Fehlermeldung. Kommentarzeilen werden dabei ignoriert). 
 
 Um einen Skript abschließend zu speichern, clicken wir entweder auf *File - Save* oder verwenden die Tastenkombination `Strg/Cmd + S`. R-Skripte können beliebig benannt werden und erhalten die Dateiendung `.R`.
 
