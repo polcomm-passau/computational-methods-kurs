@@ -38,7 +38,7 @@ Ein neuer Skript, der erstellt wird, heißt normallerweise *Untitled 1*. Hier k�
 3+3
 ```
 
-Um eine einzelne Befehlstaste auszuführen, verwenden wir die Tastenkombination `Strg/Cmd + ENTER`. Um den ganzen Skript mit allen drin erhaltenen Zeilen auszuführen, drückt `Strg/Cmd + Shift + ENTER`.  
+Um eine einzelne Befehlstaste auszuführen, verwenden wir die Tastenkombination `Strg/Cmd + ENTER`. Um den ganzen Skript mit allen drin erhaltenen Zeilen auszuführen, drücken wir `Strg/Cmd + Shift + ENTER`.  
 
 ```r
 #Eingabe: 
