@@ -18,7 +18,7 @@ Laden Sie die kostenlose RStudio Desktop Version herunter.
 
 <img src="/images/r_studio_download1.png" width="90%" >
 
-Das richtige Betriebssystem (Windows, MacOS, Linux) von Ihrem Rechner wird automatisch erkannt. Anschließend installieren Sie das Programm wie gewöhnt. 
+Das richtige Betriebssystem (Windows, MacOS, Linux) wird von Ihrem Rechner automatisch erkannt. Anschließend installieren Sie das Programm wie gewöhnt. 
 
 <img src="https://user-images.githubusercontent.com/17723168/137345747-01353203-2668-4082-bf49-e0618470dbe9.png" width="90%" >
 
