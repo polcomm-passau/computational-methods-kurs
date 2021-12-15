@@ -63,7 +63,7 @@ Um einen Skript abschließend zu speichern, clicken wir entweder auf *File - Sav
 
 ## Environment 
 
-*Environment* (oben rechts im Bildschirm) in RStudio ist der Ort wo die Objekten (z.B. Variablen und Daten) mit den wir aktuell arbeiten gespeichert bleiben. In dem Beispiel unten haben wir eine Variable `x` angelegt und ihr den Wert `10` vergeben. Außerdem, haben wir eine Tabelle (oder Datensatz) `tabelle_mit_autos` initialisiert. 
+*Environment* (oben rechts im Bildschirm) in RStudio ist der Ort, wo die Objekten (z.B. Variablen und Daten), mit denen wir aktuell arbeiten, gespeichert bleiben. In dem Beispiel unten haben wir eine Variable `x` angelegt und ihr den Wert `10` vergeben. Außerdem haben wir eine Tabelle (oder Datensatz) `tabelle_mit_autos` initialisiert. 
 
 ```r
 x = 10
