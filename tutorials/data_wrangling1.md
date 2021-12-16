@@ -4,7 +4,7 @@
 * [Der Pipe-Operator `%>%`](#Der-Pipe-Operator-%>%)
 * [Fehlende Werte](#Fehlende-Werte)
 * [Long vs. Wide Data](#Long-vs-Wide-Data)
-* [Daten zusammenfügen](#Daten-zusammenfügen)
+* [Datensätze zusammenfügen](#Datensätze-zusammenfügen)
 * [Übungsaufgaben](#Übungsaufgaben) 
 * [Lösungen](#Lösungen) 
 
