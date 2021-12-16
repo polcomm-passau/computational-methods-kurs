@@ -1,11 +1,3 @@
-### Wichtigsten Datenquellen im Computational Research:
-
-
-*   APIs
-*   Web Scraping
-* Data Crowdsourcing, Data Donations
-
-
 # APIs
 * [APIs](#APIs)
   * [JSON](#JSON)
@@ -17,6 +9,13 @@
   * [Developer Accounts Twitter APITwitter API v2](#Developer-Accounts-Twitter-API)
  * [Übungen](#Übungen)
  * [Lösungen](#Lösungen)
+
+### Wichtigsten Datenquellen im Computational Research:
+
+
+*   APIs
+*   Web Scraping
+* Data Crowdsourcing, Data Donations
 
 
 ## APIs
