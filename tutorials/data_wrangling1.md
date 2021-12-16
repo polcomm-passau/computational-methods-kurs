@@ -3,7 +3,7 @@
     * [`group_by()`, `summarize()`, `arrange()`](#Wichtigsten-Funktionen-für-Datenmanagment)
 * [Der Pipe-Operator `%>%`](#Der-Pipe-Operator-`%>%`)
 * [Fehlende Werte](#Fehlende-Werte)
-* [Long vs. Wide Data](#Long-vs.-Wide-Data)
+* [Long vs. Wide Data](#Long-vs-Wide-Data)
 * Daten zusammenfügen
 
 
