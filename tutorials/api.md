@@ -11,7 +11,7 @@
   * [JSON](#JSON)
   * [Rate-Limiting](#Rate-Limiting)
 * [API-Anfragen](#API-Anfragen-in-R-ausführen)
-* [Twitter API](#Twitter API)
+* [Twitter API](#Twitter-API)
   * [Was kann man mit `rtweet` machen?](#Was kann man mit `rtweet` machen?)  
 * [Twitter API v2](#Twitter API v2)
   * [Developer Accounts Twitter APITwitter API v2](#Developer Accounts Twitter API)
