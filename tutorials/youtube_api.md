@@ -1,11 +1,11 @@
 
 * [YouTube API v3](#YouTube-API-v3)
   * [Rate Limits](#Rate-Limits)
- * [API-Anfragen an die YouTube API](#API-Anfragen an die YouTube API)
+ * [API-Anfragen an die YouTube API](#API-Anfragen-an-die-YouTube-API)
   * [Daten extrahieren](#Daten-extrahieren)
  * [`tuber`](#`tuber`)
    * [Was kann man mit `tuber` machen?](#Was-kann-man-mit-`tuber`-machen?)
-  * [Searching Video IDs with `tuber`](#Searching Video IDs with `tuber`) 
+  * [Searching Video IDs with `tuber`](#Searching-Video-IDs-with-`tuber`) 
   * [Übungsaufgaben](#Übungsaufgaben) 
   * [Lösungen](#Lösungen) 
 
