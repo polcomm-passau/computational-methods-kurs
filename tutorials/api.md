@@ -14,7 +14,7 @@
 * [Twitter API](#Twitter-API)
   * [Was kann man mit `rtweet` machen?](#Was-kann-man-mit-rtweet-machen?)  
 * [Twitter API v2](#Twitter-API-v2)
-  * [Developer Accounts Twitter APITwitter API v2](#Developer Accounts Twitter API)
+  * [Developer Accounts Twitter APITwitter API v2](#Developer-Accounts-Twitter-API)
  * [Übungen](#Übungen)
  * [Lösungen](#Lösungen)
 
