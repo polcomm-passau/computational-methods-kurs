@@ -4,7 +4,9 @@
 * [Der Pipe-Operator `%>%`](#Der-Pipe-Operator-%>%)
 * [Fehlende Werte](#Fehlende-Werte)
 * [Long vs. Wide Data](#Long-vs-Wide-Data)
-* Daten zusammenfügen
+* [Daten zusammenfügen](#Daten-zusammenfügen)
+* [Übungsaufgaben](#Übungsaufgaben) 
+* [Lösungen](#Lösungen) 
 
 
 ## Willkommen in Tidyverse-Universum 
