@@ -1,3 +1,7 @@
+* [Debugging](#Debugging)
+  * [Hilfe beim Programmieren suchen](#Hilfe-beim-Programmieren-suchen)
+ * [Computational Hygiene](#Computational-Hygiene)
+
 # Debugging
 
 Debugging ist der Prozess der Suche nach der Antwort, warum der Code nicht funktioniert oder funktioniert nicht, wie er sollte.
