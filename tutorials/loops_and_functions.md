@@ -3,7 +3,7 @@
 * [Schleifen](#Schleifen)
   * [For-Schleifen](#For-Schleifen)
   * [While-Schleifen](#While-Schleifen)
-* [Konditionen](#Konditionen)
+* [Konditionen](#Konditionen (`if-else`-Abfragen))
 * [Funktionen](#Funktionen)
 
  
