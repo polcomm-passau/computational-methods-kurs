@@ -10,7 +10,7 @@
 * [APIs](#APIs)
   * [JSON](#JSON)
   * [Rate-Limiting](#Rate-Limiting)
-* [API-Anfragen in R ausführen](#API-Anfragen in R ausführen)
+* [API-Anfragen](#API-Anfragen)
 * [Twitter API](#Twitter API)
   * [Was kann man mit `rtweet` machen?](#Was kann man mit `rtweet` machen?)  
 * [Twitter API v2](#Twitter API v2)
