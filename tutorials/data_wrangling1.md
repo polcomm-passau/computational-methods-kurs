@@ -1,7 +1,7 @@
 * [Willkommen in *tidyverse*-Universum](#Willkommen-in-Tidyverse-Universum)
     * [`select()`, `filter()`, `rename()`, `mutate()`](#`select()`,-`filter()`,-`rename()`,-`mutate()`)
     * [`group_by()`, `summarize()`, `arrange()`](#Wichtigsten-Funktionen-für-Datenmanagment)
-* Der Pipe-Operator `%>%`: Verketten mehrerer Operationen
+* [Der Pipe-Operator `%>%`](#Der-Pipe-Operator-`%>%`)
 * Fehlende Werte
 * Long vs. Wide Data
 * Daten zusammenfügen
