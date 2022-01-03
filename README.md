@@ -23,7 +23,7 @@ Hier finden Sie diverse Kursmaterialien für die Lehre von Automatisieren Datens
 | 3    | [Variablen und Variablentypen in R](https://github.com/polcomm-passau/computational-methods-kurs/blob/main/tutorials/variablen.md) |  [Folien 2](https://github.com/polcomm-passau/computational-methods-kurs/files/7441299/Sitzung.2_.WU.Programmieren.fur.KoWi.pdf) | [R-Code 2.R](https://github.com/polcomm-passau/computational-methods-kurs/blob/main/tutorials/r_code/variables.R) | [Basics R Cheatsheet](https://github.com/rstudio/cheatsheets/blob/main/base-r.pdf)              |
 | 4    | [Schleifen und Funktionen](https://github.com/polcomm-passau/computational-methods-kurs/blob/main/tutorials/loops_and_functions.md) | [Folien 3](https://github.com/polcomm-passau/computational-methods-kurs/files/7503813/Sitzung.3.-.R_Schleifen.Bedingungen.Funktionen.pdf)| [R-Code 3.Rmd](https://github.com/polcomm-passau/computational-methods-kurs/blob/main/tutorials/r_code/Illustration_Programmieren%20von%20Schleifen%20%26%20Funktionen.Rmd)| 
 | 5    | [Packages](https://github.com/polcomm-passau/computational-methods-kurs/blob/main/tutorials/packages.md) | [Folien 4](https://github.com/polcomm-passau/computational-methods-kurs/files/7520889/Sitzung.3_.WU.Programmieren.fur.KoWi.pdf)| [R-Code 4.R](https://github.com/polcomm-passau/computational-methods-kurs/blob/main/tutorials/r_code/%C3%BCbung_3.R)  | 
-| 6    | Fehlersuche und Best Practices | | |
+| 6    | [Fehlersuche und Best Practices](https://github.com/polcomm-passau/computational-methods-kurs/blob/main/tutorials/debugging.md) | | |
 
 * [R Basics CheatSheet](https://github.com/rstudio/cheatsheets/blob/main/base-r.pdf)
 
@@ -42,6 +42,7 @@ Hier finden Sie diverse Kursmaterialien für die Lehre von Automatisieren Datens
 | 1    | [APIs](https://github.com/polcomm-passau/computational-methods-kurs/blob/main/tutorials/api.md)  | [Folien 1](https://colab.research.google.com/drive/1bxOfODWV5d5oiV6Y5KKTFpiI5gJ3qbUG?usp=sharing)| Twitter API |
 | 2    | [Youtube API](https://github.com/polcomm-passau/computational-methods-kurs/blob/main/tutorials/youtube_api.md)    | [Folien 2](https://colab.research.google.com/drive/1cfUwBQAGPuhrlWeEvQwMkNPv__5dl7ne?usp=sharing)       | Youtube API  |
 | 3    | [Web Scraping]|      |           |
+| 4    | [RSelenium]|      |           |
 
 
 ## Übungen 
