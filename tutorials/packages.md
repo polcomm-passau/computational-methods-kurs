@@ -46,7 +46,7 @@ devtools::install_github("hadley/dplyr") # (user name + repository name)
 
 ## Nutzen
 
-Hingegen um ein Package in einem Skript zu nutzen, muss es immer wieder neu aktiviert werden. 
+Um ein Package in einem Skript zu nutzen, muss es immer wieder neu aktiviert werden. 
 
 ```r
 library(package_name) 
