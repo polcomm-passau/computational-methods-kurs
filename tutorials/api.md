@@ -54,7 +54,7 @@ Einen umfassenden Überblick über alle verfügbaren APIs finden Sie auf [Progra
 
 JSON (**J**ava **S**cript **O**bject **N**otation) ist ein gängiges Format fürs Datenaustausch zwischen Anwendungen. Es hat sich als universales, leichtgewichtiges (benötigt wenig Speicherplatz), menschen- und maschinenlesbares Datenformat etabliert.
 
-Ein JSON Dokument beginnt und endet immer mit `{` und `}`. Innerhalb den geschweiften Klammen werden Inhalte (Objekte) plaziert. Jedes Objekt wird mit einem Namen definiert gefolgt von einem Doppelpunkt und den Wert (z.B. Objekt *Vorname* hat den Wert *Ronald*). Ein Objekt kann dann wieder ein Objekt sein. 
+Ein JSON Dokument beginnt und endet immer mit `{` und `}`. Innerhalb den geschweiften Klammen werden Inhalte (Objekte) plaziert. Jedes Objekt wird mit einem Namen definiert gefolgt von einem Doppelpunkt und den Wert (z.B. Objekt *Vorname* hat den Wert *Ronald*). Ein Objekt kann dann wieder ein Objekt sein (z.B. Objekt *Partei* beinhaltet mehrere Objekte). 
 
 ```r
 #JSON-Format
@@ -81,7 +81,7 @@ JSON Dateien haben die Dateiendung `.json`.
 
 Jede *API* ist anders aufgebaut, unterliegt eigenen Regeln (z.B. zur Authentifizierung oder Preis) und Struktur. Was viele *API*s aber gemeinsam haben ist sogenanntes *Rate Limiting*.
 
-Rate Limiting bedeutet, dass wir in einem bestimmten Zeitintervall nur eine bestimmte Anzahl an Anfragen stellen dürfen (z.B. 15 Anfragen alle 15 Minuten). Das wird implementiert um eine Überlastung des Servers oder missbräuchlichen Datenabruf zu verhindern.
+Rate Limiting bedeutet, dass wir in einem bestimmten Zeitintervall nur eine bestimmte Anzahl an Anfragen stellen dürfen (z.B. 15 Anfragen pro 15 Minuten). Das wird implementiert um eine Überlastung des Servers oder missbräuchlichen Datenabruf zu verhindern.
 
 Falls *API*s Rate Limits überschritten werden, bekommen wir die Fehlermeldung `429 Too Many Requests`. 
 
