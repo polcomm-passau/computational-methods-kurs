@@ -66,7 +66,7 @@ class(x)
 ```
 ### Character/String
 
-*Character*-Variablen sind ein sehr interessanter und wichtiger Datentyp für uns und wir werden damit sehr viel in der Zukunft arbeiten.
+*Character*-Variablen sind ein sehr interessanter und wichtiger Datentyp für uns. Wir werden damit sehr viel in der Zukunft arbeiten.
 
 ```r
 x = "Hello 'Daria'" # "" oder ''. In "kann man '' verwenden"
