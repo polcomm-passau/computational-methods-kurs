@@ -28,13 +28,13 @@ x = 10 #oder
 x <- 10
 ```
 
-Was ist richtiger? Beides ist möglich, aber die R Community und das R Styling Guide empfehlen, `<-` zu verwenden. Warum?  
+Welcher ist richtiger? Beides ist möglich, aber die R Community und das R Styling Guide empfehlen `<-` zu verwenden. Warum?  
 
-+ Es gibt tatsächlich Fälle, wo `<-` die einzige richtige Möglichkeit ist, einen Wert einer Variable zuzuweisen ([hier](https://www.r-bloggers.com/2018/09/why-do-we-use-arrow-as-an-assignment-operator/) können Sie die Beispiele angucken, wenn das der Fall wäre). Das sind aber nicht viele und die begegnet man im "Freien Leben" nicht oft. 
++ Es gibt tatsächlich Fälle, wo `<-` die einzige richtige Möglichkeit ist, einen Wert einer Variable zuzuweisen ([hier](https://www.r-bloggers.com/2018/09/why-do-we-use-arrow-as-an-assignment-operator/) können Sie die Beispiele angucken, wenn das der Fall wäre). Das sind aber nicht viele und die werden im "Freien Leben" nicht oft getroffen. 
 
 + **Historische Gründe:**
-  + Bis 2001 was `<-` die einzige Möglichkeit in R einer Variable einen Wert zuzuweisen. Also sind viele einfach konservativ. 
-  + Früher war `<-` nur ein Klick, da die APL Tastaturen an den R entwickelt wurde hatten eine Taste `<-`.  
+  + Bis 2001 war `<-` die einzige Möglichkeit, in R einer Variable einen Wert zuzuweisen. Also sind viele einfach konservativ. 
+  + Früher war `<-` nur ein Klick, da die APL Tastaturen, an den R entwickelt wurde, hatten eine Taste `<-`.  
  
 + **Mathematische Gründe:** 
   + Aus mathematischer Sicht ist der Pfeil schöner, denn er macht die Richtung der Zuordnungsrichtung klar. Übringens, der Pfeil nach rechts `->` würde in R auch funktionieren, aber bitte benutzt das nicht. Das Shortcut für den Linkspfeil in R-Studio ist übrigens `Alt` + `–`.
