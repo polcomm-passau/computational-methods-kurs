@@ -82,7 +82,7 @@ Um einen neunen Projekt anzulegen, gehen wir auf *File - New Project..*. Danach 
 
 ![New_project_create](https://user-images.githubusercontent.com/17723168/138303448-ffcd37d8-fe02-469d-89d4-eb797f5a2099.png)
 
-Hier wählen wir *New Directory - New Project - (Wir wählen den Ordner, wo wir das Projekt anlegen wollen, und geben einen Namen für das Projekt ein) - Create Project*. In dem Beispiel lege ich das Projekt *Teaching_R* auf meinem *Desktop* an: 
+Hier wählen wir *New Directory - New Project - (Wir wählen den Ordner, wo wir das Projekt anlegen wollen, und geben einen Namen für das Projekt ein) - Create Project*. In dem Beispiel legen wir das Projekt *Teaching_R* auf dem *Desktop* an: 
 
 ![Create_new_project](https://user-images.githubusercontent.com/17723168/138305709-153f9490-8e80-4d47-bd4a-0be0bcc37004.png)
 
