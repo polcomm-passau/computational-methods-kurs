@@ -107,7 +107,7 @@ class(x)
 
 ### Vektoren 
 
-Vektoren sind Objekte, die mehrere Werte desselben Typs beinhalten. Wir erzeugen Vektoren über die Funktion `c()` (von concatenate, also verketten). Die einzelnen Elemente des Vektors werden durch Kommas , getrennt.
+Vektoren sind Objekte, die mehrere Werte desselben Typs beinhalten. Wir erzeugen Vektoren über die Funktion `c()` (von concatenate, also verketten). Die einzelnen Elemente des Vektors werden durch Kommas `,` getrennt.
 
 ```r
 gerade_zahlen <- c(2, 4, 6, 8)
