@@ -34,10 +34,10 @@ Welcher ist richtiger? Beides ist möglich, aber die R Community und das R Styli
 
 + **Historische Gründe:**
   + Bis 2001 war `<-` die einzige Möglichkeit, in R einer Variable einen Wert zuzuweisen. Also sind viele einfach konservativ. 
-  + Früher war `<-` nur ein Klick, da die APL Tastaturen, an den R entwickelt wurde, hatten eine Taste `<-`.  
+  + Früher war `<-` nur ein Klick, da die APL Tastaturen, an denen R entwickelt wurde, eine Taste `<-` hatten.  
  
 + **Mathematische Gründe:** 
-  + Aus mathematischer Sicht ist der Pfeil schöner, denn er macht die Richtung der Zuordnungsrichtung klar. Übringens, der Pfeil nach rechts `->` würde in R auch funktionieren, aber bitte benutzt das nicht. Das Shortcut für den Linkspfeil in R-Studio ist übrigens `Alt` + `–`.
+  + Aus mathematischer Sicht ist der Pfeil schöner, denn er macht die Richtung der Zuordnungsrichtung klar. Übrigens, der Pfeil nach rechts `->` würde in R auch funktionieren, aber bitte benutzen Sie das nicht. Das Shortcut für den Linkspfeil in R-Studio ist übrigens `Alt` + `–`.
    
 + **ABER:** `=` ist lesbarer für andere Programmiersprachen. Deswegen entscheiden sich viele R-Nutzer, die zur R aus anderen Programmiersprachen wechseln für `=`.
 + FUN FACT: Package [formatR](https://yihui.org/formatr/) ändert automatisch `=` zu `<-`.
