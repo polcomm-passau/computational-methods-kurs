@@ -118,7 +118,7 @@ zahlen = c(gerade_zahlen, ungerade_zahlen) #die Zahlen werden nicht sortiert, so
 ```
 ####  Vektorelemente auswählen 
 
-Um auf Vektorenelemente zuzugreifen, benutzen wir eckige Klammen `[]`. Ein anderer Name dafür ist Index-Slicing. Anders als bei anderen Programmiersprachen, fängt R bei `1` statt bei `0` zu zählen.  
+Um auf Vektorenelemente zuzugreifen, benutzen wir eckige Klammen `[]`. Ein anderer Name dafür ist Index-Slicing. Anders als bei den anderen Programmiersprachen, fängt R bei `1` statt bei `0` zu zählen.  
 
 ```r
 zahlen = c(2, 4, 6, 8, 1, 3, 5, 7, 9)
@@ -143,7 +143,7 @@ codes
 
 #### Praktische Funktionen mit Vektoren
 
-Das besondere an Vektoren in R ist, dass man sehr einfach Ausrechnungen mit den ausführen kann. 
+Das besondere an Vektoren in R ist, dass man damit Ausrechnungen sehr einfach ausführen kann. 
 
 ```r
 zahlen + 1 #Addiert 1 zu jedem Element des Vektors 
@@ -166,7 +166,7 @@ length(zahlen) # Länge des Vektors
 
 ### Listen
 
-Listen in R sind Vektoren, die mehrere Werte unterschiedlichen Typs beinhalten. Wir erzeugen Listen über die Funktion `list()`. Wie bei Vektoren werden die einzelnen Elemente des Listes durch Kommas , getrennt.
+Listen in R sind Vektoren, die mehrere Werte unterschiedlicher Typen beinhalten. Wir erzeugen Listen über die Funktion `list()`. Wie bei Vektoren werden die einzelnen Elemente der Liste durch Kommas , getrennt.
 
 ```r
 l = list(10L, 3.14, "Text")
@@ -187,7 +187,7 @@ mat
 
 ### Dataframe
 
-*Dataframes* sind ein wichtiges Format für uns und man kann sie sich wie ganz normale Excel-Tabellen vorstellen.   
+*Dataframes* sind ein wichtiges Format für uns. Man kann sich sie als ganz normale Excel-Tabellen vorstellen.   
 
 ```r
 df = mtcars
@@ -205,7 +205,7 @@ new_df
 
 ### Date/POSIXct
 
-*Date* (Datum) und *POSIXct* (Zeitstempel: Datum + Uhrzeit) sind besondere Variablentypen in R mit den wir in den Sozialwissenschaften oft arbeiten. Datum in Date-Format in R zu haben lohnt sich besonders wenn man Zeitverläufe analysieren möchte oder bestimmte Ausrechnungen mit Daten durchführen möchte (z.B. Daten aggregieren pro Woche). 
+*Date* (Datum) und *POSIXct* (Zeitstempel: Datum + Uhrzeit) sind besondere Variablentypen in R, mit denen wir in den Sozialwissenschaften oft arbeiten. Datum in Date-Format in R zu haben lohnt sich, besonders wenn man Zeitverläufe analysieren oder bestimmte Ausrechnungen mit Daten durchführen möchte (z.B. Daten aggregieren pro Woche). 
 
 Standardgemäß möchte R Daten in `yyyy-mm-dd`-Format haben. Wenn die Daten aber in einem anderen Format vorliegen (was ziemlich oft der Fall ist), kann man das Format mit Hilfe von dem `format`-Parameter und einem entsprechenden Format-Kürzel ändern (das geht mit der Funktion `as.Date(str, format)`).     
 
