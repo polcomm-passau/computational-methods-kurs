@@ -76,7 +76,7 @@ Unser *Environment* sieht dann so aus:
 
 ## Files 
 
-Der rechte untere Bildschirmbereich in RStudio zeigt einen Dateibrowser (*Files*) an, der das aktuelle Arbeitsverzeichnis zeigt. Standardmäßig wird `Home` als das aktuelle Arbeitsverzeichnis ausgewählt. Da das aber sehr unübersichtlich ist (und später unpraktisch), bietet es sich an (und das empfehle ich sehr!) in RStudio mit Projekten zu arbeiten. 
+Der rechte untere Bildschirmbereich in RStudio zeigt einen Dateibrowser (*Files*) an, der das aktuelle Arbeitsverzeichnis zeigt. Standardmäßig wird `Home` als das aktuelle Arbeitsverzeichnis ausgewählt. Da das aber sehr unübersichtlich ist (und später unpraktisch), bietet es sich an (und das empfehlen wir sehr!) in RStudio mit Projekten zu arbeiten. 
 
 Um einen neunen Projekt anzulegen, gehen wir auf *File - New Project..*. Danach erscheint ein Fenster: 
 
