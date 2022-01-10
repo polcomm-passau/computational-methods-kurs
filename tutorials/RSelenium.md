@@ -20,7 +20,7 @@ Die Häufigsten Indikatoren sind:
 
 Ein anderer Indikator -> ihr versucht was zu scrapen, aber es ist nicht in dem HTML drin. 
 
-Ein Beispiele von dynamischen Webseite sind: 
+Ein paar Beispiele von dynamischen Webseiten: 
 
 *   https://de.rt.com/europa/128523-ukraine-als-aufmarschplatz-nato-schon-10000-soldaten-der-westlichen-allianz-land/ (Kommentarbereich) 
 *   https://www.sueddeutsche.de/bayern/covid-kids-bavaria-studie-bayern-1.5491443?reduced=true (Paywall) 
