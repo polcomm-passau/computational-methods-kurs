@@ -41,7 +41,7 @@ Hier finden Sie diverse Kursmaterialien für die Lehre von Automatisieren Datens
 | -----|:------------| :------|:----------|
 | 1    | [APIs](https://github.com/polcomm-passau/computational-methods-kurs/blob/main/tutorials/api.md)  | [Folien 1](https://colab.research.google.com/drive/1bxOfODWV5d5oiV6Y5KKTFpiI5gJ3qbUG?usp=sharing)| Twitter API |
 | 2    | [Youtube API](https://github.com/polcomm-passau/computational-methods-kurs/blob/main/tutorials/youtube_api.md)    | [Folien 2](https://colab.research.google.com/drive/1cfUwBQAGPuhrlWeEvQwMkNPv__5dl7ne?usp=sharing)       | Youtube API  |
-| 3    | [Web Scraping]|      |           |
+| 3    | [Web Scraping](https://github.com/polcomm-passau/computational-methods-kurs/blob/main/tutorials/web_scraping.md)| [Folien 3](https://colab.research.google.com/drive/1bIJ7fU5KzvDCDAc0Fiqmp5PaP_wNg_Qc?usp=sharing)     |           |
 | 4    | [RSelenium](https://github.com/polcomm-passau/computational-methods-kurs/blob/main/tutorials/RSelenium.md)| [Folien 4](https://colab.research.google.com/drive/1Uoj-Jdjg0IWrhcVHDD2VbgLvcKBNCWis?usp=sharing)     | Dynamische Webseiten          |
 
 
