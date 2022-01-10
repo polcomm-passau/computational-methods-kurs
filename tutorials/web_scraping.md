@@ -78,9 +78,9 @@ simple_html %>%
 ```
 
 
-### Wählen mit IDs. 
+### Wählen mit IDs 
 
-ID ist bei HTML unique, also man kriegt immer nur ein Element zurück. 
+`rvest` bietet eine Option Elemente anhand deren IDs zu wählen. IDs sind bei HTML unique, also man kriegt immer nur ein Element zurück. 
 
 ```r
 simple_html %>% 
@@ -93,10 +93,9 @@ simple_html %>%
 		[1] <table class="someTable blue" id="steve">\n<tr class="headerRow">\n<th>nu ...
 
 ```
+Außerdem, kann man mit `rvest` gleich mehrere Elemente wählen: 
 
 ```r
-# Mehrere Elemente wählen: 
-
 simple_html %>% 
   html_nodes(".rightColumn, .leftColumn") # Zwei Spalten wählen
 
@@ -121,7 +120,7 @@ Ergebnis:
 
 ## `html_text()` und `html_text2()`: Text aus Elementen extrahieren
 
-Zuerst versuchen wir die Funktion `html_text()` aus: 
+`rvest` bietet zwei Möglichkeiten an Texte aus Elementen zu extrahieren - `html_text()` und `html_text2()`. Zuerst versuchen wir die Funktion `html_text()` aus: 
 
 ```r
 simple_html %>% 
@@ -155,7 +154,7 @@ simple_html %>%
 		[4] "Here's another column! The main purpose of this column is just to show that you can use CSS selectors to get all elements in a specific column."
 ```
 
-Alternative ist die Funktion `html_text2()` zu nutzen. Disese Funktion ist langsamer, aber schneidet automatisch die unnötigen Leerzeichen oder Zeilenumbrüche aus:  
+Die Alternative wäre ist die Funktion `html_text2()` zu nutzen. Disese Funktion ist langsamer, aber schneidet automatisch die unnötigen Leerzeichen oder Zeilenumbrüche aus, deswegen würde ich fast immer die Verwendung von `html_text2()` bevorziehen:  
 
 ```r
 texts = simple_html %>% 
@@ -174,9 +173,7 @@ simple_tibble = tibble(
 simple_tibble
 
 # Ergebnis: 
-
-	text/plain
-		texts                                                                                                                                                                                                                                                                                                                                                                                                                
+                                               
 		1 This is a simple HTML document. Right click on the page and select view page source (or something similar, depending on browser) to view the HTML source code.                                                                                                                                                                                                                                                       
 		2 Alternatively, right click on a specific element on the page and select inspect element. This also shows the HTML code, but focused on the selected element. You should be able to fold and unfold HTML nodes (using the triangle-like thing before the <tags>), and when you hover your mouse over them, they should light up in the browser. Play around with this for a bit to get a feel for exploring HTML code.
 		3 Here's a stupid table.                                                                                                                                                                                                                                                                                                                                                                                               
@@ -209,7 +206,7 @@ Häufige Attribute, die uns interessieren:
 *   `datetime` : Timestamp
 
 
-Zum Beispiel, alle **Links** von [dieser](https://de.wikipedia.org/wiki/Hyperlink) Wikipedia-Seite extrahieren:
+Zum Beispiel, alle **Links** von [dieser](https://de.wikipedia.org/wiki/Hyperlink) Wikipedia-Seite zu extrahieren würde so gehen:
 
 ```r
 read_html("https://de.wikipedia.org/wiki/Hyperlink") %>% 
@@ -240,16 +237,19 @@ read_html("https://de.wikipedia.org/wiki/Hyperlink") %>%
 
 ## XPath 
 
-*XPath* ist mächtig, mächtiger als CSS, aber komplizierter. Mehr Infos über XPath: https://www.w3schools.com/xml/xpath_syntax.asp
+Bis jetzt haben wir immer CSS zur Auswahl von Elementen aus HTML verwendet. Eine Alternative dazu wäre *XPath* zu verwenden. *XPath* ist mächtig, mächtiger als CSS, aber komplizierter. Mehr Infos über XPath: https://www.w3schools.com/xml/xpath_syntax.asp
 
 ```r
+
+# Zum Beispiel: 
+
 html_node(simple_html, xpath = ".//table[@class='t-chart']") # XPath-Schreibweise
 ```
 
 
 # Effizientes Scraping mit Funktionen
 
-Oft wollen wir aber mehrere Webseiten mit dem selben Layout (z.B. mehrere Artikel von einer Nachrichtenwebseite) sammeln. Das geht mit Hilfe von Funktionen (könnt ihr Euch noch dran errinern?) 
+Oft wollen wir aber mehrere Webseiten mit dem selben Layout (z.B. mehrere Artikel von einer Nachrichtenwebseite) sammeln. Das geht mit Hilfe von Funktionen (können Sie sich noch dran errinern?) 
 
 ```r
 # Funktionen (fun und ENTER in RStudio)
@@ -263,9 +263,11 @@ my_function_name = function(argument){
 my_function_name("hello") #Funktion-Aufruf
 ```
 
-Nehmen wir an wir wollen Beschreibungen von Spauspielern von imbd.com sammeln. Auf der imdb-Webseite befinden sich Tausende Beschreibungen, die den gleichen Layout haben. Zum Beispiel, so sieht die Beschreibung von den Schauspieler Bill Murray aus: 
+Nehmen wir an wir wollen Beschreibungen von Spauspielern von der Webseite `imbd.com` sammeln. Auf der imdb-Webseite befinden sich Tausende Beschreibungen, die den gleichen Layout haben. Zum Beispiel, so sieht die Beschreibung von den Schauspieler Bill Murray aus: 
 
 ![bill_murray](https://user-images.githubusercontent.com/17723168/148791031-fd895aeb-7845-492b-98af-7562bc1774c7.png)
+
+Und so würde der Code aussehen, womit wir alle nötigen Informationen über Bill Murray aus seiner Beschreibung extrahieren können: 
 
 ```r
 # Die Infos über Bill Murray extrahieren:  
@@ -293,7 +295,7 @@ to_scrape = c("https://www.imdb.com/name/nm0000195/",
 )
 ```
 
-Wie macht man das? Um das effizient zu erledigen, brauchen wir eine **Funktion**! 
+Wie macht man das? Um das effizient zu erledigen, brauchen wir eine **Funktion** (ich nenne sie `scrape_actors`)! 
 
 ```r
 scrape_actors = function(link){
