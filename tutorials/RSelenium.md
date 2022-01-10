@@ -2,50 +2,23 @@
 
 ## Was sind dynamische Webseiten? 
 
+![static_dynamic](https://user-images.githubusercontent.com/17723168/148783601-63611263-d364-47a4-94ac-ab7304773270.jpg)
+
 > **Dynamische** Internetseiten werden auf Basis von Datenbanken generiert. Das bedeutet, dass die Inhalte (Texte, Bilder etc.) getrennt von technischen Elementen (Layout- Vorlagen, Programmierung, Skripte) aufbewahrt werden. Wenn ein Besucher die Website besucht, werden die Inhalte aus den Datenbanken gelesen und zu einer Internetseite zusammengefügt. Erst dann erscheinen alle Inhalte auf der Seite. 
 
 > **Statische** Webseiten werden dagegen gleich vollständig als einzelne Dateien auf dem Webserver gespeichert. Wenn ein Besucher also die Website besucht, werden die Seiten direkt zu ihm übertragen. Ein Zugriff auf Datenbanken erfolgt nicht. 
-
-![static_dynamic](https://user-images.githubusercontent.com/17723168/148783601-63611263-d364-47a4-94ac-ab7304773270.jpg)
 
 
 ## Wie erkennt man dynamische Webseiten?
 
 
-Die Häufigsten Indikatoren: 
+Die Häufigsten Indikatoren sind: 
 
 *   `php`-Endung
 *   `iframe`-Tag
 * `script`- Tag
 
 Ein anderer Indikator -> ihr versucht was zu scrapen, aber es ist nicht in dem HTML drin. 
-
-## Übungsaufgabe I
-
-Versucht den Speiseplan von der [Mensa-Webseite](https://stwno.de/de/gastronomie/speiseplan/uni-passau/uni-passau-mensa) zu scrapen.  
-
-```r
-library(rvest)
-
-# Tipp:
-
-read_html() # liest die URL
-html_nodes() # Wählt die Elemente
-html_text2() # Extrahiert die Texte
-```
-
-```r
-# Warum funktioniert das nicht? 
-
-# Mensa
-
-mensa = read_html("https://stwno.de/de/gastronomie/speiseplan/uni-passau/uni-passau-mensa") %>% 
-  html_nodes('.speiseplan') %>%
-  html_text2()
-
-mensa
-```
-
 
 Andere Beispiele: 
 
@@ -57,7 +30,7 @@ Andere Beispiele:
 # `RSelenium`
 
 
-Arbeiten mit RSelenium ist ein ziemlich kompliziertes Verfahren, die sehr Fehleranfällig ist. Es gibt auch unterschiedliche Möglichkeiten wie man mit RSelenium arbeitet: (1) Remote Driver von `RSelenium` (2) Docker-Sessions (empfohlen, aber komplizierter), oder (3) durch einen eigenen manuellen Server (ganz kompliziert!).  Ich zeige Euch heute die einfachste (1) Variante. 
+Arbeiten mit RSelenium ist ein ziemlich kompliziertes Verfahren, die sehr Fehleranfällig ist. Es gibt auch unterschiedliche Möglichkeiten wie man mit RSelenium arbeitet: (1) Remote Driver von `RSelenium` (2) Docker-Sessions (empfohlen, aber komplizierter), oder (3) durch einen eigenen manuellen Server (ganz kompliziert!). Ich zeige Euch heute die einfachste (1) Variante. 
 
 
 > ***Warnung:*** Schon die einfachste Ausführung von `RSelenium` ist aber kompliziert und benögt oft Installation von externen Software (z.B. Java!). Ihr könnt auch Probleme mit Administratorenrechten, Anti-Virus Programmen oder Firewall bekommen.
@@ -102,6 +75,16 @@ binman::list_versions("chromedriver")
 rD <- rsDriver(chromever = "96.0.4664.45", verbose=F) 
 remDr <- rD[["client"]]
 
+```
+
+Wenn die Arbeit mit RSelenium getan ist, sollte der Driver gestoppt werden: 
+
+```r
+# Remote Driver stoppen
+
+remDr$close()
+
+rD[["server"]]$stop()
 ```
 
 ## Was kann man mit `RSelenium` machen?
@@ -184,7 +167,7 @@ element <- remDr$findElement(using = "css","#iframe")
 remDr$switchToFrame(element)
 ```
 
-HTML Extrahieren und mit `rvest` bearbeiten
+## HTML Extrahieren und mit `rvest` bearbeiten
 
 ```r
 #Scrape HTML
@@ -201,16 +184,115 @@ quotes = read_html(parsed_pagesource) %>%
 
 quotes
 
-Codezelle <runyIqWFhyHY>
-#%% [code]
-#Remote Driver stoppen
+# Remote Driver stoppen
 
 remDr$close()
 
 rD[["server"]]$stop()
 ```
 
-# Übungsaufgabe II
+## Beispiel Google-Suche mit RSelenium
+
+```r
+library(RSelenium)
+rD <- rsDriver(browser="chrome", chromever = "96.0.4664.45", port=3289L, verbose=F) #Choosing a specific vversion of Chrome
+remDr <- rD[["client"]]
+
+remDr$navigate("http://www.google.de/")
+
+#Accept Cookies
+cookies = remDr$findElement(using = "id", value = "L2AGLb")
+cookies$sendKeysToElement(list("RStudio", key = "enter"))
 
 
-Sammelt jetzt den Speiseplan für heute von der [Mensa-Webseite](https://stwno.de/de/gastronomie/speiseplan/uni-passau/uni-passau-mensa). Natürlich mit Hilfe von RSelenium
+# Suche eingeben
+webElem <- remDr$findElement(using = "css", value = "input")
+webElem$sendKeysToElement(list("RStudio", key = "enter")) #don't forget to use `list()` when sending text
+
+
+# Gehe auf das erste Suchergebnis
+webElem =  remDr$findElement("css", "div.g a") 
+webElem$clickElement()
+
+# Zurück/Forward gehen:
+remDr$goBack()
+remDr$goForward()
+
+#Nach unten scrollen (1x Mal): 
+element <- remDr$findElement("css", "body")
+element$sendKeysToElement(list(key = "page_down")) 
+
+# Maus auf das erste Ergebnis bewegen und drauf clicken 
+remDr$goBack()
+webElem =  remDr$findElements("css", "div.yuRUbf a")
+remDr$mouseMoveToLocation(webElement = webElem[[1]])
+remDr$click()
+
+```
+
+
+## Beispiel - Einloggen
+
+
+```r
+remDr$navigate("http://quotes.toscrape.com/login")
+#enter username
+element <- remDr$findElement(using = "css","#username")
+element$sendKeysToElement(list("myusername"))
+#enter password
+element <- remDr$findElement(using = "css","#password")
+element$sendKeysToElement(list("mypassword"))
+#click login button
+element <- remDr$findElement(using = "css", 'input[type="submit"]')
+element$clickElement()
+
+```
+# Übungsaufgaben
+
+## Übungsaufgabe I
+
+Versucht den Speiseplan von der [Mensa-Webseite](https://stwno.de/de/gastronomie/speiseplan/uni-passau/uni-passau-mensa) zu scrapen.  
+
+```r
+library(rvest)
+
+# Tipp:
+
+read_html() # liest die URL
+html_nodes() # Wählt die Elemente
+html_text2() # Extrahiert die Texte
+```
+Warum funktioniert das nicht? 
+
+```r
+mensa = read_html("https://stwno.de/de/gastronomie/speiseplan/uni-passau/uni-passau-mensa") %>% 
+  html_nodes('.speiseplan') %>%
+  html_text2()
+
+mensa
+```
+
+## Übungsaufgabe II
+
+Sammelt jetzt den Speiseplan für heute von der [Mensa-Webseite](https://stwno.de/de/gastronomie/speiseplan/uni-passau/uni-passau-mensa). Natürlich mit Hilfe von RSelenium. 
+
+# Lösungen 
+
+## Übungsaufgabe II 
+
+```r
+remDr$navigate("https://stwno.de/de/gastronomie/speiseplan/uni-passau/uni-passau-mensa")
+
+element <- remDr$findElement(using = "css","iframe#blockrandom")
+
+#switch to the iframe
+remDr$switchToFrame(element)
+
+parsed_pagesource <- remDr$getPageSource()[[1]]
+
+speiseplan = read_html(parsed_pagesource) %>%
+  html_nodes(".speiseplan") %>%
+  html_table()
+
+speiseplan
+```
