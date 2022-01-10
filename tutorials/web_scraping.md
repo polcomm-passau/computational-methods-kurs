@@ -263,7 +263,7 @@ my_function_name = function(argument){
 my_function_name("hello") #Funktion-Aufruf
 ```
 
-Nehmen wir an wir wollen Beschreibungen von Spauspielern von der Webseite `imbd.com` sammeln. Auf der imdb-Webseite befinden sich Tausende Beschreibungen, die den gleichen Layout haben. Zum Beispiel, so sieht die Beschreibung von den Schauspieler Bill Murray aus: 
+Nehmen wir an wir wollen Beschreibungen von Spauspielern von der Webseite `imbd.com` sammeln. Auf der imdb-Webseite befinden sich Tausende Schauspieler-Beschreibungen, die alle den gleichen Layout haben. Zum Beispiel, so sieht die Beschreibung von den Schauspieler Bill Murray aus: 
 
 ![bill_murray](https://user-images.githubusercontent.com/17723168/148791031-fd895aeb-7845-492b-98af-7562bc1774c7.png)
 
