@@ -238,18 +238,6 @@ read_html("https://de.wikipedia.org/wiki/Hyperlink") %>%
 ```
 
 
-## Übungsaufgabe I 
-
-1. Sammeln Sie alle Überschriften und die dazugehörigen Links von der Titelseite von [RT Deutsch](https://de.rt.com/) in einem Tibble `rt_tibble` (wir werden den Tibble später noch mal verwenden). 
-
-```r
-rt_tibble = 
-
-```
-
-2. Jetzt gehen Sie zu irgendwelchem Artikel von RT Deutsch (z.B. [hier](https://de.rt.com/international/128452-moskau-lehnt-klimawandel-resolution-ab/)) und extrahieren Sie den Überschrift, das Datum und die Uhrzeit der Publikation und den Text in einen Tibble. 
-
-
 ## XPath 
 
 *XPath* ist mächtig, mächtiger als CSS, aber komplizierter. Mehr Infos über XPath: https://www.w3schools.com/xml/xpath_syntax.asp
@@ -305,7 +293,7 @@ to_scrape = c("https://www.imdb.com/name/nm0000195/",
 )
 ```
 
-Wie macht man das? Wir brauchen eine **Funktion**! 
+Wie macht man das? Um das effizient zu erledigen, brauchen wir eine **Funktion**! 
 
 ```r
 scrape_actors = function(link){
@@ -347,6 +335,18 @@ actors_df
 ```
 
 Unser Tibble `actors_df` beinhaltet die Beschreibungen für Bill Murray, Will Smith und Keanu Reeves. 
+
+# Übungsaufgaben
+## Übungsaufgabe I 
+
+1. Sammeln Sie alle Überschriften und die dazugehörigen Links von der Titelseite von [RT Deutsch](https://de.rt.com/) in einem Tibble `rt_tibble` (wir werden den Tibble später noch mal verwenden). 
+
+```r
+rt_tibble = 
+
+```
+
+2. Jetzt gehen Sie zu irgendwelchem Artikel von RT Deutsch (z.B. [hier](https://de.rt.com/international/128452-moskau-lehnt-klimawandel-resolution-ab/)) und extrahieren Sie den Überschrift, das Datum und die Uhrzeit der Publikation und den Text in einen Tibble. 
 
 ## Übungsaufgabe II
 
