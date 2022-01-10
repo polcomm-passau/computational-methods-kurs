@@ -20,11 +20,11 @@ Die Häufigsten Indikatoren sind:
 
 Ein anderer Indikator -> ihr versucht was zu scrapen, aber es ist nicht in dem HTML drin. 
 
-Andere Beispiele: 
+Ein Beispiele von dynamischen Webseite sind: 
 
-*   https://de.rt.com/europa/128523-ukraine-als-aufmarschplatz-nato-schon-10000-soldaten-der-westlichen-allianz-land/
-*   https://www.sueddeutsche.de/bayern/covid-kids-bavaria-studie-bayern-1.5491443?reduced=true
-* https://de-de.facebook.com/
+*   https://de.rt.com/europa/128523-ukraine-als-aufmarschplatz-nato-schon-10000-soldaten-der-westlichen-allianz-land/ (Kommentarbereich) 
+*   https://www.sueddeutsche.de/bayern/covid-kids-bavaria-studie-bayern-1.5491443?reduced=true (Paywall) 
+* https://de-de.facebook.com/ (Einloggen) 
 
 
 # `RSelenium`
