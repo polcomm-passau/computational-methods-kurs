@@ -44,6 +44,13 @@ Hier finden Sie diverse Kursmaterialien für die Lehre von Automatisieren Datens
 | 3    | [Web Scraping](https://github.com/polcomm-passau/computational-methods-kurs/blob/main/tutorials/web_scraping.md)| [Folien 3](https://colab.research.google.com/drive/1bIJ7fU5KzvDCDAc0Fiqmp5PaP_wNg_Qc?usp=sharing)     |           |
 | 4    | [RSelenium](https://github.com/polcomm-passau/computational-methods-kurs/blob/main/tutorials/RSelenium.md)| [Folien 4](https://colab.research.google.com/drive/1Uoj-Jdjg0IWrhcVHDD2VbgLvcKBNCWis?usp=sharing)     | Dynamische Webseiten          |
 
+## Scaling Up
+
+| Nr.  | Thema       | Folien | Beispiel  |
+| -----|:------------| :------|:----------|
+| 1    | Datenbanken |        |           |
+| 2    | Aufgabenautomatisierung |        |     Crontab (Linux/MacOS), Windows Task Scheduler      |
+
 
 ## Übungen 
 
