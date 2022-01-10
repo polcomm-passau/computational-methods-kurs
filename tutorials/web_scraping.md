@@ -35,7 +35,9 @@ Als erstes laden wir den Quellcode dieser [Webseite](https://raw.githack.com/ccs
 
 ![simple_html](https://user-images.githubusercontent.com/17723168/148791093-60c9768b-d6c3-4059-9107-0e604d17ed61.png)
 
+```r
 simple_html = read_html("https://raw.githack.com/ccs-amsterdam/r-course-material/master/miscellaneous/simple_html.html")
+```
 
 ## `html_nodes()` : Elemente auswählen 
 
@@ -76,7 +78,9 @@ simple_html %>%
 ```
 
 
-### Wählen mit IDs. ID ist bei HTML unique, also man kriegt immer nur ein Element zurück. 
+### Wählen mit IDs. 
+
+ID ist bei HTML unique, also man kriegt immer nur ein Element zurück. 
 
 ```r
 simple_html %>% 
@@ -275,3 +279,182 @@ Nehmen wir an wir wollen Beschreibungen von Spauspielern von imbd.com sammeln. A
 
 ![bill_murray](https://user-images.githubusercontent.com/17723168/148791031-fd895aeb-7845-492b-98af-7562bc1774c7.png)
 
+```r
+# Die Infos über Bill Murray extrahieren:  
+
+html = read_html('https://www.imdb.com/name/nm0000195/')
+name_overview = html %>% html_node('#name-overview-widget')
+
+tibble( 
+  name = name_overview %>% html_node('h1 .itemprop') %>% html_text2(),
+  job_categories = name_overview %>% html_nodes('#name-job-categories .itemprop') %>% html_text2() %>% paste(collapse=", "),
+  bio = name_overview %>% html_node('#name-bio-text') %>% html_text2(),
+  born_date = name_overview %>% html_node('#name-born-info time') %>% html_attr('datetime'),
+  born_location = name_overview %>% html_node('#name-born-info > a') %>% html_text2()
+)
+```
+
+Nun wollen wir aber nicht nur die Beschreibung von Bill Murray extrahieren, sondern auch von Will Smith und Keanu Reeves.
+
+```r
+# Links zu den Beschreibungen auf imdb.com: 
+
+to_scrape = c("https://www.imdb.com/name/nm0000195/",
+"https://www.imdb.com/name/nm0000226/",
+"https://www.imdb.com/name/nm0000206/" 
+)
+```
+
+Wie macht man das? Wir brauchen eine **Funktion**! 
+
+```r
+scrape_actors = function(link){
+ 
+  # Quellcode Einlesen: 
+
+  html = read_html(link)
+
+  # Elemente Auswählen: 
+
+  name_overview = html %>% html_node('#name-overview-widget')
+
+  # Daten extrahieren:
+
+  df = tibble( 
+  name = name_overview %>% html_node('h1 .itemprop') %>% html_text2(),
+  job_categories = name_overview %>% html_nodes('#name-job-categories .itemprop') %>% html_text2() %>% paste(collapse=", "),
+  bio = name_overview %>% html_node('#name-bio-text') %>% html_text2(),
+  born_date = name_overview %>% html_node('#name-born-info time') %>% html_attr('datetime'),
+  born_location = name_overview %>% html_node('#name-born-info > a') %>% html_text2()
+  )
+
+  #  5 Sekunden warten, um den Server bei vielen Anfragen nicht zu überlasten: 
+
+  Sys.sleep(5)
+
+  return(df)
+
+}
+
+```
+
+Da unsere Funktion ein Tibble ausgibt, können wir `map_dfr()` verwenden, um die resultierenden Tibbles zeilenweise miteinander zu verbinden:
+
+```r
+actors_df = map_dfr(to_scrape, scrape_actors)
+
+actors_df 
+```
+
+Unser Tibble `actors_df` beinhaltet die Beschreibungen für Bill Murray, Will Smith und Keanu Reeves. 
+
+## Übungsaufgabe II
+
+Von der RT Deutsch Titelseite (wir haben die Artikel im `rt_tibble` gespeichert), sammeln Sie die Texte von den ersten 10 Artikeln. 
+
+```r
+rt_tibble$links[1:10] # auf die ersten 10 Artikel zugreifen
+```
+
+# Mehr Übung: Süddeutsche Zeitung 
+
+## Übungsaufgabe III
+
+1. Scrapen Sie von [diesem](https://www.sueddeutsche.de/politik/annalena-baerbock-ursula-von-der-leyen-deutschland-europa-ukraine-russland-eu-aussenpolitik-krieg-sanktionen-1.5487174) SZ-Artikel folgende Informationen:
+
+  * Erscheinungsdatum und Uhrzeit ("13. Dezember 2021, 20:53 Uhr")
+  * Kicker ("Europa")
+  * Überschrift ("Vorbereiten auf den Ernstfall")
+  * Lead-Absatz ("Die Krise durch den russischen Truppenaufmarsch nahe der Grenze zur Ukraine...")
+  * Den Text 
+
+2. Extrahieren Sie alle Links aus dem Text des Artikels. 
+
+3. Erstellen Sie eine Funktion, um die Informationen aus Aufgabe 1 von einem beliebigen sueddeutsche.de-Artikel zu extrahieren. Testen Sie Ihre Funktion zusätzlich zum obigen Artikel auch anhand von [diesem Artikel](https://www.sueddeutsche.de/wirtschaft/usa-inflation-federal-reserve-notenbank-1.5488579).
+
+# Lösungen
+
+## Übungsaufgabe I 
+
+```r
+# Sammeln Sie alle Überschriften und die dazugehörigen Links von der Titelseite von RT Deutsch 
+
+rt = read_html("https://de.rt.com/") 
+
+rt_tibble = tibble(
+  links = rt %>% html_nodes(".Link-isFullCard") %>% html_attr("href"),
+  texts = rt %>% html_nodes(".Link-isFullCard") %>% html_text2()
+)
+
+```
+
+```r
+# Überschrift, Datum und Uhrzeit:  
+
+rt = read_html("https://de.rt.com/international/128452-moskau-lehnt-klimawandel-resolution-ab/") 
+
+tibble(
+  ueberschrift = rt %>% html_node(".ArticleView-title") %>% html_text2(),
+  datum = rt %>% html_nodes(".ArticleView-timestamp time") %>% html_text2() %>% str_replace("(?<=20\\d{2}).*", ""),
+  uhrzeit = rt %>% html_nodes(".ArticleView-timestamp time") %>% html_text2() %>% str_replace(".*20\\d{2}", ""),
+  texte = rt %>% html_nodes(".Text-type_1 , .ViewText-root p") %>% html_text2() %>% str_c(collapse = " ") 
+)
+
+```
+
+## Übungsaufgabe II
+
+```r
+rt_articles = function(link){
+
+  rt = read_html(paste0("https://de.rt.com", link)) 
+
+  df = tibble(
+    ueberschrift = rt %>% html_node(".ArticleView-title") %>% html_text2(),
+    datum = rt %>% html_nodes(".ArticleView-timestamp time") %>% html_text2() %>% str_replace("(?<=20\\d{2}).*", ""),
+    uhrzeit = rt %>% html_nodes(".ArticleView-timestamp time") %>% html_text2() %>% str_replace(".*20\\d{2}", ""),
+    texte = rt %>% html_nodes(".Text-type_1 , .ViewText-root p") %>% html_text2() %>% str_c(collapse = " ") 
+  )
+
+  return (df)
+}
+
+map_dfr(rt_tibble$links[1:10], rt_articles)
+
+```
+
+## Übungsaufgabe III
+
+sz = read_html("https://www.sueddeutsche.de/politik/annalena-baerbock-ursula-von-der-leyen-deutschland-europa-ukraine-russland-eu-aussenpolitik-krieg-sanktionen-1.5487174")
+  
+```r
+sz_infos = sz %>% 
+  html_nodes(".css-1ccsr7y, .css-1rl9nfu, .css-1r9juou, .css-1psf6fc,  .css-13wylk3") %>% 
+  html_text2() 
+
+tibble(
+    timestamp = sz_infos[1],
+    kicker = sz_infos[2],
+    title = sz_infos[3],
+    lead = sz_infos[4],
+    text = str_c(sz_infos[5:length(sz_infos)], collapse = " ")
+  )
+
+sz_infos
+```
+
+```r
+# Extrahieren Sie alle Links aus dem Text des Artikels:
+
+sz %>% 
+  html_nodes(".css-1r7yllh") %>% #html_nodes("[itemprop=articleBody]")
+  html_nodes("p") %>% 
+  html_nodes("a") %>% 
+  html_attr("href")
+
+sz %>%
+  html_nodes("[itemprop=articleBody]") %>% 
+  html_nodes("p") %>% 
+  html_nodes("a") %>%
+  html_attr("href")
+```
