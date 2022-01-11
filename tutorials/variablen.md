@@ -205,9 +205,9 @@ new_df
 
 ### Date/POSIXct
 
-*Date* (Datum) und *POSIXct* (Zeitstempel: Datum + Uhrzeit) sind besondere Variablentypen in R, mit denen wir in den Sozialwissenschaften oft arbeiten. Datum in Date-Format in R zu haben lohnt sich, besonders wenn man Zeitverläufe analysieren oder bestimmte Ausrechnungen mit Daten durchführen möchte (z.B. Daten aggregieren pro Woche). 
+*Date* (Datum) und *POSIXct* (Zeitstempel: Datum + Uhrzeit) sind besondere Variablentypen in R, mit denen in den Sozialwissenschaften oft gearbeitet wird. Datum in Date-Format in R zu haben lohnt sich, besonders wenn man Zeitverläufe analysieren oder bestimmte Ausrechnungen mit Daten durchführen möchte (z.B. Daten pro Woche aggregieren). 
 
-Standardgemäß möchte R Daten in `yyyy-mm-dd`-Format haben. Wenn die Daten aber in einem anderen Format vorliegen (was ziemlich oft der Fall ist), kann man das Format mit Hilfe von dem `format`-Parameter und einem entsprechenden Format-Kürzel ändern (das geht mit der Funktion `as.Date(str, format)`).     
+Standardgemäß werden die Daten in R in `yyyy-mm-dd`-Format bevorzugt. Wenn die Daten aber in einem anderen Format vorliegen (was ziemlich oft der Fall ist), kann man das Format mit Hilfe von dem `format`-Parameter und einem entsprechenden Format-Kürzel ändern (das geht mit der Funktion `as.Date(str, format)`).     
 
 ```r
 d = Sys.Date() # gibt heutiges Datum aus
