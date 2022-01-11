@@ -12,7 +12,7 @@ Falls Sie Fragen zu diesem Aufgabenblatt haben, kontaktieren Sie daria.kravets@u
 
 3. Schreiben Sie nun eine Funktion, die einen beliebigen Artikel von der Nachrichtenwebseite scrapen kann, d.h. den Titel des Arikels, den Text, ggf. Autor, Publikationsdatum, Tags, Sektion, usw. 
 
-4. Testen Sie die Funktion an 10 beliebigen Artikel (gepackt in einem Vektor) - Zum Beispiel, können das die 10 ersten Artikel von der Titelseite sein, die Sie im Schritt 2 gesammelt haben.
+4. Testen Sie die Funktion an 10 beliebigen Artikel (gepackt in einem Vektor) - Zum Beispiel, können das die 10 ersten Artikel von der Titelseite sein, die Sie im Schritt 2 gesammelt haben. Sie können diese auch selbst manuell auswählen. 
   
   
 Vielen Dank! 
