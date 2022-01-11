@@ -50,6 +50,7 @@ Hier finden Sie diverse Kursmaterialien für die Lehre von Automatisieren Datens
 | -----|:------------| :------|:----------|
 | 1    | Datenbanken |        |           |
 | 2    | Aufgabenautomatisierung |        |     Crontab (Linux/MacOS), Windows Task Scheduler      |
+| 3    | Server Setup |       | AWS EC2 Instance |
 
 
 ## Übungen 
