@@ -236,7 +236,7 @@ as.Date("11.03.2020", format = "%d.%m.%Y") # Daten mit anderen Formaten (z.B. dd
 | %S       | Sekunden (00-59)|
 
   
-Es gibt aber auch andere Formate wie Tag der Woche, Jahrhundert, usw. Hier findet ihr eine ausführlichere Liste: https://databraineo.com/ki-training-resources/r-programmierung/datum-und-zeitstempel-in-r-lubridate/
+Es gibt aber auch andere Formate wie Tag der Woche, Jahrhundert, usw. Hier finden Sie eine ausführlichere Liste: https://databraineo.com/ki-training-resources/r-programmierung/datum-und-zeitstempel-in-r-lubridate/
 
 
 # Variablentyp ändern
@@ -272,9 +272,9 @@ as.Date("2021-10-29")
 
 <img src="https://user-images.githubusercontent.com/17723168/141303326-c6edf25d-e1e2-4362-ad3a-455b36d9f737.png" width="50%" >
 
-Bis jetzt haben unseren Variablen immer nur `x`, `y` oder einfache Wörter als Namen vergeben. Aber man könnte und sollte die Variablen immer sinnvoll benennen und zwar danach was sie machen oder beinhalten. Und Absurd wie es am Anfang klingt, Variblenbenennung ist echt ein komplixiertes Thema beim Programmieren. Einen sinnvollen und passenden Namen für eine Variable zu finden kann schwer sein - Sie werden das schon selbst merken!  
+Bis jetzt wurden unseren Variablen immer nur `x`, `y` oder einfache Wörter als Namen vergeben. Aber man könnte und sollte die Variablen immer sinnvoll benennen und zwar danach, was sie machen oder beinhalten. Und obwohl es am Anfang wie Absurd klingt, ist Variblenbenennung echt ein komplixiertes Thema beim Programmieren. Einen sinnvollen und passenden Namen für eine Variable zu finden kann schwer sein - Sie werden das schon selbst merken!  
 
-Es gibt eigentlich nicht viel was ihr bei der Variablenbenenung beachten solltet:
+Es gibt eigentlich nicht viel, was Sie bei der Variablenbenenung beachten sollten:
 
 ### 1) Feste Regeln
 
