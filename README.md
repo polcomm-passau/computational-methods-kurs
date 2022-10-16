@@ -4,7 +4,7 @@
 
 Dozenten: Prof. Florian Töpfl (<florian.toepfl@uni-passau.de>), Daria Kravets (<daria.kravets@uni-passau.de>)
 
-Syllabus für den Kurs im WS21/22 @UniPassau finden sie [hier (Stand 28.11.2021)](https://github.com/polcomm-passau/computational-methods-kurs/files/7614495/2021_11_03_Seminarplan_Datensammlung%2BUebung_neu.pdf).
+Syllabus für den Kurs im WS22/23 @UniPassau finden sie [hier (Stand 17.10.2022)](https://github.com/polcomm-passau/computational-methods-kurs/files/7614495/2021_11_03_Seminarplan_Datensammlung%2BUebung_neu.pdf).
 
   
 Dies ist ein ***Work-in-Progress*** und wird laufend aktualisiert.
@@ -57,9 +57,9 @@ Hier finden Sie diverse Kursmaterialien für die Lehre von Automatisieren Datens
 
 | Nr.  | Aufgabenblatt     | Abgabe|
 | -----|------------------:|------:|
-|    1 | [Aufgabenblatt 1](https://github.com/polcomm-passau/computational-methods-kurs/blob/main/exercises/aufgabenblatt_1.md)| 16.11.2021|
-|    2 | [Aufgabenblatt 2](https://github.com/polcomm-passau/computational-methods-kurs/blob/main/exercises/aufgabenblatt_2.md)| 23.11.2021|
-|    3 | [Aufgabenblatt 3](https://github.com/polcomm-passau/computational-methods-kurs/blob/main/exercises/aufgabenblatt_3.md)| 30.11.2021|
+#|    1 | [Aufgabenblatt 1](https://github.com/polcomm-passau/computational-methods-kurs/blob/main/exercises/aufgabenblatt_1.md)| 16.11.2021|
+#|    2 | [Aufgabenblatt 2](https://github.com/polcomm-passau/computational-methods-kurs/blob/main/exercises/aufgabenblatt_2.md)| 23.11.2021|
+#|    3 | [Aufgabenblatt 3](https://github.com/polcomm-passau/computational-methods-kurs/blob/main/exercises/aufgabenblatt_3.md)| 30.11.2021|
 |    4 | [Aufgabenblatt 4](https://github.com/polcomm-passau/computational-methods-kurs/blob/main/exercises/aufgabenblatt_4.md)| 14.12.2021|
 |    5 | [Aufgabenblatt 5](https://github.com/polcomm-passau/computational-methods-kurs/blob/main/exercises/aufgabenblatt_5.md)| 21.01.2022|
 
