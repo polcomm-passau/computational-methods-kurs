@@ -1,8 +1,8 @@
 # Installation von R und RStudio
 
-*Hinweis:* Falls Sie eine ältere Version von R oder RStudio auf Ihrem Rechner installiert haben, empfehlen wir ein Update durchzuführen (wir benutzen die **Version 4.2.1** ("*Funny-Looking Kid*") in diesem Kurs). 
+*Hinweis:* Falls Sie eine ältere Version von R oder RStudio auf Ihrem Rechner installiert haben, empfehlen wir ein Update durchzuführen. Wir benutzen die **Version 4.2.1** ("*Funny-Looking Kid*") in diesem Kurs. 
 
-* Um die aktualisierte Version von R zu **installieren**, befolgen Sie die nachstehenden Anweisungen und laden Sie R neu (\* es gibt andere Wege (mehr dazu [hier](https://www.linkedin.com/pulse/3-methods-update-r-rstudio-windows-mac-woratana-ngarmtrakulchol)), aber dieser ist der einfachste.)
+* Um die aktualisierte Version von R zu **installieren**, befolgen Sie die nachstehenden Anweisungen und laden Sie R neu (man kann es auch anders machen (mehr dazu [hier](https://www.linkedin.com/pulse/3-methods-update-r-rstudio-windows-mac-woratana-ngarmtrakulchol)), aber dies ist der einfachste Weg).
  
 * Um RStudio zu **aktualisieren** gehen Sie in RStudio zur Registerkarte „Help“, klicken Sie auf „Check for Updates“, wählen Sie dann „Quit and Download“, wenn Sie eine ältere Version verwenden, und folgen Sie dann den Anweisungen unten, um die neueste Version herunterzuladen.
 
