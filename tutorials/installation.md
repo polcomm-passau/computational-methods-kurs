@@ -10,6 +10,12 @@
 Laden Sie herunter und installieren Sie die entsprechende Version von R abhängig vom Betriebssystem Ihres Rechners ([Windows](https://cran.r-project.org/)/[Mac](https://cran.r-project.org/)).  
 <img src="https://user-images.githubusercontent.com/17723168/137346821-afe7fcad-bf03-4f0b-b83d-a2efc418da25.png" width="90%" >
 
+Falls Sie R zum ersten Mal installieren, klicken Sie auf "install for the first time": 
+
+![download_R2](https://user-images.githubusercontent.com/17723168/196118071-0b039119-2333-4027-bbee-d11354f363b1.png)
+
+
+
 + **Step 2:** Laden Sie RStudio unter folgendem Link herunter: https://www.rstudio.com/products/rstudio/download/  
 
 <!--![Downloading R Studio](/images/r_studio_download1.png "R Studio Download")-->
