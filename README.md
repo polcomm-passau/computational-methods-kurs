@@ -4,7 +4,7 @@
 
 Dozenten: Prof. Florian Töpfl (<florian.toepfl@uni-passau.de>), Daria Kravets (<daria.kravets@uni-passau.de>)
 
-Syllabus für den Kurs im WS22/23 @UniPassau finden sie [hier (Stand 17.10.2022)](https://github.com/polcomm-passau/computational-methods-kurs/files/7614495/2021_11_03_Seminarplan_Datensammlung%2BUebung_neu.pdf).
+Syllabus für den Kurs im WS22/23 @UniPassau finden sie [hier](https://syncandshare.lrz.de/open/MlNpeGNFOGZjTDQ1eGROQk5Zb1dM/WS_22_23/Seminarplanung_Datensammlung%2B%C3%9Cbung.docx).
 
   
 Dies ist ein ***Work-in-Progress*** und wird laufend aktualisiert.
