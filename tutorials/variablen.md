@@ -378,4 +378,4 @@ sum(above_average) / length(values)
 
 ## Happy coding!  
 
-<---[Lösungen](https://github.com/polcomm-passau/computational-methods-kurs/blob/main/tutorials/r_code/l%C3%B6sungen_variablen.md)-->
+<!---[Lösungen](https://github.com/polcomm-passau/computational-methods-kurs/blob/main/tutorials/r_code/l%C3%B6sungen_variablen.md)--!>
