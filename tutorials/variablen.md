@@ -48,8 +48,8 @@ Es ist in R egal wie viele Leerzeichen Sie bei der Variablenzuweisung verwenden.
 ```r
 
 x=10  
-x = 10 # funtioniert 
-x        =      10 # funtioniert auch
+x = 10 # funktioniert 
+x        =      10 # funktioniert auch
 
 ```
 
