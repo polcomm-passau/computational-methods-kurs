@@ -43,6 +43,17 @@ Welcher ist richtiger? Beides ist möglich, aber die R Community und das R Styli
 + FUN FACT: Package [formatR](https://yihui.org/formatr/) ändert automatisch `=` zu `<-`.
 
 
+Es ist in R egal wie viele Leerzeichen Sie bei der Variablenzuweisung verwenden. 
+
+```r
+
+x=10  
+x = 10 # funtioniert 
+x        =      10 # funtioniert auch
+
+```
+
+
 # Variablentypen
 
 ## Einfache Variablentypen
