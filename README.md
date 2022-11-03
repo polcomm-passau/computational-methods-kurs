@@ -64,3 +64,5 @@ Hier finden Sie diverse Kursmaterialien für die Lehre von Automatisieren Datens
 |    4 | [Aufgabenblatt 4](https://github.com/polcomm-passau/computational-methods-kurs/blob/main/exercises/aufgabenblatt_4.md)| 14.12.2021|
 |    5 | [Aufgabenblatt 5](https://github.com/polcomm-passau/computational-methods-kurs/blob/main/exercises/aufgabenblatt_5.md)| 21.01.2022|
  --->
+
+## Weitere coole Ressources für die Lehre
