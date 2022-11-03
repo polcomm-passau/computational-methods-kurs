@@ -133,10 +133,11 @@ Um auf Vektorenelemente zuzugreifen, benutzen wir eckige Klammen `[]`. Ein ander
 
 ```r
 zahlen = c(2, 4, 6, 8, 1, 3, 5, 7, 9)
-zahlen[2] # 2 Element -> ## [1] 4
-zahlen[2:5] # Alle Elemente zwischen 2 und 5. -> ## [1] 4  6  8  1  3
-zahlen[c(1,4,6)] #gibt das 1, 4 und 6 Element aus -> ## [1] 2 8 3
-zahlen[-1] #Löscht das 1. Element 
+
+zahlen[2]           # 2 Element -> ## [1] 4
+zahlen[2:5]         # Alle Elemente zwischen 2 und 5. -> ## [1] 4  6  8  1  3
+zahlen[c(1,4,6)]    # gibt nur das 1, 4 und 6 Element aus -> ## [1] 2 8 3
+zahlen[-1]          # Löscht das 1. Element 
 ```
 
 #### Vektoren Namen vergeben
