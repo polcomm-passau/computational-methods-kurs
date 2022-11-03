@@ -32,8 +32,8 @@ Hier finden Sie diverse Kursmaterialien für die Lehre von Automatisieren Datens
 | Nr.  | Thema| Folien | Funktionen |
 | -----|:------------| :------|:-------|
 | 1    | [Daten laden und speichern](https://github.com/polcomm-passau/computational-methods-kurs/blob/main/tutorials/loading_data.md) |        | `readr()`, `readxl()`   |
-| 2    | [Datensätze bearbeiten](https://github.com/polcomm-passau/computational-methods-kurs/blob/main/tutorials/data_wrangling1.md)|<!---  [Folien 2](https://colab.research.google.com/drive/1zxPN0jXArKoqhEXK-oebTKmA0_0QxFA_?usp=sharing) --->| `select()`, `filter()`, `mutate()`, `rename()` | 
-| 3    | [Arbeiten mit Texten](https://github.com/polcomm-passau/computational-methods-kurs/blob/main/tutorials/data_wrangling2.md)|<!---  [Google Colab Folien 3](https://colab.research.google.com/drive/1qkkMRthvHTQphZ2Akk-yYiaMue5als-0?usp=sharing) --->|Regex und `stringr`|
+| 2    | [Datensätze bearbeiten](https://github.com/polcomm-passau/computational-methods-kurs/blob/main/tutorials/data_wrangling1.md)|  [Folien 2](https://colab.research.google.com/drive/1zxPN0jXArKoqhEXK-oebTKmA0_0QxFA_?usp=sharing) | `select()`, `filter()`, `mutate()`, `rename()` | 
+| 3    | [Arbeiten mit Texten](https://github.com/polcomm-passau/computational-methods-kurs/blob/main/tutorials/data_wrangling2.md)|  [Google Colab Folien 3](https://colab.research.google.com/drive/1qkkMRthvHTQphZ2Akk-yYiaMue5als-0?usp=sharing) |Regex und `stringr`|
 
 ## Datensammlung
 
