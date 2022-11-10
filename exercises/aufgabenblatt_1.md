@@ -4,7 +4,7 @@ Falls Sie Fragen zu diesem Aufgabenblatt haben, kontaktieren Sie daria.kravets@u
 
 ## 1. Variablen (5 Pkt.)
 
-Erstellen Sie eine Character-Variable `x` und geben Sie ihr den Wert 100 (Integer). Schreiben Sie Code, der: 
+Erstellen Sie eine Character-Variable `x` und weisen Sie ihr den Wert 100 (Integer) zu. Schreiben Sie Code, der: 
 
 * `x` in einen numerischen Wert transformiert 
 * `x` mit 2 multipliziert 
@@ -28,12 +28,12 @@ age = c(15,16,17,18,19,20,21,22,23,24)
 
 ## 3. Dates (5 Pkt.)
 
-Füllen Sie das `format`-Argument in der Funktion `strptime()` so aus, dass das gegebene Datum und ggf. die Uhrzeit korrekt eingelesen werden. 
+Sie erhalten drei Character-Variablen `a`, `b` und `c`. Wandeln Sie die Varibalen jeweils ins Datum-Format so um, dass das gegebene Datum und ggf. die Uhrzeit korrekt eingelesen werden. 
 
 ```r
-strptime('1961-12-24', format='%Y-%m-%d')   ## Beispiel 
-strptime('25 12, 1961', format='')
-strptime('1961-12-26T19:00:00', format='')
+a = '1961-12-24'
+b = '25 12, 1961'
+c = '1961-12-26T19:00:00'
 ```
 
 ## 4. Indexing (10 Pkt.)
@@ -57,7 +57,7 @@ Informieren Sie sich eigenständig wie die Funktion `seq()` funktioniert. Mit Hi
 Mit Hilfe von `for` und `while`-Schleifen und `if-else`-Abfragen, schreiben Sie eine Programm, die: 
 
 * Fünf mal "Ich liebe Programmieren mit R" ausgibt (bitte schreiben Sie jeweils eine Schleife mit `for` und `while`). Zum Ausgeben in der Konsole verwenden Sie die Funktion `print()`
-* Alle Zahlen von 1 bis 20 ausgibt.
+* Alle Zahlen von 1 bis 20 ausgibt. (hier können Sie entweder `for` oder `while`-Schleifen verwenden. 
 * Nur die gerade Zahlen von 1 bis 20 ausgibt.  
 
 ## 7. Funktionen-1 (10 Pkt.)
