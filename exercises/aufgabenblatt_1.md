@@ -4,7 +4,7 @@ Falls Sie Fragen zu diesem Aufgabenblatt haben, kontaktieren Sie daria.kravets@u
 
 ## 1. Variablen (5 Pkt.)
 
-Erstellen Sie eine Character-Variable `x` und weisen Sie ihr den Wert 100 (Integer) zu. Schreiben Sie Code, der: 
+Erstellen Sie eine Character-Variable `x` und weisen Sie ihr den Wert 100 (Integer) zu. Prüfen Sie den Variablentyp von `x` mit `class()`. Schreiben Sie Code, der: 
 
 * `x` in einen numerischen Wert transformiert 
 * `x` mit 2 multipliziert 
