@@ -69,7 +69,7 @@ Nutzen Sie die bisher erlernten Fähigkeiten, um aus den Daten einen *tidy*-Date
 ```r
 animal_friends <- tibble(
   Names = c("Francis", "Catniss", "Theodor", "Eugenia"),
-  "???" = c("Dog", "Cat", "Hamster", "Rabbit"),
+  ich_brauche_einen_namen = c("Dog", "Cat", "Hamster", "Rabbit"),
   Sex = c("m", "female", "m", "f"),
   VaCCinated = c("yes", "0", "0", "yes"),
   a_opterr = c("me", "me", "me", "me"), # lösche mich
