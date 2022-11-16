@@ -64,7 +64,7 @@ Fügen Sie die zwei Datensätze mit Hilfe von `inner_join()`, `full_join()`, `le
 
 Hier ist ein Datensatz, der etwas Bereinigung braucht.
 
-Nutzen Sie die bisher erlernten Fähigkeiten, um aus den Daten einen *tidy*-Datensatz zu machen (wenden Sie mindestens 5 Veränderungen an).
+* Nutzen Sie die bisher erlernten Fähigkeiten, um aus den Daten einen *tidy*-Datensatz zu machen (wenden Sie mindestens 5 Veränderungen an).
 
 ```r
 animal_friends <- tibble(
