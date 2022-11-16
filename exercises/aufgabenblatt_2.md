@@ -73,7 +73,7 @@ animal_friends <- tibble(
   Sex = c("m", "female", "m", "f"),
   VaCCinated = c("yes", "0", "0", "yes"),
   a_opterr = c("me", "me", "me", "me"), # lösche mich
-  `Age/Adopted/Condition` = c("8/2020/Very Good", "13/2019/Wild", "1/2021/Fair", "2/2020/Good") # benutze separate()
+  "Age/Adopted/Condition" = c("8/2020/Very Good", "13/2019/Wild", "1/2021/Fair", "2/2020/Good") # benutze separate()
 ) 
 ```
 
