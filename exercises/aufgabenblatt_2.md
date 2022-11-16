@@ -77,5 +77,5 @@ animal_friends <- tibble(
 ) 
 ```
 
-Wenn Sie fertig sind, wandeln Sie den bereinigten Datensatz in das *Long*-Format um.
+* Als nächstes, wandeln Sie den bereinigten Datensatz in das *Long*-Format um.
 
