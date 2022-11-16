@@ -14,24 +14,27 @@ Gucken Sie sich die Daten mittels `glimpse()` an.
 
 Erstellen Sie einen Teildatensatz, der:
 
-* die Variable id nicht enthält 
-* nur Posts ohne Video enthält (video = 0)
-* nur die Variablen date, post_link, video, text sowie alle Facebook-Metriken enthält
-* eine neue Variable total_emotions enthält, in der für jeden Post die Gesamtzahl aller Reactions (hahas, likes, sads, etc.) angegeben ist
+* die Variable `id` nicht enthält 
+* nur Posts ohne Video enthält (`video = 0`)
+* nur die Variablen `date`, `post_link`, `video`, `text` sowie alle Facebook-Metriken enthält
+* eine neue Variable `total_emotions` enthält, in der für jeden Post die Gesamtzahl aller Reactions (hahas, likes, sads, etc.) angegeben ist
 * nur Posts mit mehr als 50 Likes enthält
-* wo die Variable text in post_text umcodiert wird
-* keine fehlenden Werte bei den Shares enthällt (wähle zwischen einer der besprochenen Strategien für die Behandlung von fehlenden Werten)
+* wo der Variablenname `text` in `post_text` umcodiert wird
+* keine fehlenden Werte bei den Shares enthällt (wählen Sie zwischen einer der besprochenen Strategien für die Behandlung von fehlenden Werten)
 * wo die Posts nach Likes aufsteigend sortiert sind 
 
-Speichern Sie diesen Teildatensatz als CSV-Datei.
+Als letztes, speichern Sie bitte diesen Teildatensatz als CSV-Datei.
 
-## Aufgabe 3: Daten umstrukturieren (10 Pkt) 
+## Aufgabe 3: Daten analysieren und umstrukturieren (10 Pkt) 
 
 Verwenden Sie wieder den Datensatz aus der Datei `RT_D_Small.xlsx`. 
 
+* Wie viele Likes haben die Posts aus dem Datensatz im Durchscnitt bekommen? Wie sieht es mit dem Median aus? 
+* Welches Post hat die meisten Likes bekommen?
+* Welches Post mit Video (`video = 1`) hat die meisten Likes bekommen?
 * Berechnen Sie die durchschnittliche Anzahl an Kommentaren und die Standardabweichung für Posts mit Video und ohne Video. Verwenden Sie dafür `group_by()`
 * Wie viele Fälle hat jede Gruppe? 
-* Wählen Sie nur Variablen (Spalten), die den Buchstaben i in den Namen enthalten. 
+* Wählen Sie nur die Variablen (Spalten) aus, die den Buchstaben "i" in den Namen enthalten. 
 
 
 ## Aufgabe 4: Der Pipe-Operator `%>%` (10 Pkt)
