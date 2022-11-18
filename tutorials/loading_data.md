@@ -11,11 +11,16 @@
 
 Um CSV-Dateinen in R zu laden eignet sich am besten das externe Package [readr](https://readr.tidyverse.org/) aus dem *tidyverse*-Universum. 
 
-`readr` Installieren/ Aktivieren:
+`readr` Installieren/ Aktivieren (entweder einzeln oder als Teil von tidyverse):
 
 ```r
 install.packages("readr") # Installieren
 library("readr") # Aktivieren
+
+ODER
+
+install.packages("tidyverse") # Installieren
+library("tidyverse") # Aktivieren
 ```
 Eine CSV-Datei laden: 
 
