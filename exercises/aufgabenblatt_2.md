@@ -30,7 +30,7 @@ Als letztes, speichern Sie bitte diesen Teildatensatz als CSV-Datei.
 Verwenden Sie wieder den Datensatz aus der Datei `RT_D_Small.xlsx`. 
 
 * Wie viele Likes haben die Posts aus dem Datensatz im Durchscnitt bekommen? Wie sieht es mit dem Median aus? 
-* Welches Post hat die meisten Likes bekommen?
+* Welches Post hat die meisten Likes bekommen? *Erläuterung: entweder die ganze Zeile ausgeben lassen oder nur den Text des Posts
 * Welches Post mit Video (`video = 1`) hat die meisten Likes bekommen?
 * Berechnen Sie die durchschnittliche Anzahl an Kommentaren und die Standardabweichung für Posts mit Video und ohne Video. Verwenden Sie dafür `group_by()`
 * Wie viele Fälle hat jede Gruppe? 
