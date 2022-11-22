@@ -72,4 +72,5 @@ Hier finden Sie diverse Kursmaterialien für die Lehre von Automatisieren Datens
 * Julian Unkel, LMU, Computational Methods in der politischen Kommunikationsforschung. https://bookdown.org/joone/ComputationalMethods/
 ### English: 
 
+* https://r4ds.had.co.nz/index.html --> Ein Klassiker! Es gibt auch als Buch in der Bib, auch auf Deutsch. 
 * https://dgarcia-eu.github.io/SocialDataScience/
