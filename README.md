@@ -67,4 +67,9 @@ Hier finden Sie diverse Kursmaterialien für die Lehre von Automatisieren Datens
 
 ## Weitere empfehlenswerte Quellen für die Lehre
 
+### German: 
+* Valerie Hase, IKMZ, Universität Zürich, Forschungsseminar: Text as data. https://bookdown.org/valerie_hase/Github/
+* Julian Unkel, LMU, Computational Methods in der politischen Kommunikationsforschung. https://bookdown.org/joone/ComputationalMethods/
+### English: 
+
 * https://dgarcia-eu.github.io/SocialDataScience/
