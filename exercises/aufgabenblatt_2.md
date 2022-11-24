@@ -16,7 +16,7 @@ Erstellen Sie einen Teildatensatz, der:
 
 * die Variable `id` nicht enthält 
 * nur Posts ohne Video enthält (`video = 0`)
-* nur die Variablen `date`, `post_link`, `video`, `text` sowie alle Facebook-Metriken enthält
+* nur die Variablen `date`, `post_link`, `video`, `text` sowie alle Facebook-Metriken enthält (hahas, likes, sads, etc. und shares, comments_num)
 * eine neue Variable `total_emotions` enthält, in der für jeden Post die Gesamtzahl aller Reactions (hahas, likes, sads, etc.) angegeben ist
 * nur Posts mit mehr als 50 Likes enthält
 * wo der Variablenname `text` in `post_text` umcodiert wird
