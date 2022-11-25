@@ -15,10 +15,11 @@ sentences = c("Climate change is a crisis all across the world - but how come we
               "We've failed: The climate crisis is dooming")
 ```
 
-* Bitte ersetzen Sie alle Leerzeichen im Text durch das Wort "Leerzeichen" und speichern die manipulierten Sätze im Vektor `sentences_new` ab.
-* Wie oft kommen die Wörter "climate change" (klein- und großgeschrieben) in dem Vektor `sentences` vor? 
+* Bitte ersetzen Sie alle Leerzeichen im Vektor durch das Wort "Leerzeichen" und speichern die manipulierten Sätze im Vektor `sentences_new` ab.
 * Ersetzen Sie die umgangssprachige Englische Schreibweise "we've" mit "we have"
-* Welcher Regulärer Ausdruck (d.h. *REGEX*-Abfrage) wird die ganzen Sätze erkennen? D.h. im Fall des ersten Satzes soll der ganze Satz "Climate change is a crisis all across the world - but how come we've not taken it serious?" erkannt werden)(benutzen Sie `str_view()`).
+* Wie oft kommen die Wörter "climate change" (klein- und großgeschrieben) in dem Vektor `sentences` vor? 
+* Wählen Sie nur die Texten, die die Buchstabe `a` haben, aber nicht gefolgt von `l`, `f`, `n`, `t` oder `c` (benutzen Sie `str_subset`)
+* Welcher Regulärer Ausdruck (d.h. *REGEX*-Abfrage) wird die ganzen Sätze erkennen? D.h. im Fall des ersten Satzes soll der ganze Satz "Climate change is a crisis all across the world - but how come we've not taken it serious?" erkannt werden) (benutzen Sie `str_view()`).
 
 <!-- Noch eine Übung:  Extrahieren Sie alle Wörter, die entweder dem Wort "climate" oder "global" folgen. Am Ende, sollten Sie Wörterpaare wie "climate change", "climate scepticism" haben. -->
 
