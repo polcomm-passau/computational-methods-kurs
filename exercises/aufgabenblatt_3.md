@@ -2,7 +2,7 @@ Bitte lösen Sie dieses Aufgabenblatt 3 in Zweier-Gruppen und laden Sie Ihre Lö
 
 Falls Sie Fragen zu diesem Aufgabenblatt haben, kontaktieren Sie daria.kravets@uni-passau.de.
 
-## Aufgabe 1: Stringr (10 Pkt)
+## Aufgabe 1: Stringr (20 Pkt)
 
 Sie erhalten einen Vektor `sentences` mit Texten:
 
@@ -61,7 +61,7 @@ emails = c("daria.kravets@uni-passau.de",
       )
 ```
 
-## Aufgabe 5: Regex Daten extrahieren (30 Pkt)
+## Aufgabe 5: Regex Daten extrahieren (20 Pkt)
 
 Aus folgendem Vektor `adressen` extrahieren Sie folgende Adressbestandteile in einzelne Spalten in eine Tibble-Dataframe `adressen_tibble`:
 
