@@ -7,7 +7,7 @@ Falls Sie Fragen zu diesem Aufgabenblatt haben, kontaktieren Sie daria.kravets@u
 Machen Sie sich mit der Dokumentation von [Guardian API](https://open-platform.theguardian.com/) vertraut und beantragen Sie einen Zugansschlüssel zu der API.
 
 * Sammeln Sie die letzten 100 Artikel (mit Volltexten), die die neue Corona-Virusvariante "Omicron" in deren Texten erwähnen. Speichern Sie diese in einem Tibble.
-* Nun sammeln Sie nur solche Artikel (keyword = "omicron"),  die seit 1.12.2021 bei der Sektion "politics" publiziert wurden. Speichern Sie diese erneut in einem Tibble, bereinigen Sie den Tibble (keine nested-Listen sollten drin sein) und löschen Sie alle überflüssigen Spalten (Sie können diese selbst bestimmen).
+* Nun sammeln Sie nur solche Artikel (keyword = "omicron"),  die seit 1.12.2022 bei der Sektion "politics" publiziert wurden. Speichern Sie diese erneut in einem Tibble, bereinigen Sie den Tibble (keine nested-Listen sollten drin sein) und löschen Sie alle überflüssigen Spalten (Sie können diese selbst bestimmen).
 
 Führen Sie ein paar einfache Analysen durch: 
 
