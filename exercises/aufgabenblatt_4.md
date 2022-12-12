@@ -13,7 +13,7 @@ Führen Sie ein paar einfache Analysen durch:
 
 * Teilen Sie die Spalte mit dem Datum und Uhrzeit der Publikation in zwei Spalten (publicationDate, publicationTime). 
 * Wie lang sind die Artikel im Durchschnitt? D.h. (1) wie viele Wörter haben sie im Durchschnitt? (2) Wie viele Zeichen haben sie im Durchschnitt? 
-* Vergleichen Sie diese mit dem Durchschnitt der letzten 100 Artikel aus der Sektion "culture" (Sie müssen dafür eine neue API-Anfage stellen).
+* Vergleichen Sie diese mit dem Durchschnitt der letzten 100 Artikel mit einem beliebigen keyword (denken Sie sich ein interessantes und passendes Keyword aus!) aus der Sektion "culture" (Sie müssen dafür eine neue API-Anfage stellen).
 
 
 Vielen Dank!
