@@ -17,8 +17,21 @@ Um einen SSH-Key zu generieren, befolgen Sie bitte folgende Schritte:
 
 ![image](https://user-images.githubusercontent.com/17723168/212762327-f4df1f26-6568-49e2-ac60-a015a2bc08f7.png)
 
- Navigieren zwischen Ordner geht mit dem Befehl "cd" (change directory). Zum Beispiel, wenn ich zu dem Ordner Downloads gehen möchte, gebe ich zuerst den Behefl **cd\**
- ein. cd "C:\Users\kravet01\Downloads" ein.    
+ Navigieren zwischen Ordner geht mit dem Befehl "cd" (change directory). Zum Beispiel, wenn ich zu dem Ordner Downloads gehen möchte, gebe ich zuerst den Behefl "cd\"
+ ein. Das bringt mich dem Path-Baum nach oben zu dem Ordner "C:\": 
+ 
+ ![image](https://user-images.githubusercontent.com/17723168/212763157-b1137dcf-13f6-4cc4-ada2-02d4887d1cba.png)
 
+Nun möchte ich zu meinem Downloads Ordner wechseln. Der Ordner befindet sich auf meinem Rechner unter C:\Users\kravet01\: 
+
+![image](https://user-images.githubusercontent.com/17723168/212763445-d68fae4b-4e33-43ae-9f68-bdab049d88fe.png)
+
+Sie können einen beliebigen Ordner für die Speicherung des Schlüssels auf Ihrem Rechner wählen. Sie müssen nur den Ordner später auch finden können. 
+
+3. Um nun einen Schlüssel zu erzeugen, geben Sie folgenden Befehl in Ihre Befehlszeile ein:
+
+ssh-keygen
+
+![image](https://user-images.githubusercontent.com/17723168/212763774-aa3fad06-dc48-4414-a1aa-3d879dac975f.png)
 
 
