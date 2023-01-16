@@ -71,7 +71,7 @@ Hier finden Sie diverse Kursmaterialien für die Lehre von Automatisieren Datens
 * Valerie Hase, IKMZ, Universität Zürich, Forschungsseminar: Text as data. https://bookdown.org/valerie_hase/Github/
 * Julian Unkel, LMU, Computational Methods in der politischen Kommunikationsforschung. https://bookdown.org/joone/ComputationalMethods/
 * Mario Haim: https://wegweisr.haim.it/
-* Cornelius Puschmann: http://inhaltsanalyse-mit-r.de/ --> Besonders der Teil zu Datenanalyse ist sehr gut! 
+* Cornelius Puschmann: http://inhaltsanalyse-mit-r.de/ --> Besonders der Teil zur Datenanalyse ist sehr gut! 
 
 ### English: 
 
