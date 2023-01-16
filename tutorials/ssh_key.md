@@ -35,3 +35,18 @@ ssh-keygen
 ![image](https://user-images.githubusercontent.com/17723168/212763774-aa3fad06-dc48-4414-a1aa-3d879dac975f.png)
 
 
+4. Als nächstes werden Sie aufgefordert, den Namen der Datei einzugeben, in der der Schlüssel gespeichert werden soll. Drücken Sie einfach ENTER (Ihr Schlüssel heißt dann "id_rsa").
+5. Anschließend werden Sie aufgefordert, einen Passwort einzugeben (zweimal). Drücken Sie einfach zweimal ENTER.
+6. Wenn alles erfolgreich war, erhalten Sie eine ähnliche Ausgabe mit dem Bild Ihres Schlüssels (das Bild wird in Ihrem Fall anders aussehen): 
+
+![image](https://user-images.githubusercontent.com/17723168/212764621-c8859a47-0e31-435d-abfc-88af3e01b41d.png)
+
+7. Jetzt um Ihren Schlüssel anzuzeigen, geben Sie den folgenden Befehl in Ihre Befehlszeile ein: 
+
+type id_rsa.pub
+
+8. Kopieren die den Schlüssel (er beginnt mit "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABA.....") und schicken Sie per Post an mich. 
+
+
+
+
