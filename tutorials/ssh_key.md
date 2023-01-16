@@ -4,9 +4,9 @@ Für Lernzwecke, haben wir einen separaten Server (eine Virtual Machine) für St
 
 ## Verwendung der SSH-Authentifizierung
 
-Um sich in dem "polcomm-lehre.uni-passau.de"-Server einzuloggen, müssen Sie eine SSH (Secure Shell) Verbindung benutzen. Wenn Sie sich zum ersten Mal anmelden möchten, müssen zuerst einen SSH-Key generieren. Dieser muss von mir danach freigeschaltet (bitte schicken Sie mir den dafür per E-Mail). 
+Um sich in dem "polcomm-lehre.uni-passau.de"-Server einzuloggen, müssen Sie eine SSH (Secure Shell) Verbindung benutzen. Dafür brauchen Sie einen SSH-Schlüssel, den Sie zuerst generieren müssen (Achtung, dieser Schlüssel ist einmalig für jeden Rechner!). Dieser muss von mir danach freigeschaltet werden (bitte schicken Sie mir den dafür per E-Mail). 
 
-Um einen SSH-Key zu generieren, befolgen Sie bitte folgende Schritte: 
+Um einen SSH-Key zu generieren, befolgen Sie bitte die folgenden Schritte: 
 
 1. Als erstes, rufen Sie die Befehlszeile auf (CMD/Eingabenaufforderung bei Windows oder Terminal bei Mac). Wenn Sie nicht wissen, wie Sie die Befehlszeile öffnen, lesen Sie [hier nach](https://www.lifewire.com/how-to-open-command-prompt-2618089). Bei Windows sieht die Befehlszeile so aus (bei Mac ähnlich): 
 
@@ -26,7 +26,7 @@ Nun möchte ich zu meinem Downloads Ordner wechseln. Der Ordner befindet sich au
 
 ![image](https://user-images.githubusercontent.com/17723168/212763445-d68fae4b-4e33-43ae-9f68-bdab049d88fe.png)
 
-Sie können einen beliebigen Ordner für die Speicherung des Schlüssels auf Ihrem Rechner wählen. Sie müssen nur den Ordner später auch finden können. 
+Sie können einen beliebigen Ordner für die Speicherung des Schlüssels auf Ihrem Rechner wählen. Sie müssen nur den Ordner später auch finden können. Mehr dazu [hier](https://www.digitalcitizen.life/command-prompt-how-use-basic-commands/). 
 
 3. Um nun einen Schlüssel zu erzeugen, geben Sie folgenden Befehl in Ihre Befehlszeile ein:
 
@@ -48,5 +48,5 @@ type id_rsa.pub
 8. Kopieren die den Schlüssel (er beginnt mit "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABA.....") und schicken Sie per Post an mich. 
 
 
-
+Das war es!
 
