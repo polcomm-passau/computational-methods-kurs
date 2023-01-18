@@ -22,7 +22,7 @@ Um einen SSH-Key zu generieren, befolgen Sie bitte die folgenden Schritte:
  
  ![image](https://user-images.githubusercontent.com/17723168/212763157-b1137dcf-13f6-4cc4-ada2-02d4887d1cba.png)
 
-Nun möchte ich zu meinem Downloads Ordner wechseln. Der Ordner befindet sich auf meinem Rechner unter C:\Users\kravet01\: 
+Nun möchte ich zu meinem Downloads Ordner wechseln (Befehl "cd"). Der Ordner befindet sich auf meinem Rechner unter C:\Users\kravet01\: 
 
 ![image](https://user-images.githubusercontent.com/17723168/212763445-d68fae4b-4e33-43ae-9f68-bdab049d88fe.png)
 
