@@ -17,7 +17,7 @@ Um einen SSH-Key zu generieren, befolgen Sie bitte die folgenden Schritte:
 
 ![image](https://user-images.githubusercontent.com/17723168/212762327-f4df1f26-6568-49e2-ac60-a015a2bc08f7.png)
 
- Navigieren zwischen Ordner geht mit dem Befehl "cd" (change directory). Zum Beispiel, wenn ich zu dem Ordner Downloads gehen möchte, gebe ich zuerst den Behefl "cd\"
+ Navigieren zwischen Ordner geht mit dem Befehl "cd" (change directory). Zum Beispiel, wenn ich zu dem Ordner Downloads gehen möchte, gebe ich zuerst den Behefl "cd\\\"
  ein. Das bringt mich dem Path-Baum nach oben zu dem Ordner "C:\": 
  
  ![image](https://user-images.githubusercontent.com/17723168/212763157-b1137dcf-13f6-4cc4-ada2-02d4887d1cba.png)
