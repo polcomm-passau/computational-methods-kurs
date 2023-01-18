@@ -45,7 +45,7 @@ ssh-keygen
 
 type id_rsa.pub
 
-Alternativ können Sie die Datei auf Ihrem Rechner finden (dort, wo Sie sie im Schritt 2 gespeichert haben). Achtung, auf manchen Rechnern ist die Datei versteckt und Sie müssen sie gesondert anzeigen. Mehr dazu hier für [Windows](https://support.microsoft.com/de-de/windows/ausgeblendete-dateien-und-ordner-in-windows-anzeigen-97fbc472-c603-9d90-91d0-1166d1d9f4b5) und hier für [Mac](https://www.ionos.de/digitalguide/server/konfiguration/mac-versteckte-dateien-und-ordner-anzeigen/#:~:text=Schritt%2Df%C3%BCr%2DSchritt%2DAnleitung,-Insgesamt%20m%C3%BCssen%20Sie&text=Dr%C3%BCcken%20Sie%20die%20Tastenkombination%20aus,Sie%20dieselbe%20Tastenkombination%20erneut%20dr%C3%BCcken.) 
+Alternativ können Sie die Datei auf Ihrem Rechner finden (dort, wo Sie sie im Schritt 2 gespeichert haben) und mit einem beliebigen Textprogramm öffnen. Achtung, auf manchen Rechnern ist die Datei versteckt und Sie müssen sie gesondert anzeigen. Mehr dazu hier für [Windows](https://support.microsoft.com/de-de/windows/ausgeblendete-dateien-und-ordner-in-windows-anzeigen-97fbc472-c603-9d90-91d0-1166d1d9f4b5) und hier für [Mac](https://www.ionos.de/digitalguide/server/konfiguration/mac-versteckte-dateien-und-ordner-anzeigen/#:~:text=Schritt%2Df%C3%BCr%2DSchritt%2DAnleitung,-Insgesamt%20m%C3%BCssen%20Sie&text=Dr%C3%BCcken%20Sie%20die%20Tastenkombination%20aus,Sie%20dieselbe%20Tastenkombination%20erneut%20dr%C3%BCcken.) 
 
 8. Kopieren die den Schlüssel (er beginnt mit "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABA.....") und schicken Sie per Post an mich. 
 
