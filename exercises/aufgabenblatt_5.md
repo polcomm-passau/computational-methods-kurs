@@ -1,4 +1,4 @@
-Bitte lösen Sie dieses letztes Aufgabenblatt 6 **einzeln!** (!) und laden Sie Ihre Lösung (eine R.-Datei) bis 21.01 auf Stud.IP hoch. Dieses Aufgabenblatt wird benotet und die maximale Punktenzahl beträgt 100 Punkte. *Happy Coding!*
+Bitte lösen Sie dieses letztes Aufgabenblatt 6 **einzeln!** (!) und laden Sie Ihre Lösung (eine R.-Datei) bis 03.02 auf Stud.IP hoch. Dieses Aufgabenblatt wird benotet und die maximale Punktenzahl beträgt 100 Punkte. *Happy Coding!*
 
 Falls Sie Fragen zu diesem Aufgabenblatt haben, kontaktieren Sie daria.kravets@uni-passau.de.
 
