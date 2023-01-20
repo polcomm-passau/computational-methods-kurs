@@ -49,7 +49,7 @@ Hier finden Sie diverse Kursmaterialien für die Lehre von Automatisieren Datens
 | Nr.  | Thema       | Folien | Beispiel  |
 | -----|:------------| :------|:----------|
 | 1    | Datenbanken |        |           |
-| 2    | Aufgabenautomatisierung |        |     Crontab (Linux/MacOS), Windows Task Scheduler      |
+| 2    | Aufgabenautomatisierung |  [Folien](https://colab.research.google.com/drive/1id3M1s6xFWoaCy6j-aevTwsVx3dcZxDm?usp=sharing |     Crontab (Linux/MacOS), Windows Task Scheduler      |
 | 3    | Server Setup |       | AWS EC2 Instance |
 
 
