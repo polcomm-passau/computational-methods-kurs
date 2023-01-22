@@ -50,7 +50,8 @@ Hier finden Sie diverse Kursmaterialien für die Lehre von Automatisieren Datens
 | -----|:------------| :------|:----------|
 | 1    | Datenbanken |        |           |
 | 2    | Aufgabenautomatisierung |  [Folien](https://colab.research.google.com/drive/1id3M1s6xFWoaCy6j-aevTwsVx3dcZxDm?usp=sharing) |     Crontab (Linux/MacOS), Windows Task Scheduler      |
-| 3    | Server Setup |       | AWS EC2 Instance |
+| 3    | [Serveranmeldung](https://github.com/polcomm-passau/computational-methods-kurs/blob/main/tutorials/ssh_key.md) | ZIM-Server|
+| 4    | Server Setup |       | AWS EC2 Instance |
 
 
 ## Übungen 
