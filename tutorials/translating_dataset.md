@@ -6,7 +6,10 @@ Der 1)-Weg benötigt weniger Programmierkenntnise, aber die Qualität der Übers
 
 ## Google Tabellen-Übersetzung
 
-Für diese Variante öffnen Sie [Google Tabellen](https://docs.google.com/spreadsheets/u/0/) in Ihrem Browser. Kopieren Sie alle Zeilen, die Sie übersetzen möchten in eine leere Tabelle rein. Anschließend kopieren Sie diese Funktion (ändern Sie die Daten in eckigen Klammen): =GOOGLETRANSLATE([Zelle zum Übersetzen];"[Ihre Sprache hier]"; "en"). 
+Für diese Variante öffnen Sie [Google Tabellen](https://docs.google.com/spreadsheets/u/0/) in Ihrem Browser. Kopieren Sie alle Zeilen, die Sie übersetzen möchten in eine leere Tabelle rein. Anschließend kopieren Sie diese Funktion (ändern Sie die Daten in eckigen Klammen): =GOOGLETRANSLATE([Zelle zum Übersetzen];"[Ihre Sprache hier]"; "en"): 
+
+![image](https://user-images.githubusercontent.com/17723168/216951381-4ffeea20-8aae-4fcf-b096-7770f2c94770.png)
+
 
 ## DeepL-Übersetzung
 
