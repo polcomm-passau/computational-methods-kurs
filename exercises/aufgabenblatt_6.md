@@ -10,7 +10,7 @@ Falls Sie Fragen zu diesem Aufgabenblatt haben, kontaktieren Sie daria.kravets@u
 
 2. Schreiben Sie einen Skript, der alle Überschriften und die dazugehörigen Links von der Titelseite Ihrer ausgewählten Nachrichtenwebseite sammelt. 
 
-3. Schreiben Sie nun eine Funktion, die einen beliebigen Artikel von der Nachrichtenwebseite scrapen kann, d.h. den Titel des Arikels, den Text, ggf. Autor, Publikationsdatum, Tags, Sektion, usw. 
+3. Schreiben Sie nun eine Funktion, die einen beliebigen Artikel von der Nachrichtenwebseite scrapen kann, d.h. den Titel des Arikels, den Text, ggf. Autor, Publikationsdatum, Publikationszeit, Tags, Sektion, externe Links, usw. 
 
 4. Testen Sie die Funktion an 10 beliebigen Artikel von der Webseite (gepackt in einem Vektor) - Zum Beispiel, können das die 10 ersten Artikel von der Titelseite sein, die Sie im Schritt 2 gesammelt haben. Sie können diese auch selbst manuell auswählen. 
   
